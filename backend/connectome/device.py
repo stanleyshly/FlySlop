@@ -1,9 +1,4 @@
-"""Device selection for connectome runtimes: ``resolve_device("auto"|"cpu"|"mps")``.
-
-``auto`` reads the cached benchmark written by ``scripts/bench_device.py``
-(``data/connectome/device_bench.json``). Without the cache it returns ``cpu``
-(the measured default: CSR sparse ops are not implemented on MPS).
-"""
+"""Device selection for Torch models: CUDA, then MPS, then CPU when set to auto."""
 from __future__ import annotations
 
 import json
@@ -11,7 +6,7 @@ from functools import lru_cache
 from pathlib import Path
 
 BENCH_PATH = Path(__file__).resolve().parents[2] / "data" / "connectome" / "device_bench.json"
-DEVICES = ("auto", "cpu", "mps")
+DEVICES = ("auto", "cpu", "cuda", "mps")
 
 
 @lru_cache(maxsize=4)
@@ -36,6 +31,14 @@ def mps_available() -> bool:
         return False
 
 
+def cuda_available() -> bool:
+    try:
+        import torch
+        return bool(torch.cuda.is_available() and torch.cuda.device_count() > 0)
+    except Exception:
+        return False
+
+
 def recommended(n_neurons: int | None = None, path: str | Path = BENCH_PATH) -> dict:
     """{'device','backend'} recorded as fastest (fwd+bwd) for the nearest benchmarked size."""
     bench = load_bench(path)
@@ -44,13 +47,22 @@ def recommended(n_neurons: int | None = None, path: str | Path = BENCH_PATH) -> 
 
 
 def resolve_device(pref: str = "auto", n_neurons: int | None = None, path: str | Path = BENCH_PATH) -> str:
-    """Return ``"cpu"`` or ``"mps"``. Explicit ``mps`` falls back to ``cpu`` if unavailable."""
+    """Resolve a device preference; auto prefers CUDA, then MPS, then CPU.
+
+    ``n_neurons`` and ``path`` remain accepted for compatibility with older callers;
+    the benchmark cache no longer overrides the live hardware choice.
+    """
     pref = (pref or "auto").lower()
     if pref not in DEVICES:
         raise ValueError(f"device must be one of {DEVICES}, got {pref!r}")
     if pref == "cpu":
         return "cpu"
+    if pref == "cuda":
+        return "cuda" if cuda_available() else "cpu"
     if pref == "mps":
         return "mps" if mps_available() else "cpu"
-    choice = recommended(n_neurons, path)["device"]
-    return "mps" if choice == "mps" and mps_available() else "cpu"
+    if cuda_available():
+        return "cuda"
+    if mps_available():
+        return "mps"
+    return "cpu"

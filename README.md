@@ -32,7 +32,7 @@ npm run build
 
 ## Run training
 
-The full curriculum uses an MLX teacher on Apple silicon. Training respects a configurable RAM cap, default **4 GB**; `--ram-gb` overrides `FLYSLOP_MAX_RAM_GB`, which overrides the config.
+The teacher selects MLX on Apple silicon and Torch on other systems, using CUDA when available and CPU otherwise. Training respects a configurable RAM cap, default **4 GB**; `--ram-gb` overrides `FLYSLOP_MAX_RAM_GB`, which overrides the config. CUDA teacher inference checks available GPU memory separately.
 
 ```sh
 uv sync --extra training --extra teacher

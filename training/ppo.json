@@ -6,7 +6,7 @@
   "seed": 0,
   "total_timesteps": 3000000,
   "n_envs": 16,
-  "device": "cpu",
+  "device": "auto",
   "tokens": {"min_len": 3, "max_len": 8},
   "env": {
     "steps_per_char": 40,

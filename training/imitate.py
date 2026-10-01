@@ -127,7 +127,7 @@ def main() -> None:
     parser.add_argument("--variant", choices=("real", "shuffled", "random_sparse", "frozen"),
                         help="wiring variant of --policy connectome")
     parser.add_argument("--circuit", help="connectome circuit (.npz or legacy .json)")
-    parser.add_argument("--device", default=None, choices=("auto", "cpu", "mps"),
+    parser.add_argument("--device", default=None, choices=("auto", "cpu", "cuda", "mps"),
                         help="device of the connectome actor (mlp always runs on cpu)")
     parser.add_argument("--action-mode", choices=("claw", "mn"),
                         help="env action space: claw (8-D claw targets) or mn (thorax velocity + 14 joint targets)")

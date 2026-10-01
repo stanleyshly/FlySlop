@@ -3,7 +3,7 @@ name = "flyslop"
 version = "0.1.0"
 description = "Fly typing SystemVerilog research prototype"
 readme = "README.md"
-requires-python = ">=3.11,<3.13"
+requires-python = ">=3.11"
 dependencies = [
     "numpy>=1.26",
     "pyslang>=11.0.0",
@@ -11,10 +11,18 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-training = ["gymnasium>=1.0,<2", "numpy>=1.26", "stable-baselines3>=2.4", "torch>=2.4", "tensorboard>=2.17"]
+training = ["gymnasium>=1.0,<2", "numpy>=1.26", "stable-baselines3>=2.4", "torch>=2.14,<2.15", "tensorboard>=2.17"]
 connectome = ["pandas>=2.2", "pyarrow>=16"]
-teacher = ["mlx-lm>=0.28", "huggingface_hub>=0.24"]
+teacher = ["mlx-lm>=0.28", "huggingface_hub>=0.24", "transformers>=5.0", "accelerate>=1.0"]
 tracking = ["wandb>=0.19"]
 
 [tool.uv]
 package = false
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu126", marker = "sys_platform == 'linux' and (platform_machine == 'x86_64' or platform_machine == 'aarch64')" }]
+
+[[tool.uv.index]]
+name = "pytorch-cu126"
+url = "https://download.pytorch.org/whl/cu126"
+explicit = true

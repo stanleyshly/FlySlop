@@ -439,7 +439,7 @@ def run(a: argparse.Namespace, teacher=None, judge=None) -> dict[str, Any]:
     if teacher is None and todo:
         from training.teacher import STANDIN_MODEL, Teacher
         mb.start_watchdog(config_gb=a.max_ram_gb)
-        teacher = Teacher(STANDIN_MODEL if a.standin else a.model, "mlx", 384, a.temperature, a.seed, a.max_ram_gb)
+        teacher = Teacher(STANDIN_MODEL if a.standin else a.model, "auto", 384, a.temperature, a.seed, a.max_ram_gb)
     lim = {"spec": a.spec_tokens, "code": a.code_tokens}
     start, new_rows = time.monotonic(), []
     stopped = "complete"

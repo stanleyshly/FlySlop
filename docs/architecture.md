@@ -72,11 +72,11 @@ Hard project limit: **4 GB total RSS** (process tree), configurable with env `FL
 - `check_fits(nbytes, label, raise_error=False)` before any large allocation (dense matrices, model loads, replay buffers). Returns False (or raises `OverBudget`) and the caller must skip or shrink.
 - `start_watchdog(interval_s=1.0, fraction=1.0)`: daemon thread, `os._exit(87)` with a message when tree RSS exceeds the cap. macOS ignores `RLIMIT_AS`, so this is the enforcement. Every CLI entry point (training, extractors, teacher, orchestrator) calls it.
 - `worker_budget(per_worker_bytes, reserve_bytes, max_workers)`: number of parallel workers that fit. Training and demo pools must use it instead of a fixed process count.
-- The teacher runs alone (measured Gemma E2B peak: 2.5 GB MLX memory, about 1.2 GB RSS because weights are memory-mapped). MuJoCo workers must not run concurrently with it.
+- The teacher selects MLX on Apple silicon and Torch on CUDA or CPU elsewhere. Gemma E2B's MLX build uses about 2.5 GB MLX memory and 1.2 GB RSS; Torch Gemma weights are much larger, so CUDA runs check available VRAM and CPU loads remain subject to the configured RAM cap. MuJoCo workers must not run concurrently with it.
 
 ### C1. Device and connectome backend (measured)
 
-`backend/connectome/device.py` *(exists)*: `resolve_device("auto"|"cpu"|"mps", n_neurons=None)`; `auto` reads `data/connectome/device_bench.json` (written by `scripts/bench_device.py`, K=4 tanh micro-steps, median ms; batch 1 at 360 neurons, batch 64 at 4k/20k, about 25 edges/neuron).
+`backend/connectome/device.py` *(exists)*: `resolve_device("auto"|"cpu"|"cuda"|"mps")`; `auto` selects an available CUDA GPU, then Apple MPS, then CPU. Benchmark data remains available for backend tuning but does not override live device availability.
 
 | size | batch | device | backend | fwd ms | fwd+bwd ms |
 |---|---|---|---|---|---|

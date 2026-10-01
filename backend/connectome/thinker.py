@@ -48,7 +48,7 @@ class ThinkerConfig:
     seed: int = 0
     sep_id: int = SEP
     gru_hidden: int | None = None    # None -> solved to match the real model's trainable count
-    device: str = "cpu"
+    device: str = "auto"
 
 
 def _load(cfg: ThinkerConfig):
@@ -308,6 +308,9 @@ def build_model(kind: str, cfg: ThinkerConfig | None = None) -> _Base:
     cfg = cfg or ThinkerConfig()
     if kind not in KINDS:
         raise ValueError(f"kind must be one of {KINDS}")
+    if cfg.device == "auto":
+        from .device import resolve_device
+        cfg = replace(cfg, device=resolve_device("auto"))
     torch.manual_seed(cfg.seed)          # same seed => identical embedding / input / readout init across kinds
     if kind == "gru":
         h = cfg.gru_hidden

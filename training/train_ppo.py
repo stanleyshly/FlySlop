@@ -50,14 +50,17 @@ def make_model(config: dict, vec, seed: int | None = None, device: str | None = 
                tensorboard_log: str | None = None, verbose: int = 0) -> PPO:
     """PPO with the policy selected by ``config["policy"]`` (``mlp`` or ``connectome``).
 
-    The connectome actor's device is resolved (``auto|cpu|mps``) and written back into the config's
+    The connectome actor's device is resolved (``auto|cpu|cuda|mps``) and written back into the config's
     connectome kwargs, so the saved checkpoint records the concrete device/backend.
     """
     seed = config["seed"] if seed is None else seed
     ppo_kwargs = dict(config["ppo"])
     policy_kwargs = ppo_kwargs.pop("policy_kwargs", None) or {}
     spec = policy_spec(config)
-    device = device or config.get("device", "cpu")
+    device = device or config.get("device", "auto")
+    if device == "auto":
+        from backend.connectome.device import resolve_device
+        device = resolve_device(device)
     if spec["type"] == "mlp":
         return PPO("MlpPolicy", vec, seed=seed, device=device, verbose=verbose, tensorboard_log=tensorboard_log,
                    policy_kwargs=policy_kwargs or None, **ppo_kwargs)
@@ -181,7 +184,7 @@ def main() -> None:
     parser.add_argument("--variant", choices=("real", "shuffled", "random_sparse", "frozen"),
                         help="connectome wiring variant")
     parser.add_argument("--circuit", help="connectome circuit (.npz typing circuit or legacy .json)")
-    parser.add_argument("--connectome-device", choices=("auto", "cpu", "mps"))
+    parser.add_argument("--connectome-device", choices=("auto", "cpu", "cuda", "mps"))
     parser.add_argument("--subproc", action="store_true", help="use SubprocVecEnv (default from config)")
     parser.add_argument("--init-from", help="PPO/BC checkpoint whose policy weights initialise training")
     parser.add_argument("--smoke", action="store_true", help="tiny budget pipeline check")

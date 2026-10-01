@@ -1,0 +1,77 @@
+{
+ "mode": "corrupt",
+ "max_rounds": 3,
+ "n": 89,
+ "pass_at_1": 1.0,
+ "first_run_pass": 0.427,
+ "repair_gain": 0.573,
+ "mean_repair_rounds": 1.0,
+ "by_group": {
+  "difficulty=1": {
+   "n": 37,
+   "pass_at_1": 1.0,
+   "first_run_pass": 0.4865
+  },
+  "difficulty=2": {
+   "n": 34,
+   "pass_at_1": 1.0,
+   "first_run_pass": 0.4412
+  },
+  "difficulty=3": {
+   "n": 18,
+   "pass_at_1": 1.0,
+   "first_run_pass": 0.2778
+  },
+  "lang=py": {
+   "n": 51,
+   "pass_at_1": 1.0,
+   "first_run_pass": 0.451
+  },
+  "lang=py,difficulty=1": {
+   "n": 27,
+   "pass_at_1": 1.0,
+   "first_run_pass": 0.4815
+  },
+  "lang=py,difficulty=2": {
+   "n": 18,
+   "pass_at_1": 1.0,
+   "first_run_pass": 0.5
+  },
+  "lang=py,difficulty=3": {
+   "n": 6,
+   "pass_at_1": 1.0,
+   "first_run_pass": 0.1667
+  },
+  "lang=sv": {
+   "n": 38,
+   "pass_at_1": 1.0,
+   "first_run_pass": 0.3947
+  },
+  "lang=sv,difficulty=1": {
+   "n": 10,
+   "pass_at_1": 1.0,
+   "first_run_pass": 0.5
+  },
+  "lang=sv,difficulty=2": {
+   "n": 16,
+   "pass_at_1": 1.0,
+   "first_run_pass": 0.375
+  },
+  "lang=sv,difficulty=3": {
+   "n": 12,
+   "pass_at_1": 1.0,
+   "first_run_pass": 0.3333
+  }
+ },
+ "timing": {
+  "wall_s": 147.7,
+  "workers": 2,
+  "mean_task_s": {
+   "py": 0.05,
+   "sv": 7.7
+  },
+  "judge_cache_hits": 17,
+  "judge_runs": 161
+ },
+ "policy": "oracle"
+}

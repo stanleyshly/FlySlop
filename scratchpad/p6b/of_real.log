@@ -1,0 +1,31 @@
+data: dataset-fallback (oracle train pairs 4 < 200); sources={"authored/sv": 21, "humaneval/py": 164, "mbpp/py": 974, "rtllm/sv": 50, "verilogeval/sv": 156} {'train': 1111, 'val': 113, 'test': 141}
+[real/s0] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.99225, "acc": 0.001, "sec": 2.703}
+[real/s0] {"step": 2, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.95666, "acc": 0.0, "sec": 1.924}
+[real/s0] {"step": 4, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.83087, "acc": 0.0157, "sec": 1.837}
+[real/s0] {"step": 6, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.65308, "acc": 0.0703, "sec": 1.832}
+[real/s0] {"step": 8, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.37767, "acc": 0.0703, "sec": 1.836}
+[real/s0] {"step": 10, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 5.95515, "acc": 0.0703, "sec": 1.677}
+[real/s0] {"step": 12, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 5.52548, "acc": 0.0913, "sec": 1.613}
+[real/s0] {"step": 14, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 4.95685, "acc": 0.128, "sec": 1.703}
+[real/s0] {"step": 16, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 4.28, "acc": 0.1574, "sec": 1.738}
+[real/s0] {"step": 18, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 4.14446, "acc": 0.1742, "sec": 2.544}
+[real/s0] {"step": 20, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 3.76111, "acc": 0.2151, "sec": 2.09}
+[real/s0] {"step": 22, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 3.34454, "acc": 0.2508, "sec": 1.966}
+[real/s0] {"step": 24, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 2.98059, "acc": 0.3305, "sec": 1.747}
+[real/s0] {"step": 26, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 2.59387, "acc": 0.4239, "sec": 1.755}
+[real/s0] {"step": 28, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 2.27123, "acc": 0.4586, "sec": 1.65}
+[real/s0] {"step": 30, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.9678, "acc": 0.5404, "sec": 1.679}
+[real/s0] {"step": 32, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.68313, "acc": 0.6002, "sec": 1.767}
+{
+ "kind": "real",
+ "steps": 33,
+ "seconds": 61.5,
+ "final": {
+  "token_acc": 0.66,
+  "nll": 1.4156,
+  "n_val": 20
+ },
+ "overfit_gate": false
+}
+peak RSS 0.35 GB
+FLYSLOP_MAX_RAM_GB=1.25 uv run --extra training python -m training.distill  2  156.78s user 6.94s system 252% cpu 1:04.96 total

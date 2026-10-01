@@ -1,0 +1,64 @@
+{
+ "steps": 700,
+ "stopped": "steps",
+ "seconds": 72.5,
+ "final": {
+  "token_acc": 0.3524,
+  "nll": 5.7161,
+  "first_round_ok": 0.025,
+  "replan_reach": 0.025,
+  "replan_within_ratio": 0.025,
+  "act_exact_first": 0.025,
+  "mean_cost_ratio": 0.0,
+  "n_eval": 40,
+  "rounds": 3
+ },
+ "history": [
+  {
+   "step": 700,
+   "token_acc": 0.3524,
+   "nll": 5.7161,
+   "first_round_ok": 0.025,
+   "replan_reach": 0.025,
+   "replan_within_ratio": 0.025,
+   "act_exact_first": 0.025,
+   "mean_cost_ratio": 0.0,
+   "n_eval": 40,
+   "rounds": 3
+  }
+ ],
+ "kind": "gru",
+ "seed": 0,
+ "stage": 3,
+ "params": {
+  "kind": "gru",
+  "trainable": 680483,
+  "frozen": 0,
+  "total": 680483,
+  "groups": {
+   "embed": {
+    "trainable": 32768,
+    "frozen": 0
+   },
+   "read_norm": {
+    "trainable": 826,
+    "frozen": 0
+   },
+   "read_down": {
+    "trainable": 26496,
+    "frozen": 0
+   },
+   "read_up": {
+    "trainable": 66560,
+    "frozen": 0
+   },
+   "cell": {
+    "trainable": 553833,
+    "frozen": 0
+   }
+  },
+  "hidden": 413
+ },
+ "n_train": 400,
+ "cfg_hash": "ce6bf7e56245"
+}

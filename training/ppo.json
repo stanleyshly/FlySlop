@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "environment": "backend.env.KeyboardTypingEnv",
+  "mode": "state_assisted_kinematic_relative",
+  "claim": "Learns point-foot reach/press/release to a key whose offset is in the observation. Not pixel transcription, not articulated physics, not connectome.",
+  "seed": 0,
+  "total_timesteps": 3000000,
+  "n_envs": 16,
+  "device": "cpu",
+  "tokens": {"min_len": 3, "max_len": 8},
+  "env": {
+    "steps_per_char": 40,
+    "max_xy_step": 0.6,
+    "max_z_step": 0.3,
+    "terminate_on_error": true,
+    "random_start": true,
+    "reward": {"correct": 1.0, "wrong": -1.0, "shift": 0.5, "complete": 2.0, "time": -0.005, "shaping": 1.0}
+  },
+  "curriculum": [
+    {"until_fraction": 0.15, "pool": "chars"},
+    {"until_fraction": 0.35, "pool": "train", "max_len": 4},
+    {"until_fraction": 1.0, "pool": "train", "max_len": 8}
+  ],
+  "ppo": {
+    "learning_rate": 0.0003,
+    "n_steps": 512,
+    "batch_size": 1024,
+    "n_epochs": 10,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "clip_range": 0.2,
+    "ent_coef": 0.0,
+    "vf_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "policy_kwargs": {"net_arch": {"pi": [128, 128], "vf": [128, 128]}}
+  },
+  "eval": {"freq_timesteps": 100000, "episodes": 100},
+  "checkpoint_freq_timesteps": 250000,
+  "gate": {"heldout_exact_match": 0.9, "episodes": 100, "seeds": 5}
+}

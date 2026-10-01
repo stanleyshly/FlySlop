@@ -1,0 +1,152 @@
+{
+ "circuit_hash": "422b78d76143ebae60f50032d7fa291e500093d93f27b07fe16f1fb90ff83a56",
+ "code_hash": "a7ce1b4cbf5792d337cefbd75c1f774a8b95357a233f223b0a9b592cb9c5402c",
+ "config": {
+  "budget": {
+   "steps": 200000,
+   "wall_s": 120
+  },
+  "exclusive": false,
+  "gate": {
+   "key_accuracy": 0.95,
+   "unintended_rate_max": 0.01
+  },
+  "id": 1,
+  "level": "physical",
+  "module": "training.stages.stage1_keys",
+  "name": "Key control",
+  "physical": {
+   "action_mode": "mn",
+   "bc_episodes": 400,
+   "bc_epochs": 30,
+   "bc_workers": 4,
+   "config": "training/ppo_fly_mn.json",
+   "eval_episodes": 60,
+   "n_envs": 4,
+   "policy": "connectome",
+   "ppo": {},
+   "ppo_timesteps": 300000,
+   "readout": "mn_antagonist"
+  },
+  "smoke_gates": "relaxed",
+  "smoke_physical": {
+   "bc_episodes": 12,
+   "bc_epochs": 2,
+   "eval_episodes": 6,
+   "n_envs": 1,
+   "ppo": {
+    "batch_size": 64,
+    "n_epochs": 1,
+    "n_steps": 128
+   },
+   "ppo_timesteps": 128
+  }
+ },
+ "data_hash": "6c0eaa674541fe4781bb3a170c35a05b76e00524990c5e474a0f943d46128f14",
+ "exclusive": false,
+ "gate": {
+  "key_accuracy": 0.95,
+  "unintended_rate_max": 0.01
+ },
+ "gate_passed": true,
+ "metrics": {
+  "best_checkpoint": "scratchpad/p8b/runs/20260929-192407/stage1/best_model.zip",
+  "episodes": 6,
+  "gate_detail": {
+   "key_accuracy": {
+    "metric": "key_accuracy",
+    "ok": false,
+    "op": "ge",
+    "threshold": 0.95,
+    "value": 0.16666666666666666
+   },
+   "unintended_rate_max": {
+    "metric": "unintended_rate",
+    "ok": false,
+    "op": "le",
+    "threshold": 0.01,
+    "value": 0.5
+   }
+  },
+  "gate_mode": "relaxed (smoke, NOT a real gate)",
+  "key_accuracy": 0.16666666666666666,
+  "phases": [
+   {
+    "bc": {
+     "episodes": 12,
+     "epochs": 2,
+     "expert_exact_while_collecting": 1.0,
+     "mse_first": 0.3162350654602051,
+     "mse_last": 0.2731732428073883,
+     "transitions": 179
+    },
+    "ckpt": "scratchpad/p8b/runs/20260929-192407/stage1/phase0_keys8.zip",
+    "eval": {
+     "episodes": 6,
+     "key_accuracy": 0.16666666666666666,
+     "unintended_rate": 0.8333333333333334
+    },
+    "phase": "keys8",
+    "pool": 8,
+    "ppo_timesteps": 128,
+    "seconds": 3.7,
+    "warm_start": null
+   },
+   {
+    "bc": {
+     "episodes": 12,
+     "epochs": 2,
+     "expert_exact_while_collecting": 1.0,
+     "mse_first": 0.2414676696062088,
+     "mse_last": 0.21056120097637177,
+     "transitions": 152
+    },
+    "ckpt": "scratchpad/p8b/runs/20260929-192407/stage1/phase1_keys26.zip",
+    "eval": {
+     "episodes": 6,
+     "key_accuracy": 0.16666666666666666,
+     "unintended_rate": 0.8333333333333334
+    },
+    "phase": "keys26",
+    "pool": 26,
+    "ppo_timesteps": 128,
+    "seconds": 3.6
+   },
+   {
+    "bc": {
+     "episodes": 12,
+     "epochs": 2,
+     "expert_exact_while_collecting": 1.0,
+     "mse_first": 0.2368970662355423,
+     "mse_last": 0.21105894446372986,
+     "transitions": 217
+    },
+    "ckpt": "scratchpad/p8b/runs/20260929-192407/stage1/phase2_keys_full.zip",
+    "eval": {
+     "episodes": 6,
+     "key_accuracy": 0.16666666666666666,
+     "unintended_rate": 0.5
+    },
+    "phase": "keys_full",
+    "pool": 58,
+    "ppo_timesteps": 128,
+    "seconds": 3.2
+   }
+  ],
+  "real_gate_passed": false,
+  "smoke": true,
+  "status": "key_acc=0.16666666666666666 unintended=0.5 gate=relaxed (smoke, NOT a real gate) real_pass=False",
+  "unintended_rate": 0.5,
+  "warm_start": null
+ },
+ "name": "Key control",
+ "peak_rss_bytes": 316325888,
+ "reason": null,
+ "seed": 1,
+ "smoke": true,
+ "stage": 1,
+ "started": 1790724247.982948,
+ "status": "passed",
+ "steps": 956,
+ "time_s": 17.252840042114258
+}

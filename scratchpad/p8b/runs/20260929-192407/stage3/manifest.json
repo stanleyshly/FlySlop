@@ -1,0 +1,135 @@
+{
+ "circuit_hash": "422b78d76143ebae60f50032d7fa291e500093d93f27b07fe16f1fb90ff83a56",
+ "code_hash": "a7ce1b4cbf5792d337cefbd75c1f774a8b95357a233f223b0a9b592cb9c5402c",
+ "config": {
+  "budget": {
+   "steps": 200000,
+   "wall_s": 240
+  },
+  "exclusive": false,
+  "gate": {
+   "edit_key_accuracy": 0.95,
+   "symbolic_within_1.5x_oracle": 0.95
+  },
+  "id": 3,
+  "level": "physical+symbolic",
+  "module": "training.stages.stage3_editing",
+  "name": "Editing",
+  "physical": {
+   "action_mode": "mn",
+   "bc_episodes": 400,
+   "bc_epochs": 30,
+   "config": "training/ppo_fly_mn.json",
+   "eval_episodes": 60,
+   "include_fn": true,
+   "n_envs": 4,
+   "policy": "connectome",
+   "ppo_timesteps": 500000,
+   "readout": "mn_antagonist"
+  },
+  "smoke_gates": "relaxed",
+  "smoke_physical": {
+   "bc_episodes": 6,
+   "bc_epochs": 1,
+   "eval_episodes": 4,
+   "n_envs": 1,
+   "ppo": {
+    "batch_size": 64,
+    "n_epochs": 1,
+    "n_steps": 128
+   },
+   "ppo_timesteps": 128
+  },
+  "symbolic": true
+ },
+ "data_hash": "6c0eaa674541fe4781bb3a170c35a05b76e00524990c5e474a0f943d46128f14",
+ "exclusive": false,
+ "gate": {
+  "edit_key_accuracy": 0.95,
+  "symbolic_within_1.5x_oracle": 0.95
+ },
+ "gate_passed": true,
+ "metrics": {
+  "best_checkpoint": "scratchpad/p8b/runs/20260929-192407/stage3/best_model.zip",
+  "edit_episodes": 4,
+  "edit_exact": 0.0,
+  "edit_key_accuracy": 0.0,
+  "edit_unsupported": 0,
+  "gate_detail": {
+   "edit_key_accuracy": {
+    "metric": "edit_key_accuracy",
+    "ok": false,
+    "op": "ge",
+    "threshold": 0.95,
+    "value": 0.0
+   },
+   "symbolic_within_1.5x_oracle": {
+    "metric": "symbolic_within_1.5x_oracle",
+    "ok": false,
+    "op": "ge",
+    "threshold": 0.95,
+    "value": 0.0
+   }
+  },
+  "gate_mode": "relaxed (smoke, NOT a real gate)",
+  "phases": [
+   {
+    "bc": {
+     "episodes": 6,
+     "epochs": 1,
+     "expert_complete": 0.0,
+     "mse_first": 0.28126445412635803,
+     "mse_last": 0.28126445412635803,
+     "transitions": 44
+    },
+    "ckpt": "scratchpad/p8b/runs/20260929-192407/stage3/phase0_edit3.zip",
+    "eval": {
+     "edit_episodes": 4,
+     "edit_exact": 0.0,
+     "edit_key_accuracy": 0.0,
+     "edit_unsupported": 0
+    },
+    "phase": "edit3",
+    "pool": 1,
+    "ppo_timesteps": 128,
+    "seconds": 1.1,
+    "warm_start": "scratchpad/p8b/runs/20260929-192407/stage2/best_model.zip"
+   }
+  ],
+  "real_gate_passed": false,
+  "smoke": true,
+  "status": "edit_key_acc=0.0 unsupported=0 symbolic=ok gate=relaxed (smoke, NOT a real gate) real_pass=False",
+  "symbolic": {
+   "artifacts": [
+    "scratchpad/p8b/runs/20260929-192407/stage3/symbolic/ckpt.pt"
+   ],
+   "gate_passed": true,
+   "metrics": {
+    "act_exact_first": 0.0,
+    "first_round_ok": 0.0,
+    "mean_cost_ratio": 0.0,
+    "n_eval": 8,
+    "nll": 4.1252,
+    "replan_reach": 0.125,
+    "replan_within_ratio": 0.125,
+    "rounds": 3,
+    "stage": 3,
+    "steps": 20,
+    "token_acc": 0.367
+   },
+   "status": "ok"
+  },
+  "symbolic_within_1.5x_oracle": 0.0,
+  "warm_start": "scratchpad/p8b/runs/20260929-192407/stage2/best_model.zip"
+ },
+ "name": "Editing",
+ "peak_rss_bytes": 316325888,
+ "reason": null,
+ "seed": 3,
+ "smoke": true,
+ "stage": 3,
+ "started": 1790724279.0522869,
+ "status": "passed",
+ "steps": 197,
+ "time_s": 41.28871297836304
+}

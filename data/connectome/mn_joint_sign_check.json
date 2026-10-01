@@ -1,0 +1,189 @@
+{
+ "version": 1,
+ "method": "MuJoCo model forward kinematics at the rest pose with +0.2 rad added to one joint (the position actuators track joint targets, so target sign == joint sign); proxy = change in the geometric quantity per rad; sign +1 means +q is the map's agonist direction. Thorax frame == world frame (identity yaw).",
+ "gain_convention": "g_j initial sign = agonist_gain_sign, so more agonist drive moves the joint in the map's nominal positive direction. g_j remains free to change sign in training.",
+ "joints": {
+  "joint_RFCoxa_yaw": {
+   "proxy": "abduction (+): claw moves away from the midline, d[(tip-coxa).out]",
+   "proxy_grounding": "geometric",
+   "proxy_change_per_rad": -3.003,
+   "agonist_gain_sign": -1,
+   "verifiable": true,
+   "expert_label_corr_with_claw_rx_ry_rz": [
+    -0.856,
+    0.352,
+    -0.144
+   ],
+   "same_sign_as_other_side": false
+  },
+  "joint_RFCoxa": {
+   "proxy": "promotion (+): claw moves forward, d[(tip-coxa).fwd]",
+   "proxy_grounding": "geometric",
+   "proxy_change_per_rad": -3.1459,
+   "agonist_gain_sign": -1,
+   "verifiable": true,
+   "expert_label_corr_with_claw_rx_ry_rz": [
+    -0.603,
+    -0.441,
+    0.183
+   ],
+   "same_sign_as_other_side": true
+  },
+  "joint_RFCoxa_roll": {
+   "proxy": "anterior rotation (+): femur-tibia joint moves forward, d[(knee-coxa).fwd]",
+   "proxy_grounding": "assumed",
+   "proxy_change_per_rad": 1.1699,
+   "agonist_gain_sign": 1,
+   "verifiable": true,
+   "expert_label_corr_with_claw_rx_ry_rz": [
+    -0.407,
+    0.939,
+    -0.335
+   ],
+   "same_sign_as_other_side": false
+  },
+  "joint_RFFemur": {
+   "proxy": "flexion (+): knee (femur-tibia joint) moves ventrally, -d[knee_z]",
+   "proxy_grounding": "assumed",
+   "proxy_change_per_rad": 2.0916,
+   "agonist_gain_sign": 1,
+   "verifiable": true,
+   "expert_label_corr_with_claw_rx_ry_rz": [
+    0.867,
+    0.113,
+    -0.407
+   ],
+   "same_sign_as_other_side": true
+  },
+  "joint_RFFemur_roll": {
+   "proxy": "map gives no direction for the reductor MN; sign fixed to +1 by convention",
+   "proxy_grounding": "none",
+   "proxy_change_per_rad": -1.8388,
+   "agonist_gain_sign": 1,
+   "verifiable": false,
+   "expert_label_corr_with_claw_rx_ry_rz": [
+    0.986,
+    -0.311,
+    -0.284
+   ],
+   "same_sign_as_other_side": true
+  },
+  "joint_RFTibia": {
+   "proxy": "flexion (+): tibia folds toward the femur, -d|tip - femur_origin|",
+   "proxy_grounding": "geometric",
+   "proxy_change_per_rad": 1.6167,
+   "agonist_gain_sign": 1,
+   "verifiable": true,
+   "expert_label_corr_with_claw_rx_ry_rz": [
+    -0.865,
+    -0.161,
+    0.379
+   ],
+   "same_sign_as_other_side": true
+  },
+  "joint_RFTarsus1": {
+   "proxy": "depression (+): claw moves down, -d[tip_z]",
+   "proxy_grounding": "geometric",
+   "proxy_change_per_rad": 1.8409,
+   "agonist_gain_sign": 1,
+   "verifiable": true,
+   "expert_label_corr_with_claw_rx_ry_rz": [
+    0.728,
+    0.23,
+    -0.372
+   ],
+   "same_sign_as_other_side": true
+  },
+  "joint_LFCoxa_yaw": {
+   "proxy": "abduction (+): claw moves away from the midline, d[(tip-coxa).out]",
+   "proxy_grounding": "geometric",
+   "proxy_change_per_rad": 2.1775,
+   "agonist_gain_sign": 1,
+   "verifiable": true,
+   "expert_label_corr_with_claw_rx_ry_rz": [
+    -0.856,
+    -0.342,
+    0.23
+   ],
+   "same_sign_as_other_side": false
+  },
+  "joint_LFCoxa": {
+   "proxy": "promotion (+): claw moves forward, d[(tip-coxa).fwd]",
+   "proxy_grounding": "geometric",
+   "proxy_change_per_rad": -2.9573,
+   "agonist_gain_sign": -1,
+   "verifiable": true,
+   "expert_label_corr_with_claw_rx_ry_rz": [
+    0.393,
+    -0.666,
+    0.077
+   ],
+   "same_sign_as_other_side": true
+  },
+  "joint_LFCoxa_roll": {
+   "proxy": "anterior rotation (+): femur-tibia joint moves forward, d[(knee-coxa).fwd]",
+   "proxy_grounding": "assumed",
+   "proxy_change_per_rad": -1.6587,
+   "agonist_gain_sign": -1,
+   "verifiable": true,
+   "expert_label_corr_with_claw_rx_ry_rz": [
+    -0.534,
+    -0.894,
+    0.268
+   ],
+   "same_sign_as_other_side": false
+  },
+  "joint_LFFemur": {
+   "proxy": "flexion (+): knee (femur-tibia joint) moves ventrally, -d[knee_z]",
+   "proxy_grounding": "assumed",
+   "proxy_change_per_rad": 2.0916,
+   "agonist_gain_sign": 1,
+   "verifiable": true,
+   "expert_label_corr_with_claw_rx_ry_rz": [
+    -0.718,
+    0.416,
+    -0.247
+   ],
+   "same_sign_as_other_side": true
+  },
+  "joint_LFFemur_roll": {
+   "proxy": "map gives no direction for the reductor MN; sign fixed to +1 by convention",
+   "proxy_grounding": "none",
+   "proxy_change_per_rad": 2.0833,
+   "agonist_gain_sign": 1,
+   "verifiable": false,
+   "expert_label_corr_with_claw_rx_ry_rz": [
+    0.971,
+    0.23,
+    0.036
+   ],
+   "same_sign_as_other_side": true
+  },
+  "joint_LFTibia": {
+   "proxy": "flexion (+): tibia folds toward the femur, -d|tip - femur_origin|",
+   "proxy_grounding": "geometric",
+   "proxy_change_per_rad": 1.5187,
+   "agonist_gain_sign": 1,
+   "verifiable": true,
+   "expert_label_corr_with_claw_rx_ry_rz": [
+    0.696,
+    -0.506,
+    0.177
+   ],
+   "same_sign_as_other_side": true
+  },
+  "joint_LFTarsus1": {
+   "proxy": "depression (+): claw moves down, -d[tip_z]",
+   "proxy_grounding": "geometric",
+   "proxy_change_per_rad": 1.9587,
+   "agonist_gain_sign": 1,
+   "verifiable": true,
+   "expert_label_corr_with_claw_rx_ry_rz": [
+    -0.498,
+    0.521,
+    -0.301
+   ],
+   "same_sign_as_other_side": true
+  }
+ }
+}

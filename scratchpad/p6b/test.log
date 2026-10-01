@@ -1,0 +1,25 @@
+test_controls_share_one_config_and_resume (tests.test_distill.DistillTests.test_controls_share_one_config_and_resume) ... FAIL
+test_pad_left_and_mix (tests.test_distill.DistillTests.test_pad_left_and_mix) ... ok
+test_pair_encoding_masks_only_code (tests.test_distill.DistillTests.test_pair_encoding_masks_only_code) ... ok
+test_schedule_phases (tests.test_distill.DistillTests.test_schedule_phases) ... ok
+test_wall_budget_stops (tests.test_distill.DistillTests.test_wall_budget_stops) ... ok
+test_edit_metrics_with_perfect_oracle_model (tests.test_distill.EditTests.test_edit_metrics_with_perfect_oracle_model) ... ok
+test_edit_trainer_smoke (tests.test_distill.EditTests.test_edit_trainer_smoke) ... ok
+test_oracle_examples_round_trip_and_markers (tests.test_distill.EditTests.test_oracle_examples_round_trip_and_markers) ... ok
+
+======================================================================
+FAIL: test_controls_share_one_config_and_resume (tests.test_distill.DistillTests.test_controls_share_one_config_and_resume)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/stanley/Desktop/FlySlop/tests/test_distill.py", line 83, in test_controls_share_one_config_and_resume
+    self.assertAlmostEqual(la[-1]["loss"], lb[-1]["loss"], places=4)
+AssertionError: 2.4048 != 2.35737 within 4 places (0.04742999999999986 difference)
+
+----------------------------------------------------------------------
+Ran 8 tests in 6.195s
+
+FAILED (failures=1)
+[gru/s0] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 7.13651, "acc": 0.0, "sec": 0.075}
+[gru/s0] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 7.13651, "acc": 0.0, "sec": 0.016}
+[gru/s1] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.91572, "acc": 0.0, "sec": 0.017}
+[gru/s1] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.91572, "acc": 0.0, "sec": 0.016}

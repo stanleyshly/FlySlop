@@ -1,0 +1,67 @@
+{
+ "steps": 20,
+ "stopped": "steps",
+ "seconds": 25.4,
+ "final": {
+  "token_acc": 0.367,
+  "nll": 4.1252,
+  "first_round_ok": 0.0,
+  "replan_reach": 0.125,
+  "replan_within_ratio": 0.125,
+  "act_exact_first": 0.0,
+  "mean_cost_ratio": 0.0,
+  "n_eval": 8,
+  "rounds": 3
+ },
+ "history": [
+  {
+   "step": 20,
+   "token_acc": 0.367,
+   "nll": 4.1252,
+   "first_round_ok": 0.0,
+   "replan_reach": 0.125,
+   "replan_within_ratio": 0.125,
+   "act_exact_first": 0.0,
+   "mean_cost_ratio": 0.0,
+   "n_eval": 8,
+   "rounds": 3
+  }
+ ],
+ "kind": "real",
+ "seed": 3,
+ "stage": 3,
+ "params": {
+  "kind": "real",
+  "trainable": 681400,
+  "frozen": 0,
+  "total": 681400,
+  "groups": {
+   "embed": {
+    "trainable": 32768,
+    "frozen": 0
+   },
+   "read_norm": {
+    "trainable": 600,
+    "frozen": 0
+   },
+   "read_down": {
+    "trainable": 19264,
+    "frozen": 0
+   },
+   "read_up": {
+    "trainable": 66560,
+    "frozen": 0
+   },
+   "core": {
+    "trainable": 536608,
+    "frozen": 0
+   },
+   "in_proj": {
+    "trainable": 25600,
+    "frozen": 0
+   }
+  }
+ },
+ "n_train": 64,
+ "cfg_hash": "eb28c66f776f"
+}

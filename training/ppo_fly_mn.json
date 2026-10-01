@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "environment": "backend.fly_env.FlyTypingEnv",
+  "mode": "state_assisted_physics_body",
+  "claim": "NeuroMechFly forelegs in MuJoCo press spring-loaded keys. The policy is a connectome-wired network (3173-neuron typing circuit); the 14 foreleg joint targets are read out from the connectome's actual foreleg motor neurons with 28 learned scalars (gain and offset per joint), no free linear readout to the joints. Thorax velocity comes from a small DN-rate readout (not MN driven). Thorax carried by mocap, gravity off, game-scale key force. Not pixel transcription.",
+  "seed": 0,
+  "total_timesteps": 5000000,
+  "n_envs": 4,
+  "subproc": true,
+  "device": "cpu",
+  "tokens": {
+    "min_len": 3,
+    "max_len": 8
+  },
+  "env": {
+    "steps_per_char": 150,
+    "base_steps": 100,
+    "terminate_on_error": true,
+    "speed_fraction": 0.7,
+    "reward": {
+      "correct": 1.0,
+      "wrong": -1.0,
+      "shift": 0.5,
+      "complete": 2.0,
+      "time": -0.002,
+      "shaping": 1.0
+    },
+    "action_mode": "mn",
+    "key_obs": true,
+    "state_assist": true,
+    "editor_obs": false,
+    "max_joint_rate": 0.8
+  },
+  "curriculum": [
+    {
+      "until_fraction": 0.1,
+      "pool": "chars"
+    },
+    {
+      "until_fraction": 0.3,
+      "pool": "train",
+      "max_len": 4
+    },
+    {
+      "until_fraction": 1.0,
+      "pool": "train",
+      "max_len": 8
+    }
+  ],
+  "imitation": {
+    "episodes": 400,
+    "noisy_fraction": 0.5,
+    "action_noise": 0.3,
+    "epochs": 30,
+    "batch_size": 256,
+    "learning_rate": 0.001,
+    "log_std_after": -1.2
+  },
+  "ppo": {
+    "learning_rate": 0.0001,
+    "n_steps": 1024,
+    "batch_size": 512,
+    "n_epochs": 5,
+    "gamma": 0.995,
+    "gae_lambda": 0.95,
+    "clip_range": 0.1,
+    "ent_coef": 0.0,
+    "vf_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "policy_kwargs": {
+      "net_arch": {
+        "pi": [
+          256,
+          256
+        ],
+        "vf": [
+          256,
+          256
+        ]
+      }
+    }
+  },
+  "eval": {
+    "freq_timesteps": 250000,
+    "episodes": 30
+  },
+  "checkpoint_freq_timesteps": 500000,
+  "gate": {
+    "heldout_exact_match": 0.9,
+    "episodes": 100,
+    "seeds": 5
+  },
+  "policy": {
+    "type": "connectome",
+    "connectome": {
+      "circuit": "data/connectome/typing_circuit.npz",
+      "variant": "real",
+      "readout": "mn_antagonist",
+      "k_steps": 4,
+      "init_scale": 2.0,
+      "input_gain": 4.0,
+      "device": "cpu"
+    }
+  }
+}

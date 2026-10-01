@@ -1,0 +1,37 @@
+[curriculum] run=scratchpad/p8b/runs/20260929-192407 smoke=True ram_gb=0.6
+[curriculum] stage 1 Key control: passed | key_acc=0.16666666666666666 unintended=0.5 gate=relaxed (smoke, NOT a real gate) real_pass=False | 
+[curriculum] stage 2 Transcription: passed | token_exact=0.0 code_exact=0.0 gate=relaxed (smoke, NOT a real gate) real_pass=False | 
+[edit s3] 64 train / 8 val examples in 0.3s; oracle cost mean 13.2
+[edit3/real] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.96953, "acc": 0.0, "sec": 1.162}
+[edit3/real] {"step": 5, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.78313, "acc": 0.0794, "sec": 1.016}
+[edit3/real] {"step": 10, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.1939, "acc": 0.1509, "sec": 1.833}
+[edit3/real] {"step": 15, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 5.04812, "acc": 0.2105, "sec": 1.135}
+[edit3/real] {"step": 20, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 3.84854, "acc": 0.2143, "sec": 1.176}
+[curriculum] stage 3 Editing: passed | edit_key_acc=0.0 unsupported=0 symbolic=ok gate=relaxed (smoke, NOT a real gate) real_pass=False | 
+[edit s4] 64 train / 8 val examples in 0.3s; oracle cost mean 6.7
+[edit4/real] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.9922, "acc": 0.0, "sec": 0.774}
+[edit4/real] {"step": 5, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.80142, "acc": 0.0769, "sec": 1.047}
+[edit4/real] {"step": 10, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.19872, "acc": 0.2333, "sec": 0.848}
+[edit4/real] {"step": 15, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 5.057, "acc": 0.2083, "sec": 1.242}
+[edit4/real] {"step": 20, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 3.14514, "acc": 0.44, "sec": 1.026}
+[curriculum] stage 4 Error recovery: passed | recovery_exact=0.0 slip_eps=4 symbolic=ok gate=relaxed (smoke, NOT a real gate) real_pass=False | 
+[curriculum] stage 5 LLM oracle data: error |  | RuntimeError: oracle_gen exited 1; see scratchpad/p8b/runs/20260929-192407/stage5/oracle_gen.log
+[curriculum] stopped: stage 5 error: RuntimeError: oracle_gen exited 1; see scratchpad/p8b/runs/20260929-192407/stage5/oracle_gen.log
+      124.43 real       197.91 user        14.49 sys
+           316325888  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              953516  page reclaims
+                8376  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+               13412  voluntary context switches
+             1353656  involuntary context switches
+           137558549  instructions retired
+            69092082  cycles elapsed
+            12371136  peak memory footprint

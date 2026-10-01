@@ -1,0 +1,26 @@
+/Users/stanley/Desktop/FlySlop/backend/connectome/runtime.py:95: UserWarning: Sparse invariant checks are implicitly disabled. Memory errors (e.g. SEGFAULT) will occur when operating on a sparse tensor which violates the invariants, but checks incur performance overhead. To silence this warning, explicitly opt in or out. See `torch.sparse.check_sparse_tensor_invariants.__doc__` for guidance.  (Triggered internally at /Users/runner/work/pytorch/pytorch/aten/src/ATen/Context.cpp:855.)
+  S = torch.sparse_csr_tensor(crow, col, vals, size=(n, n))
+/Users/stanley/Desktop/FlySlop/backend/connectome/runtime.py:95: UserWarning: Sparse CSR tensor support is in beta state. If you miss a functionality in the sparse tensor support, please submit a feature request to https://github.com/pytorch/pytorch/issues. (Triggered internally at /Users/runner/work/pytorch/pytorch/aten/src/ATen/SparseCsrTensorImpl.cpp:51.)
+  S = torch.sparse_csr_tensor(crow, col, vals, size=(n, n))
+............/Users/stanley/Desktop/FlySlop/tests/test_connectome_runtime.py:86: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /Users/runner/work/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:821.)
+  rho = float(torch.linalg.eigvals(w).abs().max())
+................[curriculum] stage 1 s1: passed | not implemented | 
+[curriculum] stage 2 s2: passed | not implemented | 
+[curriculum] stage 3 s3: passed | not implemented | 
+..[curriculum] stage 1 s1: passed | not implemented | 
+[curriculum] stage 2 s2: error |  | RuntimeError: injected failure in stage6_distill
+[curriculum] stage 2 s2: passed | not implemented | 
+[curriculum] stage 3 s3: passed | not implemented | 
+.[curriculum] stage 3 s3: passed | not implemented | 
+.[curriculum] stage 1 s1: passed | not implemented | 
+[curriculum] stage 2 s2: gate_failed | not implemented | 
+..[curriculum] stage 1 s1: passed | not implemented | 
+...[curriculum] stage 1 s1: passed | not implemented | 
+[curriculum] stage 2 s2: budget_stopped |  | steps budget exceeded: 11 > 10
+[curriculum] stage 1 s1: passed | not implemented | 
+[curriculum] stage 2 s2: advanced |  | steps budget exceeded: 11 > 10
+[curriculum] stage 3 s3: passed | not implemented | 
+.[curriculum] stage 1 s1: budget_stopped |  | wall_s budget exceeded: 0.1s > 0.1s
+...............E........................[memory_budget] over RAM budget: huge needs 8.00 GB, in use 0.30 GB, cap 4.00 GB (FLYSLOP_MAX_RAM_GB)
+...s.E...E.E................................F...F.F...............................................F........

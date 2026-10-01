@@ -1,0 +1,20 @@
+[project]
+name = "flyslop"
+version = "0.1.0"
+description = "Fly typing SystemVerilog research prototype"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "numpy>=1.26",
+    "pyslang>=11.0.0",
+    "mujoco>=3.2",
+]
+
+[project.optional-dependencies]
+training = ["gymnasium>=1.0,<2", "numpy>=1.26", "stable-baselines3>=2.4", "torch>=2.4", "tensorboard>=2.17"]
+connectome = ["pandas>=2.2", "pyarrow>=16"]
+teacher = ["mlx-lm>=0.28", "huggingface_hub>=0.24"]
+tracking = ["wandb>=0.19"]
+
+[tool.uv]
+package = false

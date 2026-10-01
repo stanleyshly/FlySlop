@@ -1,0 +1,121 @@
+{
+  "npz": "typing_circuit.npz",
+  "content_hash": "49ba419838b367fd4c641c03102e4febea2a5ebcb2df706acccddefe0bfa3d70",
+  "config": {
+    "interneurons": 2500,
+    "descending": 300,
+    "sensory": 200,
+    "min_weight": 4
+  },
+  "extracted": "2026-09-29",
+  "extraction_seconds": 4.0,
+  "peak_rss_gb": 1.066,
+  "ram_cap_gb": 2.0,
+  "neurons": 3173,
+  "edges": 98551,
+  "synapses": 1710532,
+  "inhibitory_edges": 45632,
+  "populations": {
+    "DN": {
+      "neurons": 300,
+      "edges_in": 5459,
+      "edges_out": 19806,
+      "signs_neg": 79,
+      "sign_code_counts": {
+        "0": 297,
+        "1": 0,
+        "2": 3
+      }
+    },
+    "SN": {
+      "neurons": 200,
+      "edges_in": 186,
+      "edges_out": 1671,
+      "signs_neg": 0,
+      "sign_code_counts": {
+        "0": 200,
+        "1": 0,
+        "2": 0
+      }
+    },
+    "IN": {
+      "neurons": 2500,
+      "edges_in": 76621,
+      "edges_out": 76997,
+      "signs_neg": 1229,
+      "sign_code_counts": {
+        "0": 2497,
+        "1": 0,
+        "2": 3
+      }
+    },
+    "MN": {
+      "neurons": 173,
+      "edges_in": 16285,
+      "edges_out": 77,
+      "signs_neg": 111,
+      "sign_code_counts": {
+        "0": 113,
+        "1": 0,
+        "2": 60
+      }
+    }
+  },
+  "edge_blocks": {
+    "DN->DN": 4399,
+    "DN->IN": 13751,
+    "DN->MN": 1656,
+    "SN->DN": 6,
+    "SN->SN": 77,
+    "SN->IN": 1449,
+    "SN->MN": 139,
+    "IN->DN": 1054,
+    "IN->SN": 108,
+    "IN->IN": 61389,
+    "IN->MN": 14446,
+    "MN->SN": 1,
+    "MN->IN": 32,
+    "MN->MN": 44
+  },
+  "mn_groups": {
+    "proln_foreleg": 81,
+    "t1_bodywall": 38,
+    "t1_leg_other_nerve": 54
+  },
+  "mn_types": {
+    "(untyped)": 2,
+    "ADNM1 MN": 2,
+    "ADNM2 MN": 2,
+    "Acc. ti flexor MN": 19,
+    "Acc. tr flexor MN": 6,
+    "DLMn c-f": 8,
+    "DVMn 3a, b": 4,
+    "FNM2": 2,
+    "Fe reductor MN": 10,
+    "MNnm03": 2,
+    "MNnm07,MNnm12": 4,
+    "MNnm08": 2,
+    "MNnm09": 2,
+    "MNnm10": 2,
+    "MNnm11": 2,
+    "MNnm13": 2,
+    "MNnm14": 2,
+    "MNxm01": 2,
+    "Pleural remotor/abductor MN": 4,
+    "Sternal adductor MN": 2,
+    "Sternal anterior rotator MN": 4,
+    "Sternal posterior rotator MN": 6,
+    "Sternotrochanter MN": 4,
+    "Ta depressor MN": 9,
+    "Ta levator MN": 5,
+    "Tergopleural/Pleural promotor MN": 8,
+    "Tergotr. MN": 8,
+    "Ti extensor MN": 4,
+    "Ti flexor MN": 10,
+    "Tr extensor MN": 4,
+    "Tr flexor MN": 15,
+    "ltm MN": 8,
+    "ltm1-tibia MN": 3,
+    "ltm2-femur MN": 4
+  }
+}

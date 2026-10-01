@@ -1,0 +1,57 @@
+{
+ "steps": 33,
+ "stopped": "wall",
+ "seconds": 61.5,
+ "final": {
+  "token_acc": 0.66,
+  "nll": 1.4156,
+  "n_val": 20
+ },
+ "history": [
+  {
+   "step": 33,
+   "token_acc": 0.66,
+   "nll": 1.4156,
+   "n_val": 20
+  }
+ ],
+ "kind": "real",
+ "seed": 0,
+ "params": {
+  "kind": "real",
+  "trainable": 681400,
+  "frozen": 0,
+  "total": 681400,
+  "groups": {
+   "embed": {
+    "trainable": 32768,
+    "frozen": 0
+   },
+   "read_norm": {
+    "trainable": 600,
+    "frozen": 0
+   },
+   "read_down": {
+    "trainable": 19264,
+    "frozen": 0
+   },
+   "read_up": {
+    "trainable": 66560,
+    "frozen": 0
+   },
+   "core": {
+    "trainable": 536608,
+    "frozen": 0
+   },
+   "in_proj": {
+    "trainable": 25600,
+    "frozen": 0
+   }
+  }
+ },
+ "n_train": 20,
+ "data": "dataset-fallback (oracle train pairs 4 < 200); sources={\"authored/sv\": 21, \"humaneval/py\": 164, \"mbpp/py\": 974, \"rtllm/sv\": 50, \"verilogeval/sv\": 156}",
+ "cfg_hash": "08fb8a7457ed",
+ "wall": 62.3,
+ "overfit_gate": false
+}

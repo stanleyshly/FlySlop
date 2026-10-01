@@ -1,0 +1,740 @@
+{
+ "args": {
+  "advance_on_budget": true,
+  "from_stage": null
+ },
+ "config": {
+  "data_files": [
+   "data/corpus"
+  ],
+  "ram_gb": 4,
+  "seed": 0,
+  "smoke": {
+   "budget": {
+    "steps": 200000,
+    "wall_s": 120
+   },
+   "gates": "relaxed",
+   "stage_overrides": {
+    "3": {
+     "budget": {
+      "steps": 200000,
+      "wall_s": 240
+     }
+    },
+    "4": {
+     "budget": {
+      "steps": 200000,
+      "wall_s": 240
+     }
+    },
+    "5": {
+     "budget": {
+      "steps": 200000,
+      "wall_s": 150
+     }
+    }
+   }
+  },
+  "stages": [
+   {
+    "budget": {
+     "steps": 200000,
+     "wall_s": 120
+    },
+    "exclusive": false,
+    "gate": {
+     "key_accuracy": 0.95,
+     "unintended_rate_max": 0.01
+    },
+    "id": 1,
+    "level": "physical",
+    "module": "training.stages.stage1_keys",
+    "name": "Key control",
+    "physical": {
+     "action_mode": "mn",
+     "bc_episodes": 400,
+     "bc_epochs": 30,
+     "bc_workers": 4,
+     "config": "training/ppo_fly_mn.json",
+     "eval_episodes": 60,
+     "n_envs": 4,
+     "policy": "connectome",
+     "ppo": {},
+     "ppo_timesteps": 300000,
+     "readout": "mn_antagonist"
+    },
+    "smoke_gates": "relaxed",
+    "smoke_physical": {
+     "bc_episodes": 12,
+     "bc_epochs": 2,
+     "eval_episodes": 6,
+     "n_envs": 1,
+     "ppo": {
+      "batch_size": 64,
+      "n_epochs": 1,
+      "n_steps": 128
+     },
+     "ppo_timesteps": 128
+    }
+   },
+   {
+    "budget": {
+     "steps": 200000,
+     "wall_s": 120
+    },
+    "exclusive": false,
+    "gate": {
+     "code_exact": 0.7,
+     "token_exact": 0.9
+    },
+    "id": 2,
+    "level": "physical",
+    "module": "training.stages.stage2_transcription",
+    "name": "Transcription",
+    "physical": {
+     "action_mode": "mn",
+     "bc_episodes": 400,
+     "bc_episodes_code": 100,
+     "bc_epochs": 30,
+     "bc_workers": 4,
+     "config": "training/ppo_fly_mn.json",
+     "eval_code_episodes": 50,
+     "eval_episodes": 100,
+     "levels": [
+      "words",
+      "code_16",
+      "code_32",
+      "code_64",
+      "code_128",
+      "code_multi"
+     ],
+     "n_envs": 4,
+     "policy": "connectome",
+     "ppo_timesteps": 500000,
+     "readout": "mn_antagonist"
+    },
+    "smoke_gates": "relaxed",
+    "smoke_physical": {
+     "bc_episodes": 8,
+     "bc_episodes_code": 4,
+     "bc_epochs": 1,
+     "eval_code_episodes": 2,
+     "eval_episodes": 4,
+     "levels": [
+      "words",
+      "code_16"
+     ],
+     "n_envs": 1,
+     "ppo": {
+      "batch_size": 64,
+      "n_epochs": 1,
+      "n_steps": 128
+     },
+     "ppo_timesteps": 128
+    }
+   },
+   {
+    "budget": {
+     "steps": 200000,
+     "wall_s": 240
+    },
+    "exclusive": false,
+    "gate": {
+     "edit_key_accuracy": 0.95,
+     "symbolic_within_1.5x_oracle": 0.95
+    },
+    "id": 3,
+    "level": "physical+symbolic",
+    "module": "training.stages.stage3_editing",
+    "name": "Editing",
+    "physical": {
+     "action_mode": "mn",
+     "bc_episodes": 400,
+     "bc_epochs": 30,
+     "config": "training/ppo_fly_mn.json",
+     "eval_episodes": 60,
+     "include_fn": true,
+     "n_envs": 4,
+     "policy": "connectome",
+     "ppo_timesteps": 500000,
+     "readout": "mn_antagonist"
+    },
+    "smoke_gates": "relaxed",
+    "smoke_physical": {
+     "bc_episodes": 6,
+     "bc_epochs": 1,
+     "eval_episodes": 4,
+     "n_envs": 1,
+     "ppo": {
+      "batch_size": 64,
+      "n_epochs": 1,
+      "n_steps": 128
+     },
+     "ppo_timesteps": 128
+    },
+    "symbolic": true
+   },
+   {
+    "budget": {
+     "steps": 200000,
+     "wall_s": 240
+    },
+    "exclusive": false,
+    "gate": {
+     "recovery_exact": 0.9,
+     "symbolic_replan_reach": 0.9
+    },
+    "id": 4,
+    "level": "physical+symbolic",
+    "module": "training.stages.stage4_recovery",
+    "name": "Error recovery",
+    "physical": {
+     "action_mode": "mn",
+     "bc_episodes": 400,
+     "bc_epochs": 30,
+     "config": "training/ppo_fly_mn.json",
+     "eval_episodes": 50,
+     "eval_noise": 0.3,
+     "n_envs": 4,
+     "policy": "connectome",
+     "ppo_timesteps": 500000,
+     "readout": "mn_antagonist",
+     "slip_p": 0.15
+    },
+    "smoke_gates": "relaxed",
+    "smoke_physical": {
+     "bc_episodes": 6,
+     "bc_epochs": 1,
+     "eval_episodes": 4,
+     "n_envs": 1,
+     "ppo": {
+      "batch_size": 64,
+      "n_epochs": 1,
+      "n_steps": 128
+     },
+     "ppo_timesteps": 128
+    },
+    "symbolic": true
+   },
+   {
+    "budget": {
+     "steps": 200000,
+     "wall_s": 150
+    },
+    "exclusive": true,
+    "gate": {
+     "filtered_pairs": 10000
+    },
+    "id": 5,
+    "level": "offline",
+    "module": "training.stages.stage5_oracle_data",
+    "name": "LLM oracle data",
+    "oracle": {
+     "code_tokens": 384,
+     "holdout_sources": "",
+     "neardup_accepted": 0.9,
+     "neardup_test": 0.7,
+     "pairs_glob": null,
+     "pairs_min": 10000,
+     "run": "curriculum",
+     "seed": 0,
+     "sources": null,
+     "spec_tokens": 160,
+     "time_budget_s": null
+    },
+    "smoke_gates": "relaxed"
+   },
+   {
+    "budget": {
+     "steps": 200000,
+     "wall_s": 120
+    },
+    "exclusive": true,
+    "gate": {
+     "beats_controls": 1
+    },
+    "id": 6,
+    "level": "symbolic",
+    "module": "training.stages.stage6_distill",
+    "name": "Distillation A-B-C",
+    "smoke_gates": "relaxed",
+    "stub": true
+   },
+   {
+    "budget": {
+     "steps": 200000,
+     "wall_s": 120
+    },
+    "exclusive": false,
+    "gate": {
+     "pass_at_1_floor": 0.0
+    },
+    "id": 7,
+    "level": "symbolic+physical",
+    "module": "training.stages.stage7_microprograms",
+    "name": "Autonomous micro-programs",
+    "smoke_gates": "relaxed",
+    "stub": true
+   },
+   {
+    "budget": {
+     "steps": 200000,
+     "wall_s": 120
+    },
+    "exclusive": false,
+    "gate": {
+     "pass_rate_floor": 0.0
+    },
+    "id": 8,
+    "level": "symbolic",
+    "module": "training.stages.stage8_longer",
+    "name": "Longer programs",
+    "smoke_gates": "relaxed",
+    "stub": true
+   },
+   {
+    "budget": {
+     "steps": 200000,
+     "wall_s": 120
+    },
+    "exclusive": false,
+    "gate": {
+     "pass_at_1_gain": 0.0
+    },
+    "id": 9,
+    "level": "symbolic+physical",
+    "module": "training.stages.stage9_selfcorrect",
+    "name": "Self-correction",
+    "smoke_gates": "relaxed",
+    "stub": true
+   }
+  ]
+ },
+ "config_hash": "1d94cfdc8a913f9c31b2792484c8c1e33ee6377fa08cdb6957260c42640c857b",
+ "created": 1790724247.97808,
+ "current": 5,
+ "smoke": true,
+ "stages": [
+  {
+   "artifacts": [
+    "scratchpad/p8b/runs/20260929-192407/stage1/best_model.zip"
+   ],
+   "attempts": 1,
+   "gate_passed": true,
+   "id": 1,
+   "manifest": "stage1/manifest.json",
+   "metrics": {
+    "best_checkpoint": "scratchpad/p8b/runs/20260929-192407/stage1/best_model.zip",
+    "episodes": 6,
+    "gate_detail": {
+     "key_accuracy": {
+      "metric": "key_accuracy",
+      "ok": false,
+      "op": "ge",
+      "threshold": 0.95,
+      "value": 0.16666666666666666
+     },
+     "unintended_rate_max": {
+      "metric": "unintended_rate",
+      "ok": false,
+      "op": "le",
+      "threshold": 0.01,
+      "value": 0.5
+     }
+    },
+    "gate_mode": "relaxed (smoke, NOT a real gate)",
+    "key_accuracy": 0.16666666666666666,
+    "phases": [
+     {
+      "bc": {
+       "episodes": 12,
+       "epochs": 2,
+       "expert_exact_while_collecting": 1.0,
+       "mse_first": 0.3162350654602051,
+       "mse_last": 0.2731732428073883,
+       "transitions": 179
+      },
+      "ckpt": "scratchpad/p8b/runs/20260929-192407/stage1/phase0_keys8.zip",
+      "eval": {
+       "episodes": 6,
+       "key_accuracy": 0.16666666666666666,
+       "unintended_rate": 0.8333333333333334
+      },
+      "phase": "keys8",
+      "pool": 8,
+      "ppo_timesteps": 128,
+      "seconds": 3.7,
+      "warm_start": null
+     },
+     {
+      "bc": {
+       "episodes": 12,
+       "epochs": 2,
+       "expert_exact_while_collecting": 1.0,
+       "mse_first": 0.2414676696062088,
+       "mse_last": 0.21056120097637177,
+       "transitions": 152
+      },
+      "ckpt": "scratchpad/p8b/runs/20260929-192407/stage1/phase1_keys26.zip",
+      "eval": {
+       "episodes": 6,
+       "key_accuracy": 0.16666666666666666,
+       "unintended_rate": 0.8333333333333334
+      },
+      "phase": "keys26",
+      "pool": 26,
+      "ppo_timesteps": 128,
+      "seconds": 3.6
+     },
+     {
+      "bc": {
+       "episodes": 12,
+       "epochs": 2,
+       "expert_exact_while_collecting": 1.0,
+       "mse_first": 0.2368970662355423,
+       "mse_last": 0.21105894446372986,
+       "transitions": 217
+      },
+      "ckpt": "scratchpad/p8b/runs/20260929-192407/stage1/phase2_keys_full.zip",
+      "eval": {
+       "episodes": 6,
+       "key_accuracy": 0.16666666666666666,
+       "unintended_rate": 0.5
+      },
+      "phase": "keys_full",
+      "pool": 58,
+      "ppo_timesteps": 128,
+      "seconds": 3.2
+     }
+    ],
+    "real_gate_passed": false,
+    "smoke": true,
+    "status": "key_acc=0.16666666666666666 unintended=0.5 gate=relaxed (smoke, NOT a real gate) real_pass=False",
+    "unintended_rate": 0.5,
+    "warm_start": null
+   },
+   "name": "Key control",
+   "reason": null,
+   "status": "passed"
+  },
+  {
+   "artifacts": [
+    "scratchpad/p8b/runs/20260929-192407/stage2/best_model.zip"
+   ],
+   "attempts": 1,
+   "gate_passed": true,
+   "id": 2,
+   "manifest": "stage2/manifest.json",
+   "metrics": {
+    "best_checkpoint": "scratchpad/p8b/runs/20260929-192407/stage2/best_model.zip",
+    "code_cer": 1.0,
+    "code_episodes": 2,
+    "code_exact": 0.0,
+    "gate_detail": {
+     "code_exact": {
+      "metric": "code_exact",
+      "ok": false,
+      "op": "ge",
+      "threshold": 0.7,
+      "value": 0.0
+     },
+     "token_exact": {
+      "metric": "token_exact",
+      "ok": false,
+      "op": "ge",
+      "threshold": 0.9,
+      "value": 0.0
+     }
+    },
+    "gate_mode": "relaxed (smoke, NOT a real gate)",
+    "heldout_code_split": "test",
+    "levels": [
+     "words",
+     "code_16"
+    ],
+    "phases": [
+     {
+      "bc": {
+       "episodes": 8,
+       "epochs": 1,
+       "expert_exact_while_collecting": 1.0,
+       "mse_first": 0.15404744321649724,
+       "mse_last": 0.15404744321649724,
+       "transitions": 550
+      },
+      "ckpt": "scratchpad/p8b/runs/20260929-192407/stage2/phase0_words.zip",
+      "eval": {
+       "code_cer": 1.0,
+       "code_episodes": 2,
+       "code_exact": 0.0,
+       "token_cer": 0.9583333333333334,
+       "token_episodes": 4,
+       "token_exact": 0.0
+      },
+      "phase": "words",
+      "pool": 200,
+      "ppo_timesteps": 128,
+      "seconds": 4.2,
+      "warm_start": "scratchpad/p8b/runs/20260929-192407/stage1/best_model.zip"
+     },
+     {
+      "bc": {
+       "episodes": 4,
+       "epochs": 1,
+       "expert_exact_while_collecting": 1.0,
+       "mse_first": 0.14078528318442454,
+       "mse_last": 0.14078528318442454,
+       "transitions": 767
+      },
+      "ckpt": "scratchpad/p8b/runs/20260929-192407/stage2/phase1_code_16.zip",
+      "eval": {
+       "code_cer": 1.0,
+       "code_episodes": 2,
+       "code_exact": 0.0,
+       "token_cer": 0.9583333333333334,
+       "token_episodes": 4,
+       "token_exact": 0.0
+      },
+      "phase": "code_16",
+      "pool": 500,
+      "ppo_timesteps": 128,
+      "seconds": 4.7
+     }
+    ],
+    "real_gate_passed": false,
+    "smoke": true,
+    "status": "token_exact=0.0 code_exact=0.0 gate=relaxed (smoke, NOT a real gate) real_pass=False",
+    "token_cer": 0.9583333333333334,
+    "token_episodes": 4,
+    "token_exact": 0.0,
+    "warm_start": "scratchpad/p8b/runs/20260929-192407/stage1/best_model.zip"
+   },
+   "name": "Transcription",
+   "reason": null,
+   "status": "passed"
+  },
+  {
+   "artifacts": [
+    "scratchpad/p8b/runs/20260929-192407/stage3/best_model.zip",
+    "scratchpad/p8b/runs/20260929-192407/stage3/symbolic/ckpt.pt"
+   ],
+   "attempts": 1,
+   "gate_passed": true,
+   "id": 3,
+   "manifest": "stage3/manifest.json",
+   "metrics": {
+    "best_checkpoint": "scratchpad/p8b/runs/20260929-192407/stage3/best_model.zip",
+    "edit_episodes": 4,
+    "edit_exact": 0.0,
+    "edit_key_accuracy": 0.0,
+    "edit_unsupported": 0,
+    "gate_detail": {
+     "edit_key_accuracy": {
+      "metric": "edit_key_accuracy",
+      "ok": false,
+      "op": "ge",
+      "threshold": 0.95,
+      "value": 0.0
+     },
+     "symbolic_within_1.5x_oracle": {
+      "metric": "symbolic_within_1.5x_oracle",
+      "ok": false,
+      "op": "ge",
+      "threshold": 0.95,
+      "value": 0.0
+     }
+    },
+    "gate_mode": "relaxed (smoke, NOT a real gate)",
+    "phases": [
+     {
+      "bc": {
+       "episodes": 6,
+       "epochs": 1,
+       "expert_complete": 0.0,
+       "mse_first": 0.28126445412635803,
+       "mse_last": 0.28126445412635803,
+       "transitions": 44
+      },
+      "ckpt": "scratchpad/p8b/runs/20260929-192407/stage3/phase0_edit3.zip",
+      "eval": {
+       "edit_episodes": 4,
+       "edit_exact": 0.0,
+       "edit_key_accuracy": 0.0,
+       "edit_unsupported": 0
+      },
+      "phase": "edit3",
+      "pool": 1,
+      "ppo_timesteps": 128,
+      "seconds": 1.1,
+      "warm_start": "scratchpad/p8b/runs/20260929-192407/stage2/best_model.zip"
+     }
+    ],
+    "real_gate_passed": false,
+    "smoke": true,
+    "status": "edit_key_acc=0.0 unsupported=0 symbolic=ok gate=relaxed (smoke, NOT a real gate) real_pass=False",
+    "symbolic": {
+     "artifacts": [
+      "scratchpad/p8b/runs/20260929-192407/stage3/symbolic/ckpt.pt"
+     ],
+     "gate_passed": true,
+     "metrics": {
+      "act_exact_first": 0.0,
+      "first_round_ok": 0.0,
+      "mean_cost_ratio": 0.0,
+      "n_eval": 8,
+      "nll": 4.1252,
+      "replan_reach": 0.125,
+      "replan_within_ratio": 0.125,
+      "rounds": 3,
+      "stage": 3,
+      "steps": 20,
+      "token_acc": 0.367
+     },
+     "status": "ok"
+    },
+    "symbolic_within_1.5x_oracle": 0.0,
+    "warm_start": "scratchpad/p8b/runs/20260929-192407/stage2/best_model.zip"
+   },
+   "name": "Editing",
+   "reason": null,
+   "status": "passed"
+  },
+  {
+   "artifacts": [
+    "scratchpad/p8b/runs/20260929-192407/stage4/best_model.zip",
+    "scratchpad/p8b/runs/20260929-192407/stage4/symbolic/ckpt.pt"
+   ],
+   "attempts": 1,
+   "gate_passed": true,
+   "id": 4,
+   "manifest": "stage4/manifest.json",
+   "metrics": {
+    "best_checkpoint": "scratchpad/p8b/runs/20260929-192407/stage4/best_model.zip",
+    "edit_episodes": 2,
+    "edit_exact": 0.0,
+    "edit_key_accuracy": 0.0,
+    "edit_unsupported": 0,
+    "gate_detail": {
+     "recovery_exact": {
+      "metric": "recovery_exact",
+      "ok": false,
+      "op": "ge",
+      "threshold": 0.9,
+      "value": 0.0
+     },
+     "symbolic_replan_reach": {
+      "metric": "symbolic_replan_reach",
+      "ok": false,
+      "op": "ge",
+      "threshold": 0.9,
+      "value": 0.125
+     }
+    },
+    "gate_mode": "relaxed (smoke, NOT a real gate)",
+    "phases": [
+     {
+      "bc": {
+       "episodes": 6,
+       "epochs": 1,
+       "expert_complete": 0.0,
+       "mse_first": 0.24044445157051086,
+       "mse_last": 0.24044445157051086,
+       "transitions": 49
+      },
+      "ckpt": "scratchpad/p8b/runs/20260929-192407/stage4/phase0_edit4.zip",
+      "eval": {
+       "edit_episodes": 2,
+       "edit_exact": 0.0,
+       "edit_key_accuracy": 0.0,
+       "edit_unsupported": 0,
+       "recovered_given_slip": 0.0,
+       "recovery_episodes": 4,
+       "recovery_exact": 0.0,
+       "recovery_noise": 0.3,
+       "recovery_unsupported": 0,
+       "slip_episodes": 4
+      },
+      "phase": "edit4",
+      "pool": 1,
+      "ppo_timesteps": 128,
+      "seconds": 1.1,
+      "warm_start": "scratchpad/p8b/runs/20260929-192407/stage3/best_model.zip"
+     }
+    ],
+    "real_gate_passed": false,
+    "recovered_given_slip": 0.0,
+    "recovery_episodes": 4,
+    "recovery_exact": 0.0,
+    "recovery_noise": 0.3,
+    "recovery_unsupported": 0,
+    "slip_episodes": 4,
+    "smoke": true,
+    "status": "recovery_exact=0.0 slip_eps=4 symbolic=ok gate=relaxed (smoke, NOT a real gate) real_pass=False",
+    "symbolic": {
+     "artifacts": [
+      "scratchpad/p8b/runs/20260929-192407/stage4/symbolic/ckpt.pt"
+     ],
+     "gate_passed": true,
+     "metrics": {
+      "act_exact_first": 0.0,
+      "first_round_ok": 0.0,
+      "mean_cost_ratio": 0.0,
+      "n_eval": 8,
+      "nll": 2.9263,
+      "replan_reach": 0.125,
+      "replan_within_ratio": 0.0,
+      "rounds": 3,
+      "stage": 4,
+      "steps": 20,
+      "token_acc": 0.3968
+     },
+     "status": "ok"
+    },
+    "symbolic_replan_reach": 0.125,
+    "warm_start": "scratchpad/p8b/runs/20260929-192407/stage3/best_model.zip"
+   },
+   "name": "Error recovery",
+   "reason": null,
+   "status": "passed"
+  },
+  {
+   "artifacts": [],
+   "attempts": 1,
+   "gate_passed": false,
+   "id": 5,
+   "manifest": "stage5/manifest.json",
+   "metrics": {},
+   "name": "LLM oracle data",
+   "reason": "RuntimeError: oracle_gen exited 1; see scratchpad/p8b/runs/20260929-192407/stage5/oracle_gen.log",
+   "status": "error"
+  },
+  {
+   "attempts": 0,
+   "id": 6,
+   "name": "Distillation A-B-C",
+   "status": "pending"
+  },
+  {
+   "attempts": 0,
+   "id": 7,
+   "name": "Autonomous micro-programs",
+   "status": "pending"
+  },
+  {
+   "attempts": 0,
+   "id": 8,
+   "name": "Longer programs",
+   "status": "pending"
+  },
+  {
+   "attempts": 0,
+   "id": 9,
+   "name": "Self-correction",
+   "status": "pending"
+  }
+ ],
+ "status": "stopped",
+ "stop_reason": "stage 5 error: RuntimeError: oracle_gen exited 1; see scratchpad/p8b/runs/20260929-192407/stage5/oracle_gen.log",
+ "version": 1
+}

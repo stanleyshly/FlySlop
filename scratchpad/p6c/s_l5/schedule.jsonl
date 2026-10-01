@@ -1,0 +1,804 @@
+{"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 7.03324, "acc": 0.0, "sec": 0.294}
+{"step": 2, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.9406, "acc": 0.0, "sec": 0.232}
+{"step": 3, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.81766, "acc": 0.0272, "sec": 0.266}
+{"step": 4, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.58693, "acc": 0.0811, "sec": 0.211}
+{"step": 5, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.43882, "acc": 0.1167, "sec": 0.178}
+{"step": 6, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.09243, "acc": 0.1424, "sec": 0.173}
+{"step": 7, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 5.92021, "acc": 0.1413, "sec": 0.224}
+{"step": 8, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 5.68485, "acc": 0.1144, "sec": 0.145}
+{"step": 9, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 5.54254, "acc": 0.1321, "sec": 0.16}
+{"step": 10, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 5.25973, "acc": 0.1681, "sec": 0.228}
+{"step": 11, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 4.73807, "acc": 0.1844, "sec": 0.222}
+{"step": 12, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 5.18469, "acc": 0.1359, "sec": 0.228}
+{"step": 13, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 5.16641, "acc": 0.1151, "sec": 0.198}
+{"step": 14, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 4.69456, "acc": 0.1656, "sec": 0.239}
+{"step": 15, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 4.5049, "acc": 0.2209, "sec": 0.246}
+{"step": 16, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 4.58922, "acc": 0.1929, "sec": 0.281}
+{"step": 17, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 4.45922, "acc": 0.2195, "sec": 0.206}
+{"step": 18, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 3.94527, "acc": 0.2488, "sec": 0.219}
+{"step": 19, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 4.14384, "acc": 0.218, "sec": 0.171}
+{"step": 20, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 3.76596, "acc": 0.2537, "sec": 0.223}
+{"step": 21, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 3.86171, "acc": 0.258, "sec": 0.243}
+{"step": 22, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 3.43565, "acc": 0.3087, "sec": 0.142}
+{"step": 23, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 3.70869, "acc": 0.2756, "sec": 0.192}
+{"step": 24, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 3.43813, "acc": 0.3185, "sec": 0.194}
+{"step": 25, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 3.83312, "acc": 0.2629, "sec": 0.182}
+{"step": 26, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 3.54015, "acc": 0.2766, "sec": 0.206}
+{"step": 27, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 3.38025, "acc": 0.3042, "sec": 0.16}
+{"step": 28, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 3.34504, "acc": 0.31, "sec": 0.17}
+{"step": 29, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 3.33671, "acc": 0.2925, "sec": 0.22}
+{"step": 30, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 3.12271, "acc": 0.3444, "sec": 0.235}
+{"step": 31, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 3.17736, "acc": 0.3091, "sec": 0.231}
+{"step": 32, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 3.00999, "acc": 0.358, "sec": 0.198}
+{"step": 33, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 2.72294, "acc": 0.4184, "sec": 0.135}
+{"step": 34, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 2.56163, "acc": 0.4148, "sec": 0.218}
+{"step": 35, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 3.09911, "acc": 0.3501, "sec": 0.152}
+{"step": 36, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 2.87371, "acc": 0.3914, "sec": 0.224}
+{"step": 37, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 2.79763, "acc": 0.3961, "sec": 0.227}
+{"step": 38, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 2.79618, "acc": 0.3771, "sec": 0.192}
+{"step": 39, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 2.80355, "acc": 0.3882, "sec": 0.188}
+{"step": 40, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 2.37747, "acc": 0.4671, "sec": 0.172}
+{"step": 41, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 2.28209, "acc": 0.4767, "sec": 0.2}
+{"step": 42, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 2.39736, "acc": 0.4566, "sec": 0.203}
+{"step": 43, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 2.56587, "acc": 0.4162, "sec": 0.183}
+{"step": 44, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 2.57094, "acc": 0.4189, "sec": 0.168}
+{"step": 45, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 2.82981, "acc": 0.3925, "sec": 0.22}
+{"step": 46, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 2.35901, "acc": 0.4409, "sec": 0.175}
+{"step": 47, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.98898, "acc": 0.4981, "sec": 0.236}
+{"step": 48, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 2.03835, "acc": 0.5104, "sec": 0.121}
+{"step": 49, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.85831, "acc": 0.545, "sec": 0.24}
+{"step": 50, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 2.04847, "acc": 0.4849, "sec": 0.157}
+{"step": 51, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 2.00879, "acc": 0.4962, "sec": 0.196}
+{"step": 52, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 2.11804, "acc": 0.4761, "sec": 0.237}
+{"step": 53, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.93927, "acc": 0.5097, "sec": 0.224}
+{"step": 54, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.88762, "acc": 0.5429, "sec": 0.233}
+{"step": 55, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.86839, "acc": 0.5466, "sec": 0.162}
+{"step": 56, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.73786, "acc": 0.5466, "sec": 0.173}
+{"step": 57, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.95099, "acc": 0.5011, "sec": 0.212}
+{"step": 58, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.72099, "acc": 0.5647, "sec": 0.176}
+{"step": 59, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.85944, "acc": 0.5285, "sec": 0.212}
+{"step": 60, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.56186, "acc": 0.6116, "sec": 0.21}
+{"step": 61, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.58215, "acc": 0.5818, "sec": 0.237}
+{"step": 62, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.55686, "acc": 0.6248, "sec": 0.195}
+{"step": 63, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.48982, "acc": 0.5908, "sec": 0.236}
+{"step": 64, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.36478, "acc": 0.6745, "sec": 0.2}
+{"step": 65, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.34948, "acc": 0.6512, "sec": 0.175}
+{"step": 66, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.44338, "acc": 0.6243, "sec": 0.188}
+{"step": 67, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.40682, "acc": 0.6369, "sec": 0.22}
+{"step": 68, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.35821, "acc": 0.651, "sec": 0.264}
+{"step": 69, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.52782, "acc": 0.6285, "sec": 0.192}
+{"step": 70, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.30094, "acc": 0.6581, "sec": 0.156}
+{"step": 71, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.03605, "acc": 0.7182, "sec": 0.22}
+{"step": 72, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.43529, "acc": 0.6174, "sec": 0.172}
+{"step": 73, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.017, "acc": 0.6975, "sec": 0.203}
+{"step": 74, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.3012, "acc": 0.6454, "sec": 0.18}
+{"step": 75, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.32169, "acc": 0.6551, "sec": 0.211}
+{"step": 76, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.0917, "acc": 0.6939, "sec": 0.16}
+{"step": 77, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.08921, "acc": 0.7043, "sec": 0.172}
+{"step": 78, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.13583, "acc": 0.6822, "sec": 0.208}
+{"step": 79, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.02483, "acc": 0.7293, "sec": 0.137}
+{"step": 80, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.95814, "acc": 0.7328, "sec": 0.197}
+{"step": 81, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.97113, "acc": 0.7064, "sec": 0.136}
+{"step": 82, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.82065, "acc": 0.7851, "sec": 0.148}
+{"step": 83, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.97733, "acc": 0.7299, "sec": 0.254}
+{"step": 84, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.84054, "acc": 0.764, "sec": 0.295}
+{"step": 85, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.82537, "acc": 0.7624, "sec": 0.215}
+{"step": 86, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.83303, "acc": 0.7533, "sec": 0.227}
+{"step": 87, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.83184, "acc": 0.7494, "sec": 0.209}
+{"step": 88, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.70539, "acc": 0.7932, "sec": 0.188}
+{"step": 89, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.80013, "acc": 0.7662, "sec": 0.214}
+{"step": 90, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.85949, "acc": 0.7462, "sec": 0.25}
+{"step": 91, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.69787, "acc": 0.8089, "sec": 0.141}
+{"step": 92, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.58, "acc": 0.8404, "sec": 0.213}
+{"step": 93, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.81902, "acc": 0.7818, "sec": 0.195}
+{"step": 94, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.64803, "acc": 0.8107, "sec": 0.239}
+{"step": 95, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.57979, "acc": 0.8353, "sec": 0.169}
+{"step": 96, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.58207, "acc": 0.8378, "sec": 0.206}
+{"step": 97, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.58898, "acc": 0.8191, "sec": 0.172}
+{"step": 98, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.55664, "acc": 0.8419, "sec": 0.143}
+{"step": 99, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.80512, "acc": 0.8106, "sec": 0.195}
+{"step": 100, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.46652, "acc": 0.8711, "sec": 0.201}
+{"step": 101, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.38429, "acc": 0.8837, "sec": 0.2}
+{"step": 102, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.47475, "acc": 0.8714, "sec": 0.15}
+{"step": 103, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.52751, "acc": 0.8522, "sec": 0.153}
+{"step": 104, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.66912, "acc": 0.816, "sec": 0.154}
+{"step": 105, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.33541, "acc": 0.909, "sec": 0.224}
+{"step": 106, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.60812, "acc": 0.8295, "sec": 0.204}
+{"step": 107, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.55071, "acc": 0.848, "sec": 0.22}
+{"step": 108, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.4309, "acc": 0.8706, "sec": 0.206}
+{"step": 109, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.29607, "acc": 0.9179, "sec": 0.206}
+{"step": 110, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.42457, "acc": 0.8847, "sec": 0.174}
+{"step": 111, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.35011, "acc": 0.9097, "sec": 0.17}
+{"step": 112, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.42771, "acc": 0.8674, "sec": 0.204}
+{"step": 113, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.52073, "acc": 0.8669, "sec": 0.172}
+{"step": 114, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.36971, "acc": 0.8947, "sec": 0.213}
+{"step": 115, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.32262, "acc": 0.9047, "sec": 0.208}
+{"step": 116, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.35508, "acc": 0.8946, "sec": 0.198}
+{"step": 117, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.38267, "acc": 0.8963, "sec": 0.162}
+{"step": 118, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.36752, "acc": 0.9141, "sec": 0.16}
+{"step": 119, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.40409, "acc": 0.9, "sec": 0.216}
+{"step": 120, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.33416, "acc": 0.914, "sec": 0.218}
+{"step": 121, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.27102, "acc": 0.9235, "sec": 0.285}
+{"step": 122, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.30168, "acc": 0.9082, "sec": 0.212}
+{"step": 123, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.3701, "acc": 0.8816, "sec": 0.144}
+{"step": 124, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.19012, "acc": 0.9464, "sec": 0.199}
+{"step": 125, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.28419, "acc": 0.9326, "sec": 0.24}
+{"step": 126, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.30975, "acc": 0.9072, "sec": 0.222}
+{"step": 127, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.26051, "acc": 0.9216, "sec": 0.13}
+{"step": 128, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.21897, "acc": 0.935, "sec": 0.144}
+{"step": 129, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.15279, "acc": 0.9644, "sec": 0.223}
+{"step": 130, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.27957, "acc": 0.929, "sec": 0.206}
+{"step": 131, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.24264, "acc": 0.9315, "sec": 0.204}
+{"step": 132, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.17331, "acc": 0.9535, "sec": 0.204}
+{"step": 133, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.27982, "acc": 0.9305, "sec": 0.221}
+{"step": 134, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.24053, "acc": 0.9313, "sec": 0.192}
+{"step": 135, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.18962, "acc": 0.9517, "sec": 0.179}
+{"step": 136, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.17836, "acc": 0.9476, "sec": 0.233}
+{"step": 137, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.23146, "acc": 0.9474, "sec": 0.199}
+{"step": 138, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.19927, "acc": 0.9503, "sec": 0.153}
+{"step": 139, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.14477, "acc": 0.9604, "sec": 0.175}
+{"step": 140, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.1815, "acc": 0.9481, "sec": 0.212}
+{"step": 141, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.21607, "acc": 0.9532, "sec": 0.232}
+{"step": 142, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.16981, "acc": 0.9666, "sec": 0.209}
+{"step": 143, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.23118, "acc": 0.9495, "sec": 0.2}
+{"step": 144, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.19607, "acc": 0.9508, "sec": 0.218}
+{"step": 145, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.1812, "acc": 0.959, "sec": 0.205}
+{"step": 146, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.1628, "acc": 0.9704, "sec": 0.194}
+{"step": 147, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.13559, "acc": 0.9693, "sec": 0.224}
+{"step": 148, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.1344, "acc": 0.9605, "sec": 0.184}
+{"step": 149, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.23839, "acc": 0.9642, "sec": 0.207}
+{"step": 150, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.17691, "acc": 0.9675, "sec": 0.157}
+{"step": 151, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.16151, "acc": 0.965, "sec": 0.245}
+{"step": 152, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.11024, "acc": 0.9701, "sec": 0.19}
+{"step": 153, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.18044, "acc": 0.9671, "sec": 0.21}
+{"step": 154, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.12294, "acc": 0.9678, "sec": 0.224}
+{"step": 155, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.12694, "acc": 0.9766, "sec": 0.192}
+{"step": 156, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.17333, "acc": 0.9639, "sec": 0.2}
+{"step": 157, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.12534, "acc": 0.9698, "sec": 0.212}
+{"step": 158, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.13397, "acc": 0.9657, "sec": 0.168}
+{"step": 159, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.0821, "acc": 0.9854, "sec": 0.181}
+{"step": 160, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.07214, "acc": 0.9801, "sec": 0.187}
+{"step": 161, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.08956, "acc": 0.9763, "sec": 0.253}
+{"step": 162, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.10765, "acc": 0.9764, "sec": 0.252}
+{"step": 163, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.094, "acc": 0.984, "sec": 0.184}
+{"step": 164, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.10906, "acc": 0.9759, "sec": 0.216}
+{"event": "transition", "step": 164, "from": "A", "to": "B", "p": 0.25, "from_p": 0.0, "reason": "threshold", "rolling_acc": 0.9707, "threshold": 0.97}
+{"step": 165, "phase": "B", "p": 0.25, "mixed_frac": 0.2593, "loss": 0.69577, "acc": 0.9035, "sec": 0.7, "tf_acc": 0.9617}
+{"step": 166, "phase": "B", "p": 0.25, "mixed_frac": 0.2697, "loss": 0.3581, "acc": 0.9487, "sec": 0.44, "tf_acc": 0.9739}
+{"step": 167, "phase": "B", "p": 0.25, "mixed_frac": 0.2607, "loss": 0.28715, "acc": 0.9579, "sec": 0.441, "tf_acc": 0.9825}
+{"step": 168, "phase": "B", "p": 0.25, "mixed_frac": 0.2495, "loss": 0.39467, "acc": 0.9446, "sec": 0.416, "tf_acc": 0.9772}
+{"step": 169, "phase": "B", "p": 0.25, "mixed_frac": 0.2439, "loss": 0.33921, "acc": 0.9562, "sec": 0.451, "tf_acc": 0.9831}
+{"step": 170, "phase": "B", "p": 0.25, "mixed_frac": 0.25, "loss": 0.54271, "acc": 0.9207, "sec": 0.455, "tf_acc": 0.9696}
+{"step": 171, "phase": "B", "p": 0.25, "mixed_frac": 0.2399, "loss": 0.48411, "acc": 0.9111, "sec": 0.464, "tf_acc": 0.9618}
+{"step": 172, "phase": "B", "p": 0.25, "mixed_frac": 0.2634, "loss": 0.45913, "acc": 0.9311, "sec": 0.504, "tf_acc": 0.9818}
+{"step": 173, "phase": "B", "p": 0.25, "mixed_frac": 0.2403, "loss": 1.0312, "acc": 0.8582, "sec": 0.729, "tf_acc": 0.9243}
+{"step": 174, "phase": "B", "p": 0.25, "mixed_frac": 0.2259, "loss": 0.31838, "acc": 0.9463, "sec": 0.465, "tf_acc": 0.9779}
+{"step": 175, "phase": "B", "p": 0.25, "mixed_frac": 0.2663, "loss": 0.56942, "acc": 0.9034, "sec": 0.476, "tf_acc": 0.9468}
+{"step": 176, "phase": "B", "p": 0.25, "mixed_frac": 0.2515, "loss": 0.57578, "acc": 0.9136, "sec": 0.541, "tf_acc": 0.9675}
+{"step": 177, "phase": "B", "p": 0.25, "mixed_frac": 0.2292, "loss": 0.85963, "acc": 0.8714, "sec": 0.662, "tf_acc": 0.9594}
+{"step": 178, "phase": "B", "p": 0.25, "mixed_frac": 0.2198, "loss": 0.58942, "acc": 0.8998, "sec": 0.387, "tf_acc": 0.9524}
+{"step": 179, "phase": "B", "p": 0.25, "mixed_frac": 0.241, "loss": 0.75279, "acc": 0.9017, "sec": 0.47, "tf_acc": 0.9716}
+{"step": 180, "phase": "B", "p": 0.25, "mixed_frac": 0.2712, "loss": 0.94104, "acc": 0.8619, "sec": 0.55, "tf_acc": 0.9475}
+{"step": 181, "phase": "B", "p": 0.25, "mixed_frac": 0.2397, "loss": 0.63557, "acc": 0.8896, "sec": 0.581, "tf_acc": 0.9405}
+{"step": 182, "phase": "B", "p": 0.25, "mixed_frac": 0.2607, "loss": 0.63694, "acc": 0.9024, "sec": 0.62, "tf_acc": 0.9588}
+{"step": 183, "phase": "B", "p": 0.25, "mixed_frac": 0.24, "loss": 1.00064, "acc": 0.8475, "sec": 0.581, "tf_acc": 0.9443}
+{"step": 184, "phase": "B", "p": 0.25, "mixed_frac": 0.2636, "loss": 0.75041, "acc": 0.8739, "sec": 0.838, "tf_acc": 0.9585}
+{"event": "transition", "step": 184, "from": "B", "to": "B", "p": 0.5, "from_p": 0.25, "reason": "threshold", "rolling_acc": 0.9072, "threshold": 0.9}
+{"step": 185, "phase": "B", "p": 0.5, "mixed_frac": 0.5101, "loss": 3.04515, "acc": 0.6855, "sec": 0.498, "tf_acc": 0.9653}
+{"step": 186, "phase": "B", "p": 0.5, "mixed_frac": 0.4956, "loss": 2.04852, "acc": 0.756, "sec": 0.71, "tf_acc": 0.9656}
+{"step": 187, "phase": "B", "p": 0.5, "mixed_frac": 0.4831, "loss": 2.29888, "acc": 0.7069, "sec": 0.581, "tf_acc": 0.9451}
+{"step": 188, "phase": "B", "p": 0.5, "mixed_frac": 0.4802, "loss": 2.43591, "acc": 0.7108, "sec": 1.137, "tf_acc": 0.9388}
+{"step": 189, "phase": "B", "p": 0.5, "mixed_frac": 0.5072, "loss": 3.22829, "acc": 0.6376, "sec": 0.604, "tf_acc": 0.963}
+{"step": 190, "phase": "B", "p": 0.5, "mixed_frac": 0.5299, "loss": 3.83422, "acc": 0.5257, "sec": 0.414, "tf_acc": 0.9246}
+{"step": 191, "phase": "B", "p": 0.5, "mixed_frac": 0.4806, "loss": 2.57945, "acc": 0.6301, "sec": 0.542, "tf_acc": 0.9156}
+{"step": 192, "phase": "B", "p": 0.5, "mixed_frac": 0.5134, "loss": 3.8467, "acc": 0.4692, "sec": 0.963, "tf_acc": 0.8831}
+{"step": 193, "phase": "B", "p": 0.5, "mixed_frac": 0.5038, "loss": 3.22334, "acc": 0.5406, "sec": 1.173, "tf_acc": 0.9146}
+{"step": 194, "phase": "B", "p": 0.5, "mixed_frac": 0.5103, "loss": 3.47057, "acc": 0.4828, "sec": 1.011, "tf_acc": 0.9142}
+{"step": 195, "phase": "B", "p": 0.5, "mixed_frac": 0.4718, "loss": 2.75571, "acc": 0.5632, "sec": 0.536, "tf_acc": 0.8955}
+{"step": 196, "phase": "B", "p": 0.5, "mixed_frac": 0.4864, "loss": 2.72825, "acc": 0.5767, "sec": 0.513, "tf_acc": 0.9341}
+{"step": 197, "phase": "B", "p": 0.5, "mixed_frac": 0.5111, "loss": 3.57251, "acc": 0.4531, "sec": 0.748, "tf_acc": 0.8654}
+{"step": 198, "phase": "B", "p": 0.5, "mixed_frac": 0.5042, "loss": 3.4843, "acc": 0.4376, "sec": 0.6, "tf_acc": 0.8599}
+{"step": 199, "phase": "B", "p": 0.5, "mixed_frac": 0.5046, "loss": 3.19437, "acc": 0.4645, "sec": 0.789, "tf_acc": 0.9236}
+{"step": 200, "phase": "B", "p": 0.5, "mixed_frac": 0.5093, "loss": 3.22055, "acc": 0.4408, "sec": 0.389, "tf_acc": 0.862}
+{"step": 201, "phase": "B", "p": 0.5, "mixed_frac": 0.5341, "loss": 3.32961, "acc": 0.4616, "sec": 0.814, "tf_acc": 0.8743}
+{"step": 202, "phase": "B", "p": 0.5, "mixed_frac": 0.4935, "loss": 3.14505, "acc": 0.4249, "sec": 0.685, "tf_acc": 0.8891}
+{"step": 203, "phase": "B", "p": 0.5, "mixed_frac": 0.4828, "loss": 3.42057, "acc": 0.3901, "sec": 0.671, "tf_acc": 0.8645}
+{"step": 204, "phase": "B", "p": 0.5, "mixed_frac": 0.4848, "loss": 2.85052, "acc": 0.4831, "sec": 0.611, "tf_acc": 0.8668}
+{"step": 205, "phase": "B", "p": 0.5, "mixed_frac": 0.4705, "loss": 3.31613, "acc": 0.4132, "sec": 0.4, "tf_acc": 0.8855}
+{"step": 206, "phase": "B", "p": 0.5, "mixed_frac": 0.5251, "loss": 3.72678, "acc": 0.361, "sec": 0.507, "tf_acc": 0.8886}
+{"step": 207, "phase": "B", "p": 0.5, "mixed_frac": 0.5168, "loss": 3.1092, "acc": 0.399, "sec": 0.372, "tf_acc": 0.9144}
+{"step": 208, "phase": "B", "p": 0.5, "mixed_frac": 0.4938, "loss": 2.85871, "acc": 0.4476, "sec": 0.552, "tf_acc": 0.8997}
+{"step": 209, "phase": "B", "p": 0.5, "mixed_frac": 0.4847, "loss": 3.37014, "acc": 0.3596, "sec": 0.513, "tf_acc": 0.8694}
+{"step": 210, "phase": "B", "p": 0.5, "mixed_frac": 0.5139, "loss": 2.83538, "acc": 0.4485, "sec": 0.528, "tf_acc": 0.8886}
+{"step": 211, "phase": "B", "p": 0.5, "mixed_frac": 0.4923, "loss": 2.79653, "acc": 0.4469, "sec": 0.452, "tf_acc": 0.9161}
+{"step": 212, "phase": "B", "p": 0.5, "mixed_frac": 0.4869, "loss": 3.07449, "acc": 0.3799, "sec": 0.663, "tf_acc": 0.8651}
+{"step": 213, "phase": "B", "p": 0.5, "mixed_frac": 0.5264, "loss": 2.8523, "acc": 0.4707, "sec": 0.551, "tf_acc": 0.9326}
+{"step": 214, "phase": "B", "p": 0.5, "mixed_frac": 0.5343, "loss": 2.94886, "acc": 0.4457, "sec": 0.584, "tf_acc": 0.9413}
+{"step": 215, "phase": "B", "p": 0.5, "mixed_frac": 0.4795, "loss": 2.5982, "acc": 0.5163, "sec": 0.464, "tf_acc": 0.935}
+{"step": 216, "phase": "B", "p": 0.5, "mixed_frac": 0.5418, "loss": 2.86084, "acc": 0.4649, "sec": 0.401, "tf_acc": 0.9649}
+{"step": 217, "phase": "B", "p": 0.5, "mixed_frac": 0.478, "loss": 2.46696, "acc": 0.5142, "sec": 0.627, "tf_acc": 0.9098}
+{"step": 218, "phase": "B", "p": 0.5, "mixed_frac": 0.47, "loss": 2.55294, "acc": 0.5054, "sec": 0.483, "tf_acc": 0.9124}
+{"step": 219, "phase": "B", "p": 0.5, "mixed_frac": 0.5035, "loss": 2.51744, "acc": 0.4966, "sec": 1.101, "tf_acc": 0.9284}
+{"step": 220, "phase": "B", "p": 0.5, "mixed_frac": 0.5052, "loss": 2.8367, "acc": 0.4556, "sec": 0.586, "tf_acc": 0.9158}
+{"step": 221, "phase": "B", "p": 0.5, "mixed_frac": 0.4946, "loss": 2.39549, "acc": 0.5496, "sec": 0.595, "tf_acc": 0.8914}
+{"step": 222, "phase": "B", "p": 0.5, "mixed_frac": 0.5189, "loss": 2.94577, "acc": 0.4071, "sec": 0.53, "tf_acc": 0.9293}
+{"step": 223, "phase": "B", "p": 0.5, "mixed_frac": 0.5255, "loss": 2.73097, "acc": 0.4919, "sec": 0.628, "tf_acc": 0.8687}
+{"step": 224, "phase": "B", "p": 0.5, "mixed_frac": 0.4944, "loss": 2.46474, "acc": 0.5145, "sec": 0.449, "tf_acc": 0.9229}
+{"step": 225, "phase": "B", "p": 0.5, "mixed_frac": 0.498, "loss": 2.17581, "acc": 0.5832, "sec": 0.519, "tf_acc": 0.9529}
+{"step": 226, "phase": "B", "p": 0.5, "mixed_frac": 0.5191, "loss": 2.34666, "acc": 0.5687, "sec": 0.429, "tf_acc": 0.925}
+{"step": 227, "phase": "B", "p": 0.5, "mixed_frac": 0.5102, "loss": 2.23661, "acc": 0.5563, "sec": 0.528, "tf_acc": 0.9427}
+{"step": 228, "phase": "B", "p": 0.5, "mixed_frac": 0.4921, "loss": 2.33199, "acc": 0.5225, "sec": 0.584, "tf_acc": 0.9043}
+{"step": 229, "phase": "B", "p": 0.5, "mixed_frac": 0.4738, "loss": 2.0815, "acc": 0.5689, "sec": 0.586, "tf_acc": 0.9327}
+{"step": 230, "phase": "B", "p": 0.5, "mixed_frac": 0.501, "loss": 2.30138, "acc": 0.541, "sec": 0.727, "tf_acc": 0.9189}
+{"step": 231, "phase": "B", "p": 0.5, "mixed_frac": 0.5009, "loss": 2.36341, "acc": 0.5304, "sec": 0.699, "tf_acc": 0.9428}
+{"step": 232, "phase": "B", "p": 0.5, "mixed_frac": 0.5115, "loss": 1.8915, "acc": 0.6324, "sec": 0.591, "tf_acc": 0.9571}
+{"step": 233, "phase": "B", "p": 0.5, "mixed_frac": 0.486, "loss": 2.0387, "acc": 0.5992, "sec": 0.988, "tf_acc": 0.9273}
+{"step": 234, "phase": "B", "p": 0.5, "mixed_frac": 0.4948, "loss": 2.62306, "acc": 0.4792, "sec": 0.584, "tf_acc": 0.9132}
+{"step": 235, "phase": "B", "p": 0.5, "mixed_frac": 0.5243, "loss": 2.62702, "acc": 0.525, "sec": 0.678, "tf_acc": 0.9402}
+{"step": 236, "phase": "B", "p": 0.5, "mixed_frac": 0.5052, "loss": 1.81987, "acc": 0.6339, "sec": 0.977, "tf_acc": 0.9379}
+{"step": 237, "phase": "B", "p": 0.5, "mixed_frac": 0.5098, "loss": 2.51695, "acc": 0.5165, "sec": 1.231, "tf_acc": 0.9401}
+{"step": 238, "phase": "B", "p": 0.5, "mixed_frac": 0.5037, "loss": 2.41237, "acc": 0.5306, "sec": 0.731, "tf_acc": 0.9162}
+{"step": 239, "phase": "B", "p": 0.5, "mixed_frac": 0.4899, "loss": 2.03405, "acc": 0.6143, "sec": 0.628, "tf_acc": 0.9451}
+{"step": 240, "phase": "B", "p": 0.5, "mixed_frac": 0.4831, "loss": 2.02677, "acc": 0.5831, "sec": 0.589, "tf_acc": 0.9452}
+{"step": 241, "phase": "B", "p": 0.5, "mixed_frac": 0.501, "loss": 1.9319, "acc": 0.6055, "sec": 0.716, "tf_acc": 0.9402}
+{"step": 242, "phase": "B", "p": 0.5, "mixed_frac": 0.4924, "loss": 1.98897, "acc": 0.5972, "sec": 0.579, "tf_acc": 0.9476}
+{"step": 243, "phase": "B", "p": 0.5, "mixed_frac": 0.5149, "loss": 1.90596, "acc": 0.6225, "sec": 0.674, "tf_acc": 0.9637}
+{"step": 244, "phase": "B", "p": 0.5, "mixed_frac": 0.5153, "loss": 2.45357, "acc": 0.5433, "sec": 0.559, "tf_acc": 0.9406}
+{"step": 245, "phase": "B", "p": 0.5, "mixed_frac": 0.5095, "loss": 2.07568, "acc": 0.6015, "sec": 0.656, "tf_acc": 0.9376}
+{"step": 246, "phase": "B", "p": 0.5, "mixed_frac": 0.5205, "loss": 2.39216, "acc": 0.5675, "sec": 0.419, "tf_acc": 0.9635}
+{"step": 247, "phase": "B", "p": 0.5, "mixed_frac": 0.4716, "loss": 2.02155, "acc": 0.6166, "sec": 0.558, "tf_acc": 0.9538}
+{"step": 248, "phase": "B", "p": 0.5, "mixed_frac": 0.4939, "loss": 1.9764, "acc": 0.6157, "sec": 0.443, "tf_acc": 0.9487}
+{"step": 249, "phase": "B", "p": 0.5, "mixed_frac": 0.4946, "loss": 2.16898, "acc": 0.5848, "sec": 0.565, "tf_acc": 0.9375}
+{"step": 250, "phase": "B", "p": 0.5, "mixed_frac": 0.4984, "loss": 2.13214, "acc": 0.5619, "sec": 0.488, "tf_acc": 0.9407}
+{"step": 251, "phase": "B", "p": 0.5, "mixed_frac": 0.4933, "loss": 1.6514, "acc": 0.6496, "sec": 0.494, "tf_acc": 0.9654}
+{"step": 252, "phase": "B", "p": 0.5, "mixed_frac": 0.5004, "loss": 1.8693, "acc": 0.6239, "sec": 0.585, "tf_acc": 0.9569}
+{"step": 253, "phase": "B", "p": 0.5, "mixed_frac": 0.5089, "loss": 2.28073, "acc": 0.539, "sec": 0.619, "tf_acc": 0.9566}
+{"step": 254, "phase": "B", "p": 0.5, "mixed_frac": 0.5032, "loss": 1.84356, "acc": 0.6299, "sec": 0.538, "tf_acc": 0.9453}
+{"step": 255, "phase": "B", "p": 0.5, "mixed_frac": 0.4615, "loss": 1.90337, "acc": 0.5909, "sec": 0.408, "tf_acc": 0.9578}
+{"step": 256, "phase": "B", "p": 0.5, "mixed_frac": 0.505, "loss": 1.48613, "acc": 0.7143, "sec": 0.425, "tf_acc": 0.9597}
+{"step": 257, "phase": "B", "p": 0.5, "mixed_frac": 0.5072, "loss": 2.17986, "acc": 0.5761, "sec": 0.463, "tf_acc": 0.9576}
+{"step": 258, "phase": "B", "p": 0.5, "mixed_frac": 0.4871, "loss": 1.73105, "acc": 0.6519, "sec": 0.482, "tf_acc": 0.9621}
+{"step": 259, "phase": "B", "p": 0.5, "mixed_frac": 0.5208, "loss": 1.80556, "acc": 0.6587, "sec": 0.334, "tf_acc": 0.9717}
+{"step": 260, "phase": "B", "p": 0.5, "mixed_frac": 0.4985, "loss": 1.48009, "acc": 0.6843, "sec": 0.372, "tf_acc": 0.9615}
+{"step": 261, "phase": "B", "p": 0.5, "mixed_frac": 0.4987, "loss": 1.64997, "acc": 0.684, "sec": 0.441, "tf_acc": 0.9644}
+{"step": 262, "phase": "B", "p": 0.5, "mixed_frac": 0.4725, "loss": 1.23402, "acc": 0.7424, "sec": 0.565, "tf_acc": 0.9729}
+{"step": 263, "phase": "B", "p": 0.5, "mixed_frac": 0.5182, "loss": 1.96382, "acc": 0.6243, "sec": 0.455, "tf_acc": 0.9531}
+{"step": 264, "phase": "B", "p": 0.5, "mixed_frac": 0.5174, "loss": 1.45871, "acc": 0.7146, "sec": 0.428, "tf_acc": 0.9817}
+{"event": "transition", "step": 264, "from": "B", "to": "B", "p": 0.75, "from_p": 0.5, "reason": "step_cap", "rolling_acc": 0.6316, "threshold": 0.9}
+{"step": 265, "phase": "B", "p": 0.75, "mixed_frac": 0.7384, "loss": 3.32093, "acc": 0.4638, "sec": 0.56, "tf_acc": 0.97}
+{"step": 266, "phase": "B", "p": 0.75, "mixed_frac": 0.7371, "loss": 4.26637, "acc": 0.3371, "sec": 0.426, "tf_acc": 0.951}
+{"step": 267, "phase": "B", "p": 0.75, "mixed_frac": 0.774, "loss": 3.71616, "acc": 0.4006, "sec": 0.512, "tf_acc": 0.9498}
+{"step": 268, "phase": "B", "p": 0.75, "mixed_frac": 0.7424, "loss": 3.95997, "acc": 0.3421, "sec": 0.513, "tf_acc": 0.9428}
+{"step": 269, "phase": "B", "p": 0.75, "mixed_frac": 0.7493, "loss": 3.82662, "acc": 0.3252, "sec": 0.638, "tf_acc": 0.9314}
+{"step": 270, "phase": "B", "p": 0.75, "mixed_frac": 0.75, "loss": 3.60556, "acc": 0.3635, "sec": 0.675, "tf_acc": 0.9243}
+{"step": 271, "phase": "B", "p": 0.75, "mixed_frac": 0.7345, "loss": 4.27299, "acc": 0.2897, "sec": 0.555, "tf_acc": 0.9001}
+{"step": 272, "phase": "B", "p": 0.75, "mixed_frac": 0.7513, "loss": 3.83608, "acc": 0.3148, "sec": 0.593, "tf_acc": 0.9122}
+{"step": 273, "phase": "B", "p": 0.75, "mixed_frac": 0.7411, "loss": 4.48749, "acc": 0.2275, "sec": 0.603, "tf_acc": 0.92}
+{"step": 274, "phase": "B", "p": 0.75, "mixed_frac": 0.7576, "loss": 4.41155, "acc": 0.2375, "sec": 0.427, "tf_acc": 0.9172}
+{"step": 275, "phase": "B", "p": 0.75, "mixed_frac": 0.7643, "loss": 4.45713, "acc": 0.1985, "sec": 0.469, "tf_acc": 0.9167}
+{"step": 276, "phase": "B", "p": 0.75, "mixed_frac": 0.73, "loss": 3.68611, "acc": 0.2888, "sec": 0.573, "tf_acc": 0.9449}
+{"step": 277, "phase": "B", "p": 0.75, "mixed_frac": 0.7551, "loss": 4.41135, "acc": 0.205, "sec": 0.585, "tf_acc": 0.9167}
+{"step": 278, "phase": "B", "p": 0.75, "mixed_frac": 0.7439, "loss": 3.84834, "acc": 0.2504, "sec": 0.795, "tf_acc": 0.927}
+{"step": 279, "phase": "B", "p": 0.75, "mixed_frac": 0.7697, "loss": 3.98127, "acc": 0.2557, "sec": 0.433, "tf_acc": 0.9366}
+{"step": 280, "phase": "B", "p": 0.75, "mixed_frac": 0.7116, "loss": 3.93337, "acc": 0.2784, "sec": 0.391, "tf_acc": 0.942}
+{"step": 281, "phase": "B", "p": 0.75, "mixed_frac": 0.7434, "loss": 4.23429, "acc": 0.2101, "sec": 0.661, "tf_acc": 0.9367}
+{"step": 282, "phase": "B", "p": 0.75, "mixed_frac": 0.7392, "loss": 4.08633, "acc": 0.2306, "sec": 0.573, "tf_acc": 0.9215}
+{"step": 283, "phase": "B", "p": 0.75, "mixed_frac": 0.7103, "loss": 3.7228, "acc": 0.2842, "sec": 0.503, "tf_acc": 0.8998}
+{"step": 284, "phase": "B", "p": 0.75, "mixed_frac": 0.7495, "loss": 4.04433, "acc": 0.2718, "sec": 0.566, "tf_acc": 0.9178}
+{"step": 285, "phase": "B", "p": 0.75, "mixed_frac": 0.7525, "loss": 3.98338, "acc": 0.2475, "sec": 0.355, "tf_acc": 0.9106}
+{"step": 286, "phase": "B", "p": 0.75, "mixed_frac": 0.737, "loss": 3.78536, "acc": 0.2794, "sec": 0.418, "tf_acc": 0.9202}
+{"step": 287, "phase": "B", "p": 0.75, "mixed_frac": 0.7409, "loss": 3.51221, "acc": 0.3053, "sec": 0.465, "tf_acc": 0.9208}
+{"step": 288, "phase": "B", "p": 0.75, "mixed_frac": 0.7731, "loss": 4.24412, "acc": 0.2213, "sec": 0.42, "tf_acc": 0.9012}
+{"step": 289, "phase": "B", "p": 0.75, "mixed_frac": 0.7536, "loss": 4.0988, "acc": 0.2701, "sec": 0.45, "tf_acc": 0.9123}
+{"step": 290, "phase": "B", "p": 0.75, "mixed_frac": 0.7485, "loss": 4.49069, "acc": 0.1871, "sec": 0.486, "tf_acc": 0.8973}
+{"step": 291, "phase": "B", "p": 0.75, "mixed_frac": 0.7553, "loss": 4.22098, "acc": 0.23, "sec": 0.435, "tf_acc": 0.9279}
+{"step": 292, "phase": "B", "p": 0.75, "mixed_frac": 0.7357, "loss": 4.04054, "acc": 0.2686, "sec": 0.437, "tf_acc": 0.8857}
+{"step": 293, "phase": "B", "p": 0.75, "mixed_frac": 0.7562, "loss": 3.84397, "acc": 0.287, "sec": 0.476, "tf_acc": 0.904}
+{"step": 294, "phase": "B", "p": 0.75, "mixed_frac": 0.7393, "loss": 3.83829, "acc": 0.2842, "sec": 0.431, "tf_acc": 0.9171}
+{"step": 295, "phase": "B", "p": 0.75, "mixed_frac": 0.7529, "loss": 4.09609, "acc": 0.2395, "sec": 0.406, "tf_acc": 0.9306}
+{"step": 296, "phase": "B", "p": 0.75, "mixed_frac": 0.7599, "loss": 4.0842, "acc": 0.2402, "sec": 0.477, "tf_acc": 0.9277}
+{"step": 297, "phase": "B", "p": 0.75, "mixed_frac": 0.7695, "loss": 4.19579, "acc": 0.1969, "sec": 0.522, "tf_acc": 0.9094}
+{"step": 298, "phase": "B", "p": 0.75, "mixed_frac": 0.7714, "loss": 3.70945, "acc": 0.2914, "sec": 0.371, "tf_acc": 0.9296}
+{"step": 299, "phase": "B", "p": 0.75, "mixed_frac": 0.7709, "loss": 3.95268, "acc": 0.2549, "sec": 0.487, "tf_acc": 0.9255}
+{"step": 300, "phase": "B", "p": 0.75, "mixed_frac": 0.7442, "loss": 3.8813, "acc": 0.2636, "sec": 0.551, "tf_acc": 0.8943}
+{"step": 301, "phase": "B", "p": 0.75, "mixed_frac": 0.7761, "loss": 3.78175, "acc": 0.2696, "sec": 0.485, "tf_acc": 0.9127}
+{"step": 302, "phase": "B", "p": 0.75, "mixed_frac": 0.7507, "loss": 3.80665, "acc": 0.2339, "sec": 0.409, "tf_acc": 0.9163}
+{"step": 303, "phase": "B", "p": 0.75, "mixed_frac": 0.7596, "loss": 3.70328, "acc": 0.2996, "sec": 0.344, "tf_acc": 0.9399}
+{"step": 304, "phase": "B", "p": 0.75, "mixed_frac": 0.7632, "loss": 3.87971, "acc": 0.2728, "sec": 0.558, "tf_acc": 0.934}
+{"step": 305, "phase": "B", "p": 0.75, "mixed_frac": 0.7434, "loss": 3.79921, "acc": 0.2808, "sec": 0.626, "tf_acc": 0.9496}
+{"step": 306, "phase": "B", "p": 0.75, "mixed_frac": 0.7719, "loss": 4.01155, "acc": 0.2699, "sec": 0.815, "tf_acc": 0.9489}
+{"step": 307, "phase": "B", "p": 0.75, "mixed_frac": 0.7398, "loss": 4.09687, "acc": 0.2648, "sec": 0.603, "tf_acc": 0.9143}
+{"step": 308, "phase": "B", "p": 0.75, "mixed_frac": 0.7355, "loss": 3.46234, "acc": 0.2953, "sec": 0.69, "tf_acc": 0.9371}
+{"step": 309, "phase": "B", "p": 0.75, "mixed_frac": 0.7402, "loss": 3.75305, "acc": 0.2885, "sec": 0.617, "tf_acc": 0.9423}
+{"step": 310, "phase": "B", "p": 0.75, "mixed_frac": 0.7515, "loss": 3.51765, "acc": 0.3072, "sec": 0.494, "tf_acc": 0.9473}
+{"step": 311, "phase": "B", "p": 0.75, "mixed_frac": 0.7483, "loss": 4.09548, "acc": 0.2507, "sec": 0.588, "tf_acc": 0.9354}
+{"step": 312, "phase": "B", "p": 0.75, "mixed_frac": 0.7612, "loss": 3.42256, "acc": 0.3044, "sec": 0.485, "tf_acc": 0.9499}
+{"step": 313, "phase": "B", "p": 0.75, "mixed_frac": 0.7244, "loss": 3.46138, "acc": 0.327, "sec": 0.46, "tf_acc": 0.9418}
+{"step": 314, "phase": "B", "p": 0.75, "mixed_frac": 0.7379, "loss": 3.39828, "acc": 0.3372, "sec": 0.646, "tf_acc": 0.9451}
+{"step": 315, "phase": "B", "p": 0.75, "mixed_frac": 0.7494, "loss": 3.57902, "acc": 0.306, "sec": 0.66, "tf_acc": 0.9304}
+{"step": 316, "phase": "B", "p": 0.75, "mixed_frac": 0.7396, "loss": 3.32208, "acc": 0.3529, "sec": 0.544, "tf_acc": 0.9501}
+{"step": 317, "phase": "B", "p": 0.75, "mixed_frac": 0.7512, "loss": 3.31615, "acc": 0.3514, "sec": 0.596, "tf_acc": 0.962}
+{"step": 318, "phase": "B", "p": 0.75, "mixed_frac": 0.7515, "loss": 3.49273, "acc": 0.3263, "sec": 0.951, "tf_acc": 0.9576}
+{"step": 319, "phase": "B", "p": 0.75, "mixed_frac": 0.7453, "loss": 3.2197, "acc": 0.3698, "sec": 0.729, "tf_acc": 0.9415}
+{"step": 320, "phase": "B", "p": 0.75, "mixed_frac": 0.7406, "loss": 3.77545, "acc": 0.2659, "sec": 0.884, "tf_acc": 0.9092}
+{"step": 321, "phase": "B", "p": 0.75, "mixed_frac": 0.7561, "loss": 3.29597, "acc": 0.3398, "sec": 0.864, "tf_acc": 0.9535}
+{"step": 322, "phase": "B", "p": 0.75, "mixed_frac": 0.7733, "loss": 3.00971, "acc": 0.4029, "sec": 0.748, "tf_acc": 0.956}
+{"step": 323, "phase": "B", "p": 0.75, "mixed_frac": 0.7621, "loss": 3.41838, "acc": 0.3307, "sec": 0.762, "tf_acc": 0.9153}
+{"step": 324, "phase": "B", "p": 0.75, "mixed_frac": 0.7318, "loss": 3.48416, "acc": 0.2928, "sec": 0.694, "tf_acc": 0.9281}
+{"step": 325, "phase": "B", "p": 0.75, "mixed_frac": 0.7493, "loss": 3.57839, "acc": 0.305, "sec": 0.68, "tf_acc": 0.9242}
+{"step": 326, "phase": "B", "p": 0.75, "mixed_frac": 0.7461, "loss": 3.17169, "acc": 0.3783, "sec": 0.876, "tf_acc": 0.9546}
+{"step": 327, "phase": "B", "p": 0.75, "mixed_frac": 0.7412, "loss": 3.36188, "acc": 0.3269, "sec": 0.713, "tf_acc": 0.9442}
+{"step": 328, "phase": "B", "p": 0.75, "mixed_frac": 0.7658, "loss": 3.47872, "acc": 0.3191, "sec": 0.821, "tf_acc": 0.9433}
+{"step": 329, "phase": "B", "p": 0.75, "mixed_frac": 0.7644, "loss": 2.8655, "acc": 0.4009, "sec": 0.577, "tf_acc": 0.9421}
+{"step": 330, "phase": "B", "p": 0.75, "mixed_frac": 0.7379, "loss": 3.07542, "acc": 0.3868, "sec": 0.548, "tf_acc": 0.9452}
+{"step": 331, "phase": "B", "p": 0.75, "mixed_frac": 0.727, "loss": 3.08645, "acc": 0.3863, "sec": 0.681, "tf_acc": 0.9396}
+{"step": 332, "phase": "B", "p": 0.75, "mixed_frac": 0.7568, "loss": 3.47847, "acc": 0.3089, "sec": 0.711, "tf_acc": 0.9551}
+{"step": 333, "phase": "B", "p": 0.75, "mixed_frac": 0.7515, "loss": 3.55845, "acc": 0.3049, "sec": 1.081, "tf_acc": 0.9369}
+{"step": 334, "phase": "B", "p": 0.75, "mixed_frac": 0.7274, "loss": 3.07796, "acc": 0.3701, "sec": 0.896, "tf_acc": 0.9549}
+{"step": 335, "phase": "B", "p": 0.75, "mixed_frac": 0.7526, "loss": 3.25578, "acc": 0.3727, "sec": 0.875, "tf_acc": 0.9438}
+{"step": 336, "phase": "B", "p": 0.75, "mixed_frac": 0.7558, "loss": 3.50348, "acc": 0.3251, "sec": 0.791, "tf_acc": 0.9421}
+{"step": 337, "phase": "B", "p": 0.75, "mixed_frac": 0.7574, "loss": 3.43993, "acc": 0.3606, "sec": 0.697, "tf_acc": 0.9211}
+{"step": 338, "phase": "B", "p": 0.75, "mixed_frac": 0.7477, "loss": 3.41239, "acc": 0.3526, "sec": 0.52, "tf_acc": 0.9414}
+{"step": 339, "phase": "B", "p": 0.75, "mixed_frac": 0.7682, "loss": 3.1116, "acc": 0.3785, "sec": 0.485, "tf_acc": 0.9589}
+{"step": 340, "phase": "B", "p": 0.75, "mixed_frac": 0.7418, "loss": 3.25096, "acc": 0.3336, "sec": 0.653, "tf_acc": 0.9552}
+{"step": 341, "phase": "B", "p": 0.75, "mixed_frac": 0.7563, "loss": 3.53638, "acc": 0.2965, "sec": 0.573, "tf_acc": 0.9472}
+{"step": 342, "phase": "B", "p": 0.75, "mixed_frac": 0.7643, "loss": 2.52032, "acc": 0.4902, "sec": 0.335, "tf_acc": 0.9637}
+{"step": 343, "phase": "B", "p": 0.75, "mixed_frac": 0.7754, "loss": 3.70767, "acc": 0.2644, "sec": 0.991, "tf_acc": 0.9242}
+{"step": 344, "phase": "B", "p": 0.75, "mixed_frac": 0.7498, "loss": 3.67246, "acc": 0.29, "sec": 0.895, "tf_acc": 0.9212}
+{"event": "transition", "step": 344, "from": "B", "to": "B", "p": 0.95, "from_p": 0.75, "reason": "step_cap", "rolling_acc": 0.3476, "threshold": 0.9}
+{"step": 345, "phase": "B", "p": 0.95, "mixed_frac": 0.9568, "loss": 4.08903, "acc": 0.2688, "sec": 0.88, "tf_acc": 0.9489}
+{"step": 346, "phase": "B", "p": 0.95, "mixed_frac": 0.9589, "loss": 4.0351, "acc": 0.2824, "sec": 0.696, "tf_acc": 0.9548}
+{"step": 347, "phase": "B", "p": 0.95, "mixed_frac": 0.9454, "loss": 4.2743, "acc": 0.233, "sec": 0.984, "tf_acc": 0.9392}
+{"step": 348, "phase": "B", "p": 0.95, "mixed_frac": 0.9442, "loss": 3.9817, "acc": 0.2246, "sec": 0.751, "tf_acc": 0.8962}
+{"step": 349, "phase": "B", "p": 0.95, "mixed_frac": 0.9525, "loss": 4.09869, "acc": 0.2169, "sec": 0.675, "tf_acc": 0.8623}
+{"step": 350, "phase": "B", "p": 0.95, "mixed_frac": 0.9464, "loss": 4.1084, "acc": 0.2097, "sec": 0.638, "tf_acc": 0.9205}
+{"step": 351, "phase": "B", "p": 0.95, "mixed_frac": 0.952, "loss": 3.70678, "acc": 0.2745, "sec": 0.49, "tf_acc": 0.9504}
+{"step": 352, "phase": "B", "p": 0.95, "mixed_frac": 0.9518, "loss": 4.18029, "acc": 0.1883, "sec": 1.014, "tf_acc": 0.9378}
+{"step": 353, "phase": "B", "p": 0.95, "mixed_frac": 0.9588, "loss": 4.23833, "acc": 0.1803, "sec": 0.8, "tf_acc": 0.9366}
+{"step": 354, "phase": "B", "p": 0.95, "mixed_frac": 0.9486, "loss": 4.49181, "acc": 0.1672, "sec": 0.738, "tf_acc": 0.9263}
+{"step": 355, "phase": "B", "p": 0.95, "mixed_frac": 0.9543, "loss": 4.63973, "acc": 0.136, "sec": 0.652, "tf_acc": 0.8553}
+{"step": 356, "phase": "B", "p": 0.95, "mixed_frac": 0.9598, "loss": 4.39809, "acc": 0.1907, "sec": 0.783, "tf_acc": 0.9178}
+{"step": 357, "phase": "B", "p": 0.95, "mixed_frac": 0.9621, "loss": 3.96018, "acc": 0.2079, "sec": 1.099, "tf_acc": 0.9475}
+{"step": 358, "phase": "B", "p": 0.95, "mixed_frac": 0.9539, "loss": 4.11935, "acc": 0.1903, "sec": 0.997, "tf_acc": 0.9333}
+{"step": 359, "phase": "B", "p": 0.95, "mixed_frac": 0.9571, "loss": 4.09531, "acc": 0.1681, "sec": 0.564, "tf_acc": 0.9399}
+{"step": 360, "phase": "B", "p": 0.95, "mixed_frac": 0.9561, "loss": 3.9883, "acc": 0.2256, "sec": 0.612, "tf_acc": 0.9389}
+{"step": 361, "phase": "B", "p": 0.95, "mixed_frac": 0.9497, "loss": 3.67959, "acc": 0.2651, "sec": 0.677, "tf_acc": 0.9476}
+{"step": 362, "phase": "B", "p": 0.95, "mixed_frac": 0.937, "loss": 4.06305, "acc": 0.1897, "sec": 1.114, "tf_acc": 0.9317}
+{"step": 363, "phase": "B", "p": 0.95, "mixed_frac": 0.9466, "loss": 3.89836, "acc": 0.2227, "sec": 0.611, "tf_acc": 0.924}
+{"step": 364, "phase": "B", "p": 0.95, "mixed_frac": 0.9357, "loss": 4.16811, "acc": 0.1945, "sec": 0.568, "tf_acc": 0.934}
+{"step": 365, "phase": "B", "p": 0.95, "mixed_frac": 0.9481, "loss": 4.09586, "acc": 0.2003, "sec": 0.431, "tf_acc": 0.8768}
+{"step": 366, "phase": "B", "p": 0.95, "mixed_frac": 0.9521, "loss": 3.89308, "acc": 0.2243, "sec": 0.432, "tf_acc": 0.8851}
+{"step": 367, "phase": "B", "p": 0.95, "mixed_frac": 0.9539, "loss": 3.98452, "acc": 0.213, "sec": 0.519, "tf_acc": 0.912}
+{"step": 368, "phase": "B", "p": 0.95, "mixed_frac": 0.9459, "loss": 4.11354, "acc": 0.1939, "sec": 0.674, "tf_acc": 0.9384}
+{"step": 369, "phase": "B", "p": 0.95, "mixed_frac": 0.9436, "loss": 4.12248, "acc": 0.1694, "sec": 0.581, "tf_acc": 0.896}
+{"step": 370, "phase": "B", "p": 0.95, "mixed_frac": 0.9464, "loss": 3.68554, "acc": 0.2449, "sec": 0.587, "tf_acc": 0.9398}
+{"step": 371, "phase": "B", "p": 0.95, "mixed_frac": 0.9525, "loss": 3.83101, "acc": 0.2139, "sec": 0.532, "tf_acc": 0.9351}
+{"step": 372, "phase": "B", "p": 0.95, "mixed_frac": 0.9503, "loss": 4.07025, "acc": 0.201, "sec": 0.778, "tf_acc": 0.9476}
+{"step": 373, "phase": "B", "p": 0.95, "mixed_frac": 0.94, "loss": 3.57655, "acc": 0.2616, "sec": 0.571, "tf_acc": 0.9545}
+{"step": 374, "phase": "B", "p": 0.95, "mixed_frac": 0.952, "loss": 3.50408, "acc": 0.2821, "sec": 0.35, "tf_acc": 0.9693}
+{"step": 375, "phase": "B", "p": 0.95, "mixed_frac": 0.964, "loss": 3.61635, "acc": 0.2621, "sec": 0.605, "tf_acc": 0.9666}
+{"step": 376, "phase": "B", "p": 0.95, "mixed_frac": 0.9571, "loss": 3.88637, "acc": 0.2009, "sec": 0.54, "tf_acc": 0.9451}
+{"step": 377, "phase": "B", "p": 0.95, "mixed_frac": 0.9568, "loss": 3.57953, "acc": 0.248, "sec": 0.456, "tf_acc": 0.9609}
+{"step": 378, "phase": "B", "p": 0.95, "mixed_frac": 0.9473, "loss": 3.50063, "acc": 0.2798, "sec": 0.317, "tf_acc": 0.9192}
+{"step": 379, "phase": "B", "p": 0.95, "mixed_frac": 0.9453, "loss": 3.4576, "acc": 0.2788, "sec": 0.347, "tf_acc": 0.9265}
+{"step": 380, "phase": "B", "p": 0.95, "mixed_frac": 0.9459, "loss": 3.76822, "acc": 0.2263, "sec": 0.538, "tf_acc": 0.9346}
+{"step": 381, "phase": "B", "p": 0.95, "mixed_frac": 0.9521, "loss": 3.36926, "acc": 0.2815, "sec": 0.436, "tf_acc": 0.9409}
+{"step": 382, "phase": "B", "p": 0.95, "mixed_frac": 0.9441, "loss": 3.4137, "acc": 0.2868, "sec": 0.386, "tf_acc": 0.9601}
+{"step": 383, "phase": "B", "p": 0.95, "mixed_frac": 0.9464, "loss": 3.61316, "acc": 0.2789, "sec": 0.506, "tf_acc": 0.9277}
+{"step": 384, "phase": "B", "p": 0.95, "mixed_frac": 0.9478, "loss": 3.48187, "acc": 0.309, "sec": 0.407, "tf_acc": 0.9576}
+{"step": 385, "phase": "B", "p": 0.95, "mixed_frac": 0.9354, "loss": 3.81238, "acc": 0.2623, "sec": 0.501, "tf_acc": 0.9527}
+{"step": 386, "phase": "B", "p": 0.95, "mixed_frac": 0.9635, "loss": 3.83531, "acc": 0.2511, "sec": 0.494, "tf_acc": 0.8903}
+{"step": 387, "phase": "B", "p": 0.95, "mixed_frac": 0.9419, "loss": 3.9194, "acc": 0.2297, "sec": 0.514, "tf_acc": 0.9096}
+{"step": 388, "phase": "B", "p": 0.95, "mixed_frac": 0.956, "loss": 3.94632, "acc": 0.209, "sec": 0.568, "tf_acc": 0.8492}
+{"step": 389, "phase": "B", "p": 0.95, "mixed_frac": 0.9441, "loss": 3.94967, "acc": 0.2432, "sec": 0.473, "tf_acc": 0.9248}
+{"step": 390, "phase": "B", "p": 0.95, "mixed_frac": 0.9503, "loss": 3.77343, "acc": 0.2183, "sec": 0.368, "tf_acc": 0.8877}
+{"step": 391, "phase": "B", "p": 0.95, "mixed_frac": 0.9578, "loss": 3.75585, "acc": 0.2479, "sec": 0.436, "tf_acc": 0.9149}
+{"step": 392, "phase": "B", "p": 0.95, "mixed_frac": 0.9556, "loss": 3.57149, "acc": 0.3039, "sec": 0.391, "tf_acc": 0.9443}
+{"step": 393, "phase": "B", "p": 0.95, "mixed_frac": 0.9522, "loss": 3.54105, "acc": 0.2582, "sec": 0.598, "tf_acc": 0.972}
+{"step": 394, "phase": "B", "p": 0.95, "mixed_frac": 0.9568, "loss": 3.7036, "acc": 0.2715, "sec": 0.437, "tf_acc": 0.9726}
+{"step": 395, "phase": "B", "p": 0.95, "mixed_frac": 0.9418, "loss": 3.65052, "acc": 0.2895, "sec": 0.565, "tf_acc": 0.9541}
+{"step": 396, "phase": "B", "p": 0.95, "mixed_frac": 0.9516, "loss": 3.54813, "acc": 0.2641, "sec": 0.475, "tf_acc": 0.9581}
+{"step": 397, "phase": "B", "p": 0.95, "mixed_frac": 0.9473, "loss": 3.82777, "acc": 0.2204, "sec": 0.426, "tf_acc": 0.9275}
+{"step": 398, "phase": "B", "p": 0.95, "mixed_frac": 0.957, "loss": 3.65236, "acc": 0.2516, "sec": 0.509, "tf_acc": 0.9495}
+{"step": 399, "phase": "B", "p": 0.95, "mixed_frac": 0.9542, "loss": 3.6184, "acc": 0.2598, "sec": 0.405, "tf_acc": 0.9483}
+{"step": 400, "phase": "B", "p": 0.95, "mixed_frac": 0.9506, "loss": 3.4065, "acc": 0.3242, "sec": 0.391, "tf_acc": 0.9493}
+{"step": 401, "phase": "B", "p": 0.95, "mixed_frac": 0.9472, "loss": 3.17304, "acc": 0.3392, "sec": 0.379, "tf_acc": 0.9576}
+{"step": 402, "phase": "B", "p": 0.95, "mixed_frac": 0.9539, "loss": 3.74468, "acc": 0.2502, "sec": 0.481, "tf_acc": 0.9638}
+{"step": 403, "phase": "B", "p": 0.95, "mixed_frac": 0.9542, "loss": 3.90002, "acc": 0.2361, "sec": 0.375, "tf_acc": 0.9401}
+{"step": 404, "phase": "B", "p": 0.95, "mixed_frac": 0.9383, "loss": 3.66145, "acc": 0.2559, "sec": 0.378, "tf_acc": 0.9024}
+{"step": 405, "phase": "B", "p": 0.95, "mixed_frac": 0.9432, "loss": 3.55014, "acc": 0.2718, "sec": 0.443, "tf_acc": 0.9529}
+{"step": 406, "phase": "B", "p": 0.95, "mixed_frac": 0.9601, "loss": 3.80512, "acc": 0.2625, "sec": 0.512, "tf_acc": 0.9664}
+{"step": 407, "phase": "B", "p": 0.95, "mixed_frac": 0.9463, "loss": 3.57636, "acc": 0.2542, "sec": 0.453, "tf_acc": 0.962}
+{"step": 408, "phase": "B", "p": 0.95, "mixed_frac": 0.9508, "loss": 3.68899, "acc": 0.2331, "sec": 0.484, "tf_acc": 0.9287}
+{"step": 409, "phase": "B", "p": 0.95, "mixed_frac": 0.9526, "loss": 3.23988, "acc": 0.3157, "sec": 0.337, "tf_acc": 0.9588}
+{"step": 410, "phase": "B", "p": 0.95, "mixed_frac": 0.9397, "loss": 3.7958, "acc": 0.2349, "sec": 0.539, "tf_acc": 0.9679}
+{"step": 411, "phase": "B", "p": 0.95, "mixed_frac": 0.9587, "loss": 3.81411, "acc": 0.2614, "sec": 0.44, "tf_acc": 0.8883}
+{"step": 412, "phase": "B", "p": 0.95, "mixed_frac": 0.9527, "loss": 3.25072, "acc": 0.3283, "sec": 0.625, "tf_acc": 0.949}
+{"step": 413, "phase": "B", "p": 0.95, "mixed_frac": 0.9445, "loss": 3.65389, "acc": 0.2663, "sec": 0.602, "tf_acc": 0.9785}
+{"step": 414, "phase": "B", "p": 0.95, "mixed_frac": 0.943, "loss": 3.64133, "acc": 0.2609, "sec": 0.497, "tf_acc": 0.9149}
+{"step": 415, "phase": "B", "p": 0.95, "mixed_frac": 0.9475, "loss": 3.40705, "acc": 0.2663, "sec": 0.454, "tf_acc": 0.9722}
+{"step": 416, "phase": "B", "p": 0.95, "mixed_frac": 0.9488, "loss": 3.74713, "acc": 0.2219, "sec": 0.545, "tf_acc": 0.9584}
+{"step": 417, "phase": "B", "p": 0.95, "mixed_frac": 0.9584, "loss": 3.84217, "acc": 0.2087, "sec": 0.495, "tf_acc": 0.9068}
+{"step": 418, "phase": "B", "p": 0.95, "mixed_frac": 0.9454, "loss": 3.49044, "acc": 0.2247, "sec": 0.407, "tf_acc": 0.9371}
+{"step": 419, "phase": "B", "p": 0.95, "mixed_frac": 0.9438, "loss": 3.6235, "acc": 0.2523, "sec": 0.705, "tf_acc": 0.9484}
+{"step": 420, "phase": "B", "p": 0.95, "mixed_frac": 0.9507, "loss": 3.38105, "acc": 0.3453, "sec": 0.472, "tf_acc": 0.9696}
+{"step": 421, "phase": "B", "p": 0.95, "mixed_frac": 0.9553, "loss": 3.60961, "acc": 0.3198, "sec": 0.452, "tf_acc": 0.9617}
+{"step": 422, "phase": "B", "p": 0.95, "mixed_frac": 0.9534, "loss": 3.67253, "acc": 0.2627, "sec": 0.607, "tf_acc": 0.9023}
+{"step": 423, "phase": "B", "p": 0.95, "mixed_frac": 0.9634, "loss": 3.44793, "acc": 0.2809, "sec": 0.441, "tf_acc": 0.9588}
+{"step": 424, "phase": "B", "p": 0.95, "mixed_frac": 0.9458, "loss": 3.58576, "acc": 0.2421, "sec": 0.587, "tf_acc": 0.9113}
+{"event": "transition", "step": 424, "from": "B", "to": "C", "p": 1.0, "from_p": 0.95, "reason": "step_cap", "rolling_acc": 0.2657, "threshold": 0.9}
+{"step": 425, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.29894, "acc": 0.2832, "sec": 0.448, "tf_acc": 0.9532}
+{"step": 426, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.971, "acc": 0.2057, "sec": 0.45, "tf_acc": 0.9363}
+{"step": 427, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.73312, "acc": 0.2375, "sec": 0.575, "tf_acc": 0.9429}
+{"step": 428, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.26514, "acc": 0.3145, "sec": 0.446, "tf_acc": 0.9605}
+{"step": 429, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.60442, "acc": 0.2466, "sec": 0.567, "tf_acc": 0.9409}
+{"step": 430, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.40145, "acc": 0.287, "sec": 0.383, "tf_acc": 0.9496}
+{"step": 431, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.40693, "acc": 0.2883, "sec": 0.441, "tf_acc": 0.9761}
+{"step": 432, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.3436, "acc": 0.2937, "sec": 0.37, "tf_acc": 0.9546}
+{"step": 433, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.07279, "acc": 0.333, "sec": 0.469, "tf_acc": 0.966}
+{"step": 434, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.08019, "acc": 0.3325, "sec": 1.06, "tf_acc": 0.9621}
+{"step": 435, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.35455, "acc": 0.264, "sec": 0.51, "tf_acc": 0.8899}
+{"step": 436, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.71761, "acc": 0.2457, "sec": 0.549, "tf_acc": 0.9167}
+{"step": 437, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.84067, "acc": 0.227, "sec": 0.537, "tf_acc": 0.9353}
+{"step": 438, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.8731, "acc": 0.2306, "sec": 0.544, "tf_acc": 0.9396}
+{"step": 439, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.45059, "acc": 0.2557, "sec": 0.36, "tf_acc": 0.9525}
+{"step": 440, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.23893, "acc": 0.3333, "sec": 0.365, "tf_acc": 0.9672}
+{"step": 441, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.53724, "acc": 0.2743, "sec": 0.551, "tf_acc": 0.892}
+{"step": 442, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.52788, "acc": 0.288, "sec": 0.376, "tf_acc": 0.9017}
+{"step": 443, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.70036, "acc": 0.2386, "sec": 0.539, "tf_acc": 0.9178}
+{"step": 444, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.68793, "acc": 0.2581, "sec": 0.528, "tf_acc": 0.8512}
+{"step": 445, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.36177, "acc": 0.2913, "sec": 0.449, "tf_acc": 0.8549}
+{"step": 446, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.51419, "acc": 0.2713, "sec": 0.454, "tf_acc": 0.9574}
+{"step": 447, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.37388, "acc": 0.2631, "sec": 0.524, "tf_acc": 0.9672}
+{"step": 448, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.51521, "acc": 0.2589, "sec": 0.452, "tf_acc": 0.9192}
+{"step": 449, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.7704, "acc": 0.2217, "sec": 0.512, "tf_acc": 0.9294}
+{"step": 450, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.59617, "acc": 0.2465, "sec": 0.455, "tf_acc": 0.9446}
+{"step": 451, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.30563, "acc": 0.2808, "sec": 0.521, "tf_acc": 0.9628}
+{"step": 452, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.24511, "acc": 0.3017, "sec": 0.358, "tf_acc": 0.9676}
+{"step": 453, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.44108, "acc": 0.2961, "sec": 0.523, "tf_acc": 0.9023}
+{"step": 454, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.6646, "acc": 0.2304, "sec": 0.459, "tf_acc": 0.9072}
+{"step": 455, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.54459, "acc": 0.2831, "sec": 0.624, "tf_acc": 0.9423}
+{"step": 456, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.89592, "acc": 0.2592, "sec": 0.673, "tf_acc": 0.9634}
+{"step": 457, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.24159, "acc": 0.3078, "sec": 0.558, "tf_acc": 0.9637}
+{"step": 458, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.48982, "acc": 0.2537, "sec": 0.519, "tf_acc": 0.9579}
+{"step": 459, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.36595, "acc": 0.288, "sec": 0.597, "tf_acc": 0.966}
+{"step": 460, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.63778, "acc": 0.2216, "sec": 0.525, "tf_acc": 0.9602}
+{"step": 461, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.63656, "acc": 0.2385, "sec": 0.449, "tf_acc": 0.9669}
+{"step": 462, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.52198, "acc": 0.2595, "sec": 0.459, "tf_acc": 0.9369}
+{"step": 463, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.25458, "acc": 0.292, "sec": 0.596, "tf_acc": 0.9479}
+{"step": 464, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.42785, "acc": 0.2506, "sec": 0.541, "tf_acc": 0.9447}
+{"step": 465, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.38636, "acc": 0.2627, "sec": 0.472, "tf_acc": 0.9685}
+{"step": 466, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.33837, "acc": 0.3059, "sec": 0.411, "tf_acc": 0.9752}
+{"step": 467, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.02692, "acc": 0.3431, "sec": 0.448, "tf_acc": 0.9719}
+{"step": 468, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.07717, "acc": 0.3247, "sec": 0.4, "tf_acc": 0.9333}
+{"step": 469, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.25453, "acc": 0.296, "sec": 0.429, "tf_acc": 0.9542}
+{"step": 470, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.34689, "acc": 0.2811, "sec": 0.45, "tf_acc": 0.9689}
+{"step": 471, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.13956, "acc": 0.3109, "sec": 0.373, "tf_acc": 0.9735}
+{"step": 472, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.0392, "acc": 0.3702, "sec": 0.385, "tf_acc": 0.9642}
+{"step": 473, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.10814, "acc": 0.3505, "sec": 0.528, "tf_acc": 0.9157}
+{"step": 474, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.68622, "acc": 0.2517, "sec": 0.425, "tf_acc": 0.9104}
+{"step": 475, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.4895, "acc": 0.2562, "sec": 0.534, "tf_acc": 0.9094}
+{"step": 476, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.22562, "acc": 0.2787, "sec": 0.448, "tf_acc": 0.9457}
+{"step": 477, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.14376, "acc": 0.2741, "sec": 0.455, "tf_acc": 0.9502}
+{"step": 478, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.39052, "acc": 0.2898, "sec": 0.409, "tf_acc": 0.9639}
+{"step": 479, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.54775, "acc": 0.2365, "sec": 0.454, "tf_acc": 0.9602}
+{"step": 480, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.3414, "acc": 0.2914, "sec": 0.579, "tf_acc": 0.9193}
+{"step": 481, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.13459, "acc": 0.2841, "sec": 0.621, "tf_acc": 0.9542}
+{"step": 482, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.17666, "acc": 0.3052, "sec": 0.442, "tf_acc": 0.9534}
+{"step": 483, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.99874, "acc": 0.3489, "sec": 0.413, "tf_acc": 0.9675}
+{"step": 484, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.06115, "acc": 0.3246, "sec": 0.618, "tf_acc": 0.9717}
+{"step": 485, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.12729, "acc": 0.3281, "sec": 0.564, "tf_acc": 0.975}
+{"step": 486, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.98939, "acc": 0.3588, "sec": 0.566, "tf_acc": 0.9633}
+{"step": 487, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.72808, "acc": 0.2543, "sec": 0.949, "tf_acc": 0.9339}
+{"step": 488, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.43905, "acc": 0.2642, "sec": 0.621, "tf_acc": 0.9448}
+{"step": 489, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.04311, "acc": 0.3287, "sec": 0.491, "tf_acc": 0.9608}
+{"step": 490, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.14138, "acc": 0.2878, "sec": 0.432, "tf_acc": 0.9353}
+{"step": 491, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.22944, "acc": 0.3179, "sec": 0.404, "tf_acc": 0.9466}
+{"step": 492, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.23371, "acc": 0.2924, "sec": 0.475, "tf_acc": 0.9619}
+{"step": 493, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.79402, "acc": 0.3629, "sec": 0.407, "tf_acc": 0.9716}
+{"step": 494, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.15916, "acc": 0.3266, "sec": 0.407, "tf_acc": 0.9145}
+{"step": 495, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.22674, "acc": 0.3082, "sec": 0.494, "tf_acc": 0.9649}
+{"step": 496, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.77286, "acc": 0.2238, "sec": 0.421, "tf_acc": 0.9371}
+{"step": 497, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.20499, "acc": 0.3006, "sec": 0.443, "tf_acc": 0.9363}
+{"step": 498, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.15341, "acc": 0.3033, "sec": 0.389, "tf_acc": 0.9384}
+{"step": 499, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.28983, "acc": 0.2969, "sec": 0.413, "tf_acc": 0.8445}
+{"step": 500, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.50445, "acc": 0.2493, "sec": 0.441, "tf_acc": 0.9221}
+{"step": 501, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.24386, "acc": 0.3049, "sec": 0.455, "tf_acc": 0.8569}
+{"step": 502, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.15906, "acc": 0.2852, "sec": 0.481, "tf_acc": 0.8556}
+{"step": 503, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.99939, "acc": 0.337, "sec": 0.462, "tf_acc": 0.9692}
+{"step": 504, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.39953, "acc": 0.2924, "sec": 0.407, "tf_acc": 0.9799}
+{"step": 505, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.08846, "acc": 0.3022, "sec": 0.274, "tf_acc": 0.9677}
+{"step": 506, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.04229, "acc": 0.3106, "sec": 0.343, "tf_acc": 0.9708}
+{"step": 507, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.13271, "acc": 0.3221, "sec": 0.413, "tf_acc": 0.9704}
+{"step": 508, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.98991, "acc": 0.3371, "sec": 0.34, "tf_acc": 0.9589}
+{"step": 509, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.11848, "acc": 0.3153, "sec": 0.482, "tf_acc": 0.958}
+{"step": 510, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.34431, "acc": 0.2789, "sec": 0.459, "tf_acc": 0.8414}
+{"step": 511, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.02202, "acc": 0.3093, "sec": 0.512, "tf_acc": 0.9295}
+{"step": 512, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.10317, "acc": 0.3218, "sec": 0.524, "tf_acc": 0.9148}
+{"step": 513, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.67786, "acc": 0.3981, "sec": 0.35, "tf_acc": 0.9575}
+{"step": 514, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.05365, "acc": 0.3489, "sec": 0.467, "tf_acc": 0.9612}
+{"step": 515, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.98264, "acc": 0.3365, "sec": 0.374, "tf_acc": 0.9653}
+{"step": 516, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.17283, "acc": 0.292, "sec": 0.612, "tf_acc": 0.9587}
+{"step": 517, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.06898, "acc": 0.3131, "sec": 0.533, "tf_acc": 0.9706}
+{"step": 518, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.08424, "acc": 0.3122, "sec": 0.497, "tf_acc": 0.898}
+{"step": 519, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.21724, "acc": 0.3315, "sec": 0.418, "tf_acc": 0.9491}
+{"step": 520, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.85275, "acc": 0.3478, "sec": 0.474, "tf_acc": 0.9607}
+{"step": 521, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.95401, "acc": 0.3421, "sec": 0.644, "tf_acc": 0.9697}
+{"step": 522, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.38604, "acc": 0.4472, "sec": 0.479, "tf_acc": 0.942}
+{"step": 523, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.08857, "acc": 0.3124, "sec": 0.439, "tf_acc": 0.9765}
+{"step": 524, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.92413, "acc": 0.3606, "sec": 0.577, "tf_acc": 0.965}
+{"step": 525, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.8784, "acc": 0.3643, "sec": 0.541, "tf_acc": 0.9497}
+{"step": 526, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.91218, "acc": 0.3512, "sec": 0.501, "tf_acc": 0.9643}
+{"step": 527, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.14587, "acc": 0.313, "sec": 0.523, "tf_acc": 0.964}
+{"step": 528, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.78958, "acc": 0.3965, "sec": 0.508, "tf_acc": 0.9706}
+{"step": 529, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.80078, "acc": 0.3799, "sec": 1.611, "tf_acc": 0.956}
+{"step": 530, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.82497, "acc": 0.3758, "sec": 1.098, "tf_acc": 0.977}
+{"step": 531, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.26558, "acc": 0.2805, "sec": 0.795, "tf_acc": 0.9655}
+{"step": 532, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.96826, "acc": 0.3473, "sec": 0.66, "tf_acc": 0.9412}
+{"step": 533, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.37213, "acc": 0.3206, "sec": 0.626, "tf_acc": 0.8909}
+{"step": 534, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.337, "acc": 0.2929, "sec": 0.535, "tf_acc": 0.9651}
+{"step": 535, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.22103, "acc": 0.345, "sec": 0.725, "tf_acc": 0.9089}
+{"step": 536, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.92412, "acc": 0.3592, "sec": 0.485, "tf_acc": 0.9803}
+{"step": 537, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.38142, "acc": 0.2868, "sec": 0.463, "tf_acc": 0.9602}
+{"step": 538, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.56144, "acc": 0.2729, "sec": 0.547, "tf_acc": 0.9362}
+{"step": 539, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.5783, "acc": 0.4066, "sec": 0.468, "tf_acc": 0.966}
+{"step": 540, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.11591, "acc": 0.3047, "sec": 0.478, "tf_acc": 0.9317}
+{"step": 541, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.30294, "acc": 0.2923, "sec": 0.691, "tf_acc": 0.966}
+{"step": 542, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.19072, "acc": 0.3206, "sec": 0.694, "tf_acc": 0.9685}
+{"step": 543, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.06818, "acc": 0.3197, "sec": 0.493, "tf_acc": 0.8959}
+{"step": 544, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.8054, "acc": 0.3823, "sec": 0.491, "tf_acc": 0.9471}
+{"step": 545, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.01809, "acc": 0.3277, "sec": 0.418, "tf_acc": 0.9373}
+{"step": 546, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.38655, "acc": 0.452, "sec": 0.446, "tf_acc": 0.9868}
+{"step": 547, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.98097, "acc": 0.3312, "sec": 0.484, "tf_acc": 0.9363}
+{"step": 548, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.80702, "acc": 0.3556, "sec": 0.536, "tf_acc": 0.964}
+{"step": 549, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.33942, "acc": 0.2589, "sec": 0.706, "tf_acc": 0.9518}
+{"step": 550, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.72589, "acc": 0.3895, "sec": 0.522, "tf_acc": 0.9574}
+{"step": 551, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.21767, "acc": 0.2767, "sec": 0.446, "tf_acc": 0.948}
+{"step": 552, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.32889, "acc": 0.2685, "sec": 0.604, "tf_acc": 0.9351}
+{"step": 553, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.23208, "acc": 0.4615, "sec": 0.324, "tf_acc": 0.9546}
+{"step": 554, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.68268, "acc": 0.3766, "sec": 0.453, "tf_acc": 0.9656}
+{"step": 555, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.21156, "acc": 0.3053, "sec": 0.414, "tf_acc": 0.9789}
+{"step": 556, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.98684, "acc": 0.3229, "sec": 0.523, "tf_acc": 0.9742}
+{"step": 557, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.88946, "acc": 0.3689, "sec": 0.605, "tf_acc": 0.9698}
+{"step": 558, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.09693, "acc": 0.3276, "sec": 0.627, "tf_acc": 0.9615}
+{"step": 559, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.83035, "acc": 0.3546, "sec": 0.496, "tf_acc": 0.9609}
+{"step": 560, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.20862, "acc": 0.3097, "sec": 0.62, "tf_acc": 0.9408}
+{"step": 561, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.85842, "acc": 0.3444, "sec": 0.537, "tf_acc": 0.9659}
+{"step": 562, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.64382, "acc": 0.3759, "sec": 0.582, "tf_acc": 0.9548}
+{"step": 563, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.04748, "acc": 0.3106, "sec": 0.708, "tf_acc": 0.9734}
+{"step": 564, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.07568, "acc": 0.3142, "sec": 0.771, "tf_acc": 0.9655}
+{"step": 565, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.17075, "acc": 0.3108, "sec": 0.79, "tf_acc": 0.9728}
+{"step": 566, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.07882, "acc": 0.3504, "sec": 0.731, "tf_acc": 0.9634}
+{"step": 567, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.75197, "acc": 0.399, "sec": 0.734, "tf_acc": 0.95}
+{"step": 568, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.9782, "acc": 0.3244, "sec": 0.834, "tf_acc": 0.9686}
+{"step": 569, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.14521, "acc": 0.3157, "sec": 0.718, "tf_acc": 0.9628}
+{"step": 570, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.75978, "acc": 0.3874, "sec": 0.522, "tf_acc": 0.9802}
+{"step": 571, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.63139, "acc": 0.4042, "sec": 0.595, "tf_acc": 0.9536}
+{"step": 572, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.90445, "acc": 0.3422, "sec": 0.545, "tf_acc": 0.9597}
+{"step": 573, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.71693, "acc": 0.3755, "sec": 0.501, "tf_acc": 0.9167}
+{"step": 574, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.88176, "acc": 0.3399, "sec": 0.604, "tf_acc": 0.9715}
+{"step": 575, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.06744, "acc": 0.3546, "sec": 0.489, "tf_acc": 0.9615}
+{"step": 576, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.35381, "acc": 0.2711, "sec": 0.601, "tf_acc": 0.971}
+{"step": 577, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.96968, "acc": 0.324, "sec": 0.525, "tf_acc": 0.9683}
+{"step": 578, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.37049, "acc": 0.4356, "sec": 0.511, "tf_acc": 0.9596}
+{"step": 579, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.88363, "acc": 0.3304, "sec": 0.655, "tf_acc": 0.9357}
+{"step": 580, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.27978, "acc": 0.2667, "sec": 0.82, "tf_acc": 0.9551}
+{"step": 581, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.15694, "acc": 0.3108, "sec": 0.5, "tf_acc": 0.9464}
+{"step": 582, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.79662, "acc": 0.3632, "sec": 0.582, "tf_acc": 0.979}
+{"step": 583, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.55586, "acc": 0.423, "sec": 0.593, "tf_acc": 0.98}
+{"step": 584, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.09773, "acc": 0.2984, "sec": 0.629, "tf_acc": 0.9783}
+{"step": 585, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.70929, "acc": 0.3768, "sec": 0.536, "tf_acc": 0.9747}
+{"step": 586, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.20937, "acc": 0.3029, "sec": 0.785, "tf_acc": 0.9841}
+{"step": 587, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.81696, "acc": 0.3735, "sec": 0.504, "tf_acc": 0.9602}
+{"step": 588, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.66574, "acc": 0.4, "sec": 0.48, "tf_acc": 0.9292}
+{"step": 589, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.09325, "acc": 0.339, "sec": 0.915, "tf_acc": 0.9467}
+{"step": 590, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.8948, "acc": 0.32, "sec": 0.563, "tf_acc": 0.9679}
+{"step": 591, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.05629, "acc": 0.29, "sec": 0.991, "tf_acc": 0.958}
+{"step": 592, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.69621, "acc": 0.3641, "sec": 0.976, "tf_acc": 0.9631}
+{"step": 593, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.86203, "acc": 0.3564, "sec": 1.12, "tf_acc": 0.9422}
+{"step": 594, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.96366, "acc": 0.3404, "sec": 1.369, "tf_acc": 0.9567}
+{"step": 595, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.73454, "acc": 0.3828, "sec": 0.96, "tf_acc": 0.9677}
+{"step": 596, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.49117, "acc": 0.2675, "sec": 1.097, "tf_acc": 0.9687}
+{"step": 597, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.65628, "acc": 0.3592, "sec": 0.868, "tf_acc": 0.9704}
+{"step": 598, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.0363, "acc": 0.3101, "sec": 1.086, "tf_acc": 0.9813}
+{"step": 599, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.14977, "acc": 0.316, "sec": 0.766, "tf_acc": 0.9889}
+{"step": 600, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.11049, "acc": 0.3165, "sec": 0.941, "tf_acc": 0.9705}
+{"step": 601, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.45352, "acc": 0.4061, "sec": 0.797, "tf_acc": 0.9338}
+{"step": 602, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.4487, "acc": 0.4079, "sec": 0.56, "tf_acc": 0.9619}
+{"step": 603, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.09323, "acc": 0.5006, "sec": 0.917, "tf_acc": 0.939}
+{"step": 604, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.91392, "acc": 0.3336, "sec": 0.978, "tf_acc": 0.9417}
+{"step": 605, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.88111, "acc": 0.3738, "sec": 1.011, "tf_acc": 0.9748}
+{"step": 606, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.64422, "acc": 0.373, "sec": 0.82, "tf_acc": 0.9816}
+{"step": 607, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.76777, "acc": 0.3873, "sec": 0.918, "tf_acc": 0.9773}
+{"step": 608, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.96602, "acc": 0.3192, "sec": 0.75, "tf_acc": 0.9733}
+{"step": 609, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.15402, "acc": 0.3289, "sec": 0.989, "tf_acc": 0.9696}
+{"step": 610, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.31625, "acc": 0.287, "sec": 1.006, "tf_acc": 0.9597}
+{"step": 611, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.60509, "acc": 0.3787, "sec": 0.965, "tf_acc": 0.9816}
+{"step": 612, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.64625, "acc": 0.3991, "sec": 0.581, "tf_acc": 0.9269}
+{"step": 613, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.42242, "acc": 0.4272, "sec": 0.742, "tf_acc": 0.9814}
+{"step": 614, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.76558, "acc": 0.4064, "sec": 1.072, "tf_acc": 0.978}
+{"step": 615, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.33588, "acc": 0.509, "sec": 0.569, "tf_acc": 0.9549}
+{"step": 616, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.83667, "acc": 0.367, "sec": 0.757, "tf_acc": 0.9466}
+{"step": 617, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.18691, "acc": 0.3152, "sec": 0.641, "tf_acc": 0.9394}
+{"step": 618, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.76896, "acc": 0.373, "sec": 0.556, "tf_acc": 0.9744}
+{"step": 619, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.11096, "acc": 0.2986, "sec": 0.603, "tf_acc": 0.9756}
+{"step": 620, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.82429, "acc": 0.3397, "sec": 0.558, "tf_acc": 0.9743}
+{"step": 621, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.80092, "acc": 0.3608, "sec": 0.544, "tf_acc": 0.975}
+{"step": 622, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.73246, "acc": 0.372, "sec": 0.589, "tf_acc": 0.943}
+{"step": 623, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.57316, "acc": 0.3941, "sec": 0.574, "tf_acc": 0.9801}
+{"step": 624, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.70689, "acc": 0.3771, "sec": 0.746, "tf_acc": 0.9766}
+{"step": 625, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.74172, "acc": 0.3187, "sec": 0.465, "tf_acc": 0.9236}
+{"step": 626, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.8186, "acc": 0.394, "sec": 0.574, "tf_acc": 0.9894}
+{"step": 627, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.47185, "acc": 0.4359, "sec": 0.466, "tf_acc": 0.9445}
+{"step": 628, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.44002, "acc": 0.4358, "sec": 0.434, "tf_acc": 0.9748}
+{"step": 629, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.7429, "acc": 0.3701, "sec": 0.63, "tf_acc": 0.9377}
+{"step": 630, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.68545, "acc": 0.3607, "sec": 0.546, "tf_acc": 0.9856}
+{"step": 631, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.33232, "acc": 0.4533, "sec": 0.599, "tf_acc": 0.9758}
+{"step": 632, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.47651, "acc": 0.4194, "sec": 0.547, "tf_acc": 0.9745}
+{"step": 633, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.61793, "acc": 0.3868, "sec": 0.552, "tf_acc": 0.9856}
+{"step": 634, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.34756, "acc": 0.2733, "sec": 0.614, "tf_acc": 0.9357}
+{"step": 635, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.0008, "acc": 0.3405, "sec": 0.607, "tf_acc": 0.9793}
+{"step": 636, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.59681, "acc": 0.3859, "sec": 0.891, "tf_acc": 0.9351}
+{"step": 637, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.61219, "acc": 0.3765, "sec": 1.275, "tf_acc": 0.9745}
+{"step": 638, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.70772, "acc": 0.4232, "sec": 0.75, "tf_acc": 0.985}
+{"step": 639, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.61772, "acc": 0.4063, "sec": 0.681, "tf_acc": 0.9499}
+{"step": 640, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.05234, "acc": 0.2929, "sec": 0.85, "tf_acc": 0.9509}
+{"step": 641, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.43818, "acc": 0.4303, "sec": 0.699, "tf_acc": 0.9406}
+{"step": 642, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.88661, "acc": 0.337, "sec": 0.92, "tf_acc": 0.9523}
+{"step": 643, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.61133, "acc": 0.4048, "sec": 0.692, "tf_acc": 0.9324}
+{"step": 644, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.51519, "acc": 0.4048, "sec": 0.923, "tf_acc": 0.9692}
+{"step": 645, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.33863, "acc": 0.4376, "sec": 0.609, "tf_acc": 0.9536}
+{"step": 646, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.5136, "acc": 0.3845, "sec": 0.862, "tf_acc": 0.9131}
+{"step": 647, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.71922, "acc": 0.3674, "sec": 1.227, "tf_acc": 0.9673}
+{"step": 648, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.45301, "acc": 0.4215, "sec": 0.663, "tf_acc": 0.9426}
+{"step": 649, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.09925, "acc": 0.4759, "sec": 1.094, "tf_acc": 0.9805}
+{"step": 650, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.51031, "acc": 0.4127, "sec": 0.799, "tf_acc": 0.9495}
+{"step": 651, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.66982, "acc": 0.3731, "sec": 0.849, "tf_acc": 0.9652}
+{"step": 652, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.86331, "acc": 0.3524, "sec": 1.069, "tf_acc": 0.9769}
+{"step": 653, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.61688, "acc": 0.4116, "sec": 0.745, "tf_acc": 0.9852}
+{"step": 654, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.55827, "acc": 0.4301, "sec": 0.849, "tf_acc": 0.9882}
+{"step": 655, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.72123, "acc": 0.4598, "sec": 0.848, "tf_acc": 0.9859}
+{"step": 656, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.37688, "acc": 0.4279, "sec": 0.786, "tf_acc": 0.9648}
+{"step": 657, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.09454, "acc": 0.3352, "sec": 0.93, "tf_acc": 0.904}
+{"step": 658, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.60169, "acc": 0.3884, "sec": 0.733, "tf_acc": 0.9402}
+{"step": 659, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.47209, "acc": 0.3965, "sec": 0.903, "tf_acc": 0.9863}
+{"step": 660, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.65854, "acc": 0.4043, "sec": 1.121, "tf_acc": 0.9861}
+{"step": 661, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.4708, "acc": 0.428, "sec": 1.007, "tf_acc": 0.9767}
+{"step": 662, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.7214, "acc": 0.3718, "sec": 1.251, "tf_acc": 0.9503}
+{"step": 663, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.37087, "acc": 0.4642, "sec": 0.861, "tf_acc": 0.9779}
+{"step": 664, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.00533, "acc": 0.4958, "sec": 0.824, "tf_acc": 0.9892}
+{"step": 665, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.62557, "acc": 0.4239, "sec": 0.859, "tf_acc": 0.9608}
+{"step": 666, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.41018, "acc": 0.468, "sec": 0.968, "tf_acc": 0.9787}
+{"step": 667, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.53439, "acc": 0.4272, "sec": 0.922, "tf_acc": 0.9751}
+{"step": 668, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.67469, "acc": 0.4124, "sec": 0.941, "tf_acc": 0.9675}
+{"step": 669, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.09122, "acc": 0.3455, "sec": 0.872, "tf_acc": 0.9297}
+{"step": 670, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.32381, "acc": 0.4429, "sec": 1.025, "tf_acc": 0.8986}
+{"step": 671, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.31663, "acc": 0.4412, "sec": 1.322, "tf_acc": 0.9769}
+{"step": 672, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.2885, "acc": 0.4507, "sec": 0.905, "tf_acc": 0.9507}
+{"step": 673, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.1875, "acc": 0.4675, "sec": 0.863, "tf_acc": 0.9776}
+{"step": 674, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.93717, "acc": 0.3827, "sec": 1.143, "tf_acc": 0.9813}
+{"step": 675, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.67883, "acc": 0.4007, "sec": 1.284, "tf_acc": 0.9754}
+{"step": 676, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 1.87941, "acc": 0.5651, "sec": 1.602, "tf_acc": 0.9578}
+{"step": 677, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.65829, "acc": 0.374, "sec": 0.667, "tf_acc": 0.9619}
+{"step": 678, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.16875, "acc": 0.489, "sec": 0.823, "tf_acc": 0.9868}
+{"step": 679, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.70159, "acc": 0.3827, "sec": 1.03, "tf_acc": 0.9887}
+{"step": 680, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.4258, "acc": 0.4424, "sec": 0.969, "tf_acc": 0.9759}
+{"step": 681, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.94063, "acc": 0.3387, "sec": 1.13, "tf_acc": 0.9633}
+{"step": 682, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.89977, "acc": 0.3455, "sec": 0.792, "tf_acc": 0.9818}
+{"step": 683, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.85824, "acc": 0.351, "sec": 1.0, "tf_acc": 0.9167}
+{"step": 684, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.47606, "acc": 0.4907, "sec": 0.814, "tf_acc": 0.9246}
+{"step": 685, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.73622, "acc": 0.3535, "sec": 0.796, "tf_acc": 0.9496}
+{"step": 686, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.31352, "acc": 0.4821, "sec": 0.734, "tf_acc": 0.9438}
+{"step": 687, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.20664, "acc": 0.3328, "sec": 0.95, "tf_acc": 0.9638}
+{"step": 688, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.46301, "acc": 0.4128, "sec": 0.943, "tf_acc": 0.9688}
+{"step": 689, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.99134, "acc": 0.3377, "sec": 0.956, "tf_acc": 0.981}
+{"step": 690, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.54011, "acc": 0.4056, "sec": 0.819, "tf_acc": 0.9814}
+{"step": 691, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.11849, "acc": 0.4803, "sec": 0.426, "tf_acc": 0.9557}
+{"step": 692, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.30256, "acc": 0.4664, "sec": 0.667, "tf_acc": 0.9729}
+{"step": 693, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.79599, "acc": 0.3682, "sec": 0.888, "tf_acc": 0.9783}
+{"step": 694, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.69252, "acc": 0.3891, "sec": 0.931, "tf_acc": 0.9709}
+{"step": 695, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.48733, "acc": 0.4189, "sec": 0.813, "tf_acc": 0.9841}
+{"step": 696, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.15364, "acc": 0.476, "sec": 0.776, "tf_acc": 0.9858}
+{"step": 697, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.49276, "acc": 0.4132, "sec": 0.715, "tf_acc": 0.9854}
+{"step": 698, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.82332, "acc": 0.3592, "sec": 0.81, "tf_acc": 0.9848}
+{"step": 699, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.36406, "acc": 0.4368, "sec": 0.743, "tf_acc": 0.9831}
+{"step": 700, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.919, "acc": 0.3435, "sec": 0.694, "tf_acc": 0.9884}
+{"step": 701, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.62967, "acc": 0.4446, "sec": 0.776, "tf_acc": 0.9832}
+{"step": 702, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.73406, "acc": 0.3785, "sec": 0.604, "tf_acc": 0.9356}
+{"step": 703, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.29171, "acc": 0.434, "sec": 0.722, "tf_acc": 0.9567}
+{"step": 704, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.38187, "acc": 0.4572, "sec": 0.731, "tf_acc": 0.9852}
+{"step": 705, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.43962, "acc": 0.3709, "sec": 0.826, "tf_acc": 0.9664}
+{"step": 706, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.75876, "acc": 0.3812, "sec": 0.847, "tf_acc": 0.9691}
+{"step": 707, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.40769, "acc": 0.4221, "sec": 0.491, "tf_acc": 0.9661}
+{"step": 708, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.69517, "acc": 0.4148, "sec": 0.757, "tf_acc": 0.9706}
+{"step": 709, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.57574, "acc": 0.3924, "sec": 0.758, "tf_acc": 0.9202}
+{"step": 710, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.70007, "acc": 0.3747, "sec": 0.607, "tf_acc": 0.9677}
+{"step": 711, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.4115, "acc": 0.4245, "sec": 0.519, "tf_acc": 0.9839}
+{"step": 712, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.59752, "acc": 0.4024, "sec": 0.697, "tf_acc": 0.9743}
+{"step": 713, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.77896, "acc": 0.4055, "sec": 0.656, "tf_acc": 0.9832}
+{"step": 714, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.62619, "acc": 0.3724, "sec": 0.545, "tf_acc": 0.9773}
+{"step": 715, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.61647, "acc": 0.4065, "sec": 0.728, "tf_acc": 0.9712}
+{"step": 716, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.8905, "acc": 0.3288, "sec": 0.518, "tf_acc": 0.9252}
+{"step": 717, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.71817, "acc": 0.3923, "sec": 0.701, "tf_acc": 0.9041}
+{"step": 718, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.5728, "acc": 0.4075, "sec": 0.517, "tf_acc": 0.8862}
+{"step": 719, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.51078, "acc": 0.4442, "sec": 0.508, "tf_acc": 0.9123}
+{"step": 720, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.59029, "acc": 0.4042, "sec": 0.688, "tf_acc": 0.9804}
+{"step": 721, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.6639, "acc": 0.409, "sec": 0.54, "tf_acc": 0.9758}
+{"step": 722, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.48289, "acc": 0.4516, "sec": 0.517, "tf_acc": 0.9805}
+{"step": 723, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.10069, "acc": 0.2873, "sec": 0.553, "tf_acc": 0.9857}
+{"step": 724, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.67377, "acc": 0.4066, "sec": 0.361, "tf_acc": 0.9808}
+{"step": 725, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.84815, "acc": 0.4014, "sec": 0.347, "tf_acc": 0.9751}
+{"step": 726, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.03016, "acc": 0.3829, "sec": 0.572, "tf_acc": 0.9856}
+{"step": 727, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.52055, "acc": 0.3986, "sec": 0.584, "tf_acc": 0.9856}
+{"step": 728, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.37275, "acc": 0.429, "sec": 0.533, "tf_acc": 0.9405}
+{"step": 729, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.19032, "acc": 0.4826, "sec": 0.449, "tf_acc": 0.9796}
+{"step": 730, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.82596, "acc": 0.3517, "sec": 0.531, "tf_acc": 0.972}
+{"step": 731, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.44463, "acc": 0.4064, "sec": 0.531, "tf_acc": 0.9251}
+{"step": 732, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.86676, "acc": 0.3307, "sec": 0.653, "tf_acc": 0.9744}
+{"step": 733, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.86223, "acc": 0.3431, "sec": 0.553, "tf_acc": 0.9108}
+{"step": 734, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.50002, "acc": 0.3939, "sec": 0.655, "tf_acc": 0.9732}
+{"step": 735, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.46232, "acc": 0.4184, "sec": 0.662, "tf_acc": 0.9797}
+{"step": 736, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.79714, "acc": 0.3836, "sec": 0.495, "tf_acc": 0.9724}
+{"step": 737, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.22489, "acc": 0.4594, "sec": 0.502, "tf_acc": 0.9733}
+{"step": 738, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.40388, "acc": 0.4324, "sec": 0.665, "tf_acc": 0.9804}
+{"step": 739, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.05609, "acc": 0.5216, "sec": 0.723, "tf_acc": 0.9897}
+{"step": 740, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.50001, "acc": 0.4314, "sec": 0.746, "tf_acc": 0.991}
+{"step": 741, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.21867, "acc": 0.477, "sec": 0.788, "tf_acc": 0.9897}
+{"step": 742, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.211, "acc": 0.4823, "sec": 0.673, "tf_acc": 0.9384}
+{"step": 743, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.22183, "acc": 0.4809, "sec": 0.611, "tf_acc": 0.9889}
+{"step": 744, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.25164, "acc": 0.4726, "sec": 0.648, "tf_acc": 0.9934}
+{"step": 745, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.2598, "acc": 0.468, "sec": 0.563, "tf_acc": 0.9828}
+{"step": 746, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.78582, "acc": 0.3684, "sec": 0.851, "tf_acc": 0.9813}
+{"step": 747, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.9112, "acc": 0.4068, "sec": 0.823, "tf_acc": 0.9847}
+{"step": 748, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.60135, "acc": 0.3843, "sec": 0.752, "tf_acc": 0.9521}
+{"step": 749, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 1.45301, "acc": 0.624, "sec": 0.606, "tf_acc": 0.9909}
+{"step": 750, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.49273, "acc": 0.4417, "sec": 0.732, "tf_acc": 0.983}
+{"step": 751, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.8378, "acc": 0.3627, "sec": 0.717, "tf_acc": 0.9461}
+{"step": 752, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.79875, "acc": 0.3977, "sec": 0.803, "tf_acc": 0.9823}
+{"step": 753, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.6775, "acc": 0.3679, "sec": 0.883, "tf_acc": 0.982}
+{"step": 754, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.19138, "acc": 0.4781, "sec": 0.541, "tf_acc": 0.9786}
+{"step": 755, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.10232, "acc": 0.4693, "sec": 0.59, "tf_acc": 0.9725}
+{"step": 756, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.45674, "acc": 0.4071, "sec": 0.659, "tf_acc": 0.9752}
+{"step": 757, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.03904, "acc": 0.5118, "sec": 0.683, "tf_acc": 0.9657}
+{"step": 758, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.44682, "acc": 0.427, "sec": 0.804, "tf_acc": 0.9784}
+{"step": 759, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 1.86407, "acc": 0.5316, "sec": 0.813, "tf_acc": 0.9755}
+{"step": 760, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.69245, "acc": 0.4278, "sec": 0.808, "tf_acc": 0.8904}
+{"step": 761, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.59191, "acc": 0.4068, "sec": 0.58, "tf_acc": 0.9678}
+{"step": 762, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.32278, "acc": 0.4794, "sec": 0.737, "tf_acc": 0.9873}
+{"step": 763, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.74137, "acc": 0.3757, "sec": 0.602, "tf_acc": 0.9825}
+{"step": 764, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.25811, "acc": 0.4911, "sec": 0.768, "tf_acc": 0.9556}
+{"step": 765, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.76641, "acc": 0.3909, "sec": 0.88, "tf_acc": 0.9705}
+{"step": 766, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.57962, "acc": 0.4145, "sec": 0.598, "tf_acc": 0.9733}
+{"step": 767, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.35451, "acc": 0.4767, "sec": 0.59, "tf_acc": 0.9334}
+{"step": 768, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 1.78922, "acc": 0.5567, "sec": 0.527, "tf_acc": 0.9815}
+{"step": 769, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 1.68208, "acc": 0.576, "sec": 0.509, "tf_acc": 0.9712}
+{"step": 770, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.10694, "acc": 0.5037, "sec": 0.596, "tf_acc": 0.9736}
+{"step": 771, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.21571, "acc": 0.4957, "sec": 0.512, "tf_acc": 0.9538}
+{"step": 772, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.79483, "acc": 0.3436, "sec": 0.728, "tf_acc": 0.9511}
+{"step": 773, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.27471, "acc": 0.4551, "sec": 0.622, "tf_acc": 0.9725}
+{"step": 774, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.63193, "acc": 0.403, "sec": 0.712, "tf_acc": 0.977}
+{"step": 775, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.31397, "acc": 0.4847, "sec": 0.706, "tf_acc": 0.9736}
+{"step": 776, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.7209, "acc": 0.3931, "sec": 0.708, "tf_acc": 0.968}
+{"step": 777, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.67122, "acc": 0.3537, "sec": 0.753, "tf_acc": 0.9678}
+{"step": 778, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.61746, "acc": 0.4005, "sec": 0.628, "tf_acc": 0.9398}
+{"step": 779, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.68567, "acc": 0.3857, "sec": 0.654, "tf_acc": 0.9789}
+{"step": 780, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.33076, "acc": 0.4363, "sec": 0.485, "tf_acc": 0.9773}
+{"step": 781, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.03199, "acc": 0.5017, "sec": 0.405, "tf_acc": 0.9582}
+{"step": 782, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.40951, "acc": 0.4333, "sec": 0.521, "tf_acc": 0.9873}
+{"step": 783, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.42455, "acc": 0.4196, "sec": 0.589, "tf_acc": 0.968}
+{"step": 784, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.66251, "acc": 0.3697, "sec": 0.469, "tf_acc": 0.9501}
+{"step": 785, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.31411, "acc": 0.4164, "sec": 0.55, "tf_acc": 0.9868}
+{"step": 786, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.47512, "acc": 0.3972, "sec": 0.503, "tf_acc": 0.9281}
+{"step": 787, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.33189, "acc": 0.45, "sec": 0.524, "tf_acc": 0.9752}
+{"step": 788, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 1.74159, "acc": 0.5645, "sec": 0.408, "tf_acc": 0.9805}
+{"step": 789, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.36883, "acc": 0.4858, "sec": 0.443, "tf_acc": 0.9658}
+{"step": 790, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.53238, "acc": 0.3688, "sec": 0.626, "tf_acc": 0.9817}
+{"step": 791, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.44779, "acc": 0.4018, "sec": 0.51, "tf_acc": 0.9697}
+{"step": 792, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.28919, "acc": 0.4647, "sec": 0.638, "tf_acc": 0.9891}
+{"step": 793, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.29126, "acc": 0.4763, "sec": 0.768, "tf_acc": 0.9818}
+{"step": 794, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 1.96591, "acc": 0.5555, "sec": 0.713, "tf_acc": 0.9839}
+{"step": 795, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 1.98318, "acc": 0.5257, "sec": 1.154, "tf_acc": 0.9665}
+{"step": 796, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.22098, "acc": 0.4945, "sec": 1.563, "tf_acc": 0.9751}
+{"step": 797, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 1.9164, "acc": 0.5321, "sec": 2.358, "tf_acc": 0.9818}
+{"step": 798, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.57994, "acc": 0.403, "sec": 1.549, "tf_acc": 0.9688}
+{"step": 799, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.80185, "acc": 0.383, "sec": 1.943, "tf_acc": 0.9742}

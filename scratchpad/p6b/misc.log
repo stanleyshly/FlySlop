@@ -1,0 +1,19 @@
+connectome mix ok frac 1.0 0.02 s
+controls: cfg_hash=a809d97f97c3 steps=40 seeds=[0, 1] data=dataset; sources={"authored/sv": 21, "humaneval/py": 164, "mbpp/py": 974, "rtllm/sv": 50, "verilogeval/sv": 156}
+
+| kind | trainable | token_acc | parse | pass | real-minus-kind token_acc CI95 |
+|---|---|---|---|---|---|
+| gru | 680483 | 0.059+-0.019 | 0.000+-0.000 | 0.000+-0.000 | - |
+
+['a809d97f97c3', 'a809d97f97c3']
+{"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 7.00822, "acc": 0.0, "sec": 0.112}
+{"step": 5, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.24399, "acc": 0.1536, "sec": 0.095}
+{"step": 9, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 5.70879, "acc": 0.1201, "sec": 0.09}
+{"step": 13, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 4.88792, "acc": 0.1887, "sec": 0.108}
+{"step": 17, "phase": "B", "p": 0.25, "mixed_frac": 0.2476, "loss": 4.71529, "acc": 0.2136, "sec": 0.165}
+{"step": 21, "phase": "B", "p": 0.5, "mixed_frac": 0.5119, "loss": 5.66914, "acc": 0.0909, "sec": 0.151}
+{"step": 25, "phase": "B", "p": 0.75, "mixed_frac": 0.7692, "loss": 5.34447, "acc": 0.1098, "sec": 0.107}
+{"step": 29, "phase": "B", "p": 0.95, "mixed_frac": 0.9601, "loss": 5.3782, "acc": 0.0782, "sec": 0.169}
+{"step": 33, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 5.28674, "acc": 0.0822, "sec": 0.15}
+{"step": 37, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 5.38472, "acc": 0.0921, "sec": 0.145}
+edit overfit {"token_acc": 0.9762, "nll": 0.0821, "first_round_ok": 0.8333, "replan_reach": 0.8333, "replan_within_ratio": 0.8333, "act_exact_first": 0.8333, "mean_cost_ratio": 1.0, "n_eval": 48, "rounds": 3} 54.8

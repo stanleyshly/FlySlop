@@ -1,0 +1,27 @@
+data: dataset-fallback (oracle train pairs 4 < 200); sources={"authored/sv": 21, "humaneval/py": 164, "mbpp/py": 974, "rtllm/sv": 50, "verilogeval/sv": 156} {'train': 1111, 'val': 113, 'test': 141}
+[real/s0] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.98347, "acc": 0.0034, "sec": 0.655}
+[real/s0] {"event": "transition", "step": 10, "from": "A", "to": "B", "p": 0.25, "from_p": 0.0, "reason": "step_cap", "rolling_acc": 0.0101, "threshold": 0.97}
+[real/s0] {"event": "transition", "step": 13, "from": "B", "to": "B", "p": 0.5, "from_p": 0.25, "reason": "step_cap", "rolling_acc": 0.0453, "threshold": 0.9}
+[real/s0] {"event": "transition", "step": 16, "from": "B", "to": "B", "p": 0.75, "from_p": 0.5, "reason": "step_cap", "rolling_acc": 0.0487, "threshold": 0.9}
+[real/s0] {"event": "transition", "step": 19, "from": "B", "to": "B", "p": 0.95, "from_p": 0.75, "reason": "step_cap", "rolling_acc": 0.0759, "threshold": 0.9}
+[real/s0] {"event": "transition", "step": 22, "from": "B", "to": "C", "p": 1.0, "from_p": 0.95, "reason": "step_cap", "rolling_acc": 0.0418, "threshold": 0.9}
+{
+ "kind": "real",
+ "steps": 30,
+ "stopped": "steps",
+ "seconds": 35.5,
+ "final": {
+  "token_acc": 0.0318,
+  "nll": 6.2932,
+  "n_val": 8,
+  "gen_n": 4,
+  "gen_parse_rate": 0.0,
+  "gen_pass_rate": 0.0,
+  "gen_exact_rate": 0.0,
+  "gen_token_acc": 0.0149
+ }
+}
+peak RSS 0.37 GB
+real 38.79
+user 123.03
+sys 3.50

@@ -1,0 +1,139 @@
+{
+ "circuit_hash": "422b78d76143ebae60f50032d7fa291e500093d93f27b07fe16f1fb90ff83a56",
+ "code_hash": "4f489b98e80fd55d9fed120b29f4b81c9d4f3b4b810e5f37673a3f77a38d2bed",
+ "config": {
+  "action_mode": "mn",
+  "budget": {
+   "steps": 200000,
+   "wall_s": 150
+  },
+  "exclusive": false,
+  "finetune_on_failures": false,
+  "ft_steps": 50,
+  "ft_tasks": 64,
+  "gate": {
+   "pass_at_1_floor": 0.0,
+   "physical_exact_rate": 0.0
+  },
+  "id": 7,
+  "level": "symbolic+physical",
+  "max_new": 256,
+  "max_py": null,
+  "max_sv": null,
+  "module": "training.stages.stage7_microprograms",
+  "name": "Autonomous micro-programs",
+  "phys_max_chars": 80,
+  "phys_tasks": 3,
+  "run_timeout": 20.0,
+  "smoke_gates": "relaxed",
+  "smoke_stage": {
+   "max_new": 96,
+   "max_py": 10,
+   "max_sv": 1,
+   "phys_max_chars": 30,
+   "typist": "expert",
+   "workers": 2
+  },
+  "typist": "auto",
+  "workers": 4
+ },
+ "data_hash": "6c0eaa674541fe4781bb3a170c35a05b76e00524990c5e474a0f943d46128f14",
+ "exclusive": false,
+ "gate": {
+  "pass_at_1_floor": 0.0,
+  "physical_exact_rate": 0.0
+ },
+ "gate_passed": true,
+ "metrics": {
+  "checkpoint": "scratchpad/p8c/runs/20260929-195419/stage6/ckpt.pt",
+  "eval_s": 0.1,
+  "gate_detail": {
+   "pass_at_1_floor": {
+    "metric": "pass_at_1",
+    "ok": true,
+    "op": "ge",
+    "threshold": 0.0,
+    "value": 0.0
+   },
+   "physical_exact_rate": {
+    "metric": "physical_exact_rate",
+    "ok": true,
+    "op": "ge",
+    "threshold": 0.0,
+    "value": 1.0
+   }
+  },
+  "gate_mode": "relaxed (smoke, NOT a real gate)",
+  "kind": "gru",
+  "mean_task_s": {
+   "py": 0.0,
+   "sv": 0.03
+  },
+  "n_tasks": 11,
+  "pass_at_1": 0.0,
+  "pass_at_1_by_difficulty": {
+   "1": 0.0
+  },
+  "pass_at_1_by_lang": {
+   "py": 0.0,
+   "sv": 0.0
+  },
+  "physical": {
+   "contact_verified_rate": 1.0,
+   "n": 3,
+   "physical_exact_rate": 1.0,
+   "text_match_rate": 1.0,
+   "typist": "expert"
+  },
+  "physical_exact_rate": 1.0,
+  "physical_rows": [
+   {
+    "chars": 30,
+    "contact_verified": true,
+    "exact": true,
+    "lang": "py",
+    "task": "py/add",
+    "text_match": true,
+    "ticks": 724,
+    "truncated": false,
+    "wall_s": 2.08
+   },
+   {
+    "chars": 29,
+    "contact_verified": true,
+    "exact": true,
+    "lang": "py",
+    "task": "py/celsius",
+    "text_match": true,
+    "ticks": 688,
+    "truncated": false,
+    "wall_s": 1.97
+   },
+   {
+    "chars": 30,
+    "contact_verified": true,
+    "exact": true,
+    "lang": "py",
+    "task": "py/const5",
+    "text_match": true,
+    "ticks": 704,
+    "truncated": true,
+    "wall_s": 1.97
+   }
+  ],
+  "real_gate_passed": true,
+  "smoke": true,
+  "status": "pass@1=0.0 by_lang={\"py\": 0.0, \"sv\": 0.0} physical_exact=1.0 (n=3) gate=relaxed (smoke, NOT a real gate) real_pass=True",
+  "workers": 1
+ },
+ "name": "Autonomous micro-programs",
+ "peak_rss_bytes": 421675008,
+ "reason": null,
+ "seed": 7,
+ "smoke": true,
+ "stage": 7,
+ "started": 1790726064.681323,
+ "status": "passed",
+ "steps": 12,
+ "time_s": 6.5137269496917725
+}

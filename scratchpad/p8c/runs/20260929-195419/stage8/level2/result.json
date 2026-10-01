@@ -1,0 +1,96 @@
+{
+ "steps": 54,
+ "stopped": "steps",
+ "seconds": 5.1,
+ "final": {
+  "token_acc": 0.1471,
+  "nll": 4.5217,
+  "n_val": 8,
+  "gen_n": 4,
+  "gen_parse_rate": 0.0,
+  "gen_pass_rate": 0.0,
+  "gen_exact_rate": 0.0,
+  "gen_token_acc": 0.0325
+ },
+ "history": [
+  {
+   "step": 30,
+   "token_acc": 0.2297,
+   "nll": 4.4931,
+   "n_val": 8,
+   "gen_n": 4,
+   "gen_parse_rate": 0.0,
+   "gen_pass_rate": 0.0,
+   "gen_exact_rate": 0.0,
+   "gen_token_acc": 0.0432
+  },
+  {
+   "step": 38,
+   "token_acc": 0.1944,
+   "nll": 4.4582,
+   "n_val": 1,
+   "gen_n": 1,
+   "gen_parse_rate": 0.0,
+   "gen_pass_rate": 0.0,
+   "gen_exact_rate": 0.0,
+   "gen_token_acc": 0.0857
+  },
+  {
+   "step": 46,
+   "token_acc": 0.1218,
+   "nll": 5.0557,
+   "n_val": 8,
+   "gen_n": 4,
+   "gen_parse_rate": 0.0,
+   "gen_pass_rate": 0.0,
+   "gen_exact_rate": 0.0,
+   "gen_token_acc": 0.0688
+  },
+  {
+   "step": 54,
+   "token_acc": 0.1471,
+   "nll": 4.5217,
+   "n_val": 8,
+   "gen_n": 4,
+   "gen_parse_rate": 0.0,
+   "gen_pass_rate": 0.0,
+   "gen_exact_rate": 0.0,
+   "gen_token_acc": 0.0325
+  }
+ ],
+ "kind": "gru",
+ "seed": 8,
+ "params": {
+  "kind": "gru",
+  "trainable": 680483,
+  "frozen": 0,
+  "total": 680483,
+  "groups": {
+   "embed": {
+    "trainable": 32768,
+    "frozen": 0
+   },
+   "read_norm": {
+    "trainable": 826,
+    "frozen": 0
+   },
+   "read_down": {
+    "trainable": 26496,
+    "frozen": 0
+   },
+   "read_up": {
+    "trainable": 66560,
+    "frozen": 0
+   },
+   "cell": {
+    "trainable": 553833,
+    "frozen": 0
+   }
+  },
+  "hidden": 413
+ },
+ "n_train": 498,
+ "data": "dataset-fallback (oracle train pairs 4 < 200); sources={\"authored/sv\": 21, \"humaneval/py\": 164, \"mbpp/py\": 974, \"rtllm/sv\": 50, \"verilogeval/sv\": 156} | level branches",
+ "cfg_hash": "440018b0e4e3",
+ "wall": 0.9
+}

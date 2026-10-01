@@ -1,0 +1,25 @@
+..........
+----------------------------------------------------------------------
+Ran 10 tests in 12.919s
+
+OK
+[gru/s0] {"event": "transition", "step": 1, "from": "A", "to": "B", "p": 0.25, "from_p": 0.0, "reason": "step_cap", "rolling_acc": 0.0, "threshold": 0.97}
+[gru/s0] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 7.13651, "acc": 0.0, "sec": 0.066}
+[gru/s0] {"event": "transition", "step": 2, "from": "B", "to": "B", "p": 0.5, "from_p": 0.25, "reason": "step_cap", "rolling_acc": 0.5769, "threshold": 0.9}
+[gru/s0] {"event": "transition", "step": 3, "from": "B", "to": "B", "p": 0.75, "from_p": 0.5, "reason": "step_cap", "rolling_acc": 0.7885, "threshold": 0.9}
+[gru/s0] {"event": "transition", "step": 4, "from": "B", "to": "B", "p": 0.95, "from_p": 0.75, "reason": "step_cap", "rolling_acc": 0.8269, "threshold": 0.9}
+[gru/s0] {"event": "transition", "step": 1, "from": "A", "to": "B", "p": 0.25, "from_p": 0.0, "reason": "step_cap", "rolling_acc": 0.0, "threshold": 0.97}
+[gru/s0] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 7.13651, "acc": 0.0, "sec": 0.073}
+[gru/s0] {"event": "transition", "step": 2, "from": "B", "to": "B", "p": 0.5, "from_p": 0.25, "reason": "step_cap", "rolling_acc": 0.5769, "threshold": 0.9}
+[gru/s0] {"event": "transition", "step": 3, "from": "B", "to": "B", "p": 0.75, "from_p": 0.5, "reason": "step_cap", "rolling_acc": 0.7885, "threshold": 0.9}
+[gru/s0] {"event": "transition", "step": 4, "from": "B", "to": "B", "p": 0.95, "from_p": 0.75, "reason": "step_cap", "rolling_acc": 0.8269, "threshold": 0.9}
+[gru/s1] {"event": "transition", "step": 1, "from": "A", "to": "B", "p": 0.25, "from_p": 0.0, "reason": "step_cap", "rolling_acc": 0.0, "threshold": 0.97}
+[gru/s1] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.91572, "acc": 0.0, "sec": 0.095}
+[gru/s1] {"event": "transition", "step": 2, "from": "B", "to": "B", "p": 0.5, "from_p": 0.25, "reason": "step_cap", "rolling_acc": 0.6923, "threshold": 0.9}
+[gru/s1] {"event": "transition", "step": 3, "from": "B", "to": "B", "p": 0.75, "from_p": 0.5, "reason": "step_cap", "rolling_acc": 0.8654, "threshold": 0.9}
+[gru/s1] {"event": "transition", "step": 4, "from": "B", "to": "B", "p": 0.95, "from_p": 0.75, "reason": "step_cap", "rolling_acc": 0.8654, "threshold": 0.9}
+[gru/s1] {"event": "transition", "step": 1, "from": "A", "to": "B", "p": 0.25, "from_p": 0.0, "reason": "step_cap", "rolling_acc": 0.0, "threshold": 0.97}
+[gru/s1] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.91572, "acc": 0.0, "sec": 0.045}
+[gru/s1] {"event": "transition", "step": 2, "from": "B", "to": "B", "p": 0.5, "from_p": 0.25, "reason": "step_cap", "rolling_acc": 0.6923, "threshold": 0.9}
+[gru/s1] {"event": "transition", "step": 3, "from": "B", "to": "B", "p": 0.75, "from_p": 0.5, "reason": "step_cap", "rolling_acc": 0.8654, "threshold": 0.9}
+[gru/s1] {"event": "transition", "step": 4, "from": "B", "to": "B", "p": 0.95, "from_p": 0.75, "reason": "step_cap", "rolling_acc": 0.8654, "threshold": 0.9}

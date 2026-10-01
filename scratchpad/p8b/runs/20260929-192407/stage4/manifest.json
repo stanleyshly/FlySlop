@@ -1,0 +1,148 @@
+{
+ "circuit_hash": "422b78d76143ebae60f50032d7fa291e500093d93f27b07fe16f1fb90ff83a56",
+ "code_hash": "a7ce1b4cbf5792d337cefbd75c1f774a8b95357a233f223b0a9b592cb9c5402c",
+ "config": {
+  "budget": {
+   "steps": 200000,
+   "wall_s": 240
+  },
+  "exclusive": false,
+  "gate": {
+   "recovery_exact": 0.9,
+   "symbolic_replan_reach": 0.9
+  },
+  "id": 4,
+  "level": "physical+symbolic",
+  "module": "training.stages.stage4_recovery",
+  "name": "Error recovery",
+  "physical": {
+   "action_mode": "mn",
+   "bc_episodes": 400,
+   "bc_epochs": 30,
+   "config": "training/ppo_fly_mn.json",
+   "eval_episodes": 50,
+   "eval_noise": 0.3,
+   "n_envs": 4,
+   "policy": "connectome",
+   "ppo_timesteps": 500000,
+   "readout": "mn_antagonist",
+   "slip_p": 0.15
+  },
+  "smoke_gates": "relaxed",
+  "smoke_physical": {
+   "bc_episodes": 6,
+   "bc_epochs": 1,
+   "eval_episodes": 4,
+   "n_envs": 1,
+   "ppo": {
+    "batch_size": 64,
+    "n_epochs": 1,
+    "n_steps": 128
+   },
+   "ppo_timesteps": 128
+  },
+  "symbolic": true
+ },
+ "data_hash": "6c0eaa674541fe4781bb3a170c35a05b76e00524990c5e474a0f943d46128f14",
+ "exclusive": false,
+ "gate": {
+  "recovery_exact": 0.9,
+  "symbolic_replan_reach": 0.9
+ },
+ "gate_passed": true,
+ "metrics": {
+  "best_checkpoint": "scratchpad/p8b/runs/20260929-192407/stage4/best_model.zip",
+  "edit_episodes": 2,
+  "edit_exact": 0.0,
+  "edit_key_accuracy": 0.0,
+  "edit_unsupported": 0,
+  "gate_detail": {
+   "recovery_exact": {
+    "metric": "recovery_exact",
+    "ok": false,
+    "op": "ge",
+    "threshold": 0.9,
+    "value": 0.0
+   },
+   "symbolic_replan_reach": {
+    "metric": "symbolic_replan_reach",
+    "ok": false,
+    "op": "ge",
+    "threshold": 0.9,
+    "value": 0.125
+   }
+  },
+  "gate_mode": "relaxed (smoke, NOT a real gate)",
+  "phases": [
+   {
+    "bc": {
+     "episodes": 6,
+     "epochs": 1,
+     "expert_complete": 0.0,
+     "mse_first": 0.24044445157051086,
+     "mse_last": 0.24044445157051086,
+     "transitions": 49
+    },
+    "ckpt": "scratchpad/p8b/runs/20260929-192407/stage4/phase0_edit4.zip",
+    "eval": {
+     "edit_episodes": 2,
+     "edit_exact": 0.0,
+     "edit_key_accuracy": 0.0,
+     "edit_unsupported": 0,
+     "recovered_given_slip": 0.0,
+     "recovery_episodes": 4,
+     "recovery_exact": 0.0,
+     "recovery_noise": 0.3,
+     "recovery_unsupported": 0,
+     "slip_episodes": 4
+    },
+    "phase": "edit4",
+    "pool": 1,
+    "ppo_timesteps": 128,
+    "seconds": 1.1,
+    "warm_start": "scratchpad/p8b/runs/20260929-192407/stage3/best_model.zip"
+   }
+  ],
+  "real_gate_passed": false,
+  "recovered_given_slip": 0.0,
+  "recovery_episodes": 4,
+  "recovery_exact": 0.0,
+  "recovery_noise": 0.3,
+  "recovery_unsupported": 0,
+  "slip_episodes": 4,
+  "smoke": true,
+  "status": "recovery_exact=0.0 slip_eps=4 symbolic=ok gate=relaxed (smoke, NOT a real gate) real_pass=False",
+  "symbolic": {
+   "artifacts": [
+    "scratchpad/p8b/runs/20260929-192407/stage4/symbolic/ckpt.pt"
+   ],
+   "gate_passed": true,
+   "metrics": {
+    "act_exact_first": 0.0,
+    "first_round_ok": 0.0,
+    "mean_cost_ratio": 0.0,
+    "n_eval": 8,
+    "nll": 2.9263,
+    "replan_reach": 0.125,
+    "replan_within_ratio": 0.0,
+    "rounds": 3,
+    "stage": 4,
+    "steps": 20,
+    "token_acc": 0.3968
+   },
+   "status": "ok"
+  },
+  "symbolic_replan_reach": 0.125,
+  "warm_start": "scratchpad/p8b/runs/20260929-192407/stage3/best_model.zip"
+ },
+ "name": "Error recovery",
+ "peak_rss_bytes": 316325888,
+ "reason": null,
+ "seed": 4,
+ "smoke": true,
+ "stage": 4,
+ "started": 1790724320.343734,
+ "status": "passed",
+ "steps": 204,
+ "time_s": 48.903125047683716
+}

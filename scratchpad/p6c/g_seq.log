@@ -1,0 +1,38 @@
+data: dataset-fallback (oracle train pairs 4 < 200); sources={"authored/sv": 21, "humaneval/py": 164, "mbpp/py": 974, "rtllm/sv": 50, "verilogeval/sv": 156} {'train': 1111, 'val': 113, 'test': 141}
+[gru/s0] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 7.03324, "acc": 0.0, "sec": 0.291}
+[gru/s0] {"step": 50, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 2.04847, "acc": 0.4849, "sec": 0.097}
+[gru/s0] {"step": 100, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.46652, "acc": 0.8711, "sec": 0.141}
+[gru/s0] {"event": "transition", "step": 127, "from": "A", "to": "B", "p": 0.25, "from_p": 0.0, "reason": "threshold", "rolling_acc": 0.9028, "threshold": 0.9}
+[gru/s0] {"step": 150, "phase": "B", "p": 0.25, "mixed_frac": 0.2309, "loss": 0.87727, "acc": 0.8114, "sec": 0.17}
+[gru/s0] {"event": "transition", "step": 192, "from": "B", "to": "B", "p": 0.5, "from_p": 0.25, "reason": "threshold", "rolling_acc": 0.8549, "threshold": 0.85}
+[gru/s0] {"step": 200, "phase": "B", "p": 0.5, "mixed_frac": 0.5093, "loss": 2.34335, "acc": 0.5678, "sec": 0.235}
+[gru/s0] {"step": 250, "phase": "B", "p": 0.5, "mixed_frac": 0.4984, "loss": 2.41754, "acc": 0.4787, "sec": 0.252}
+[gru/s0] {"event": "transition", "step": 262, "from": "B", "to": "B", "p": 0.75, "from_p": 0.5, "reason": "step_cap", "rolling_acc": 0.5439, "threshold": 0.85}
+[gru/s0] {"step": 300, "phase": "B", "p": 0.75, "mixed_frac": 0.7442, "loss": 3.99845, "acc": 0.1864, "sec": 0.345}
+[gru/s0] {"event": "transition", "step": 332, "from": "B", "to": "B", "p": 0.95, "from_p": 0.75, "reason": "step_cap", "rolling_acc": 0.2531, "threshold": 0.85}
+[gru/s0] {"step": 350, "phase": "B", "p": 0.95, "mixed_frac": 0.9464, "loss": 4.05778, "acc": 0.1643, "sec": 0.211}
+[gru/s0] {"step": 400, "phase": "B", "p": 0.95, "mixed_frac": 0.9506, "loss": 3.52052, "acc": 0.2112, "sec": 0.149}
+[gru/s0] {"event": "transition", "step": 402, "from": "B", "to": "C", "p": 1.0, "from_p": 0.95, "reason": "step_cap", "rolling_acc": 0.1974, "threshold": 0.85}
+[gru/s0] {"step": 450, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.58792, "acc": 0.2085, "sec": 0.236}
+[gru/s0] {"step": 500, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.33306, "acc": 0.2283, "sec": 0.2}
+[gru/s0] {"step": 550, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.83432, "acc": 0.2755, "sec": 0.224}
+[gru/s0] {"step": 600, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.87054, "acc": 0.2685, "sec": 0.226}
+[gru/s0] {"step": 650, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.95248, "acc": 0.2936, "sec": 0.182}
+[gru/s0] {"step": 700, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 2.51437, "acc": 0.3154, "sec": 0.267}
+{
+ "kind": "gru",
+ "steps": 700,
+ "seconds": 163.0,
+ "final": {
+  "token_acc": 0.43,
+  "nll": 2.1525,
+  "n_val": 100,
+  "gen_n": 24,
+  "gen_parse_rate": 0.0417,
+  "gen_pass_rate": 0.0,
+  "gen_exact_rate": 0.0,
+  "gen_token_acc": 0.3236
+ },
+ "overfit_gate": false
+}
+peak RSS 0.36 GB

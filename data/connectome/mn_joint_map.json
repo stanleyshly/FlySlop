@@ -1,0 +1,229 @@
+{
+ "version": 1,
+ "purpose": "MN population -> joint drive for the typing circuit. Joint target = rest + g_j * (sum agonist MN rate - sum antagonist MN rate); g_j, offset learned per joint (28 params).",
+ "circuit": "data/connectome/typing_circuit.npz",
+ "match": {
+  "mn_type": "MN type string (npz mn_type), restricted to MNs whose mn_side equals joint side (L drives LF, R drives RF); all nerves (ProLN and T1 other-nerve MNs) count"
+ },
+ "sign_convention": "Agonist minus antagonist is the nominal positive direction of the joint's movement text, but the sign relative to the MuJoCo joint axis is NOT verified; the learned gain g_j has free sign so it absorbs this. Review before trusting sign.",
+ "fallback_policy": "A joint with status 'fallback' has no MN drive; the env must use its rest+learned bias or IK/imitation output. Currently none: all 14 joints have MN coverage, but see confidence.",
+ "joints": {
+  "joint_LFCoxa_yaw": {
+   "leg": "LF",
+   "side": "L",
+   "dof": "Coxa_yaw",
+   "status": "mn",
+   "movement": "leg abduction (+) / adduction (-) about the body-axis (x) hinge",
+   "agonist": [
+    "Pleural remotor/abductor MN"
+   ],
+   "antagonist": [
+    "Sternal adductor MN"
+   ],
+   "confidence": "low",
+   "note": "Pleural remotor/abductor MN is dual-function (also antagonist of the coxa promotor); Sternal adductor MN has only 1 neuron per side."
+  },
+  "joint_LFCoxa": {
+   "leg": "LF",
+   "side": "L",
+   "dof": "Coxa",
+   "status": "mn",
+   "movement": "coxa promotion (+) / remotion (-), pitch about y",
+   "agonist": [
+    "Tergopleural/Pleural promotor MN"
+   ],
+   "antagonist": [
+    "Pleural remotor/abductor MN"
+   ],
+   "confidence": "low",
+   "note": "Promotor 4 neurons per side; remotor 2 per side. Names follow Azevedo et al. 2020 leg-muscle nomenclature; direction vs NeuroMechFly sign is unverified."
+  },
+  "joint_LFCoxa_roll": {
+   "leg": "LF",
+   "side": "L",
+   "dof": "Coxa_roll",
+   "status": "mn",
+   "movement": "coxa rotation about its long axis (z)",
+   "agonist": [
+    "Sternal anterior rotator MN"
+   ],
+   "antagonist": [
+    "Sternal posterior rotator MN"
+   ],
+   "confidence": "low",
+   "note": "Anterior rotator 2 (L) / 2 (R); posterior rotator 4 (L) / 2 (R)."
+  },
+  "joint_LFFemur": {
+   "leg": "LF",
+   "side": "L",
+   "dof": "Femur",
+   "status": "mn",
+   "movement": "trochanter-femur pitch: flexion (+) / extension (-)",
+   "agonist": [
+    "Tr flexor MN",
+    "Acc. tr flexor MN"
+   ],
+   "antagonist": [
+    "Tr extensor MN"
+   ],
+   "confidence": "medium",
+   "note": "Trochanter and femur are fused in the fly, so trochanter muscles drive the model's Femur pitch. Sternotrochanter MN / Tergotr. MN are left unmapped (uncertain action)."
+  },
+  "joint_LFFemur_roll": {
+   "leg": "LF",
+   "side": "L",
+   "dof": "Femur_roll",
+   "status": "mn",
+   "movement": "femur rotation about its long axis (z)",
+   "agonist": [
+    "Fe reductor MN"
+   ],
+   "antagonist": [],
+   "confidence": "low",
+   "note": "One-sided: no annotated antagonist roll muscle; Fe reductor action on the roll DOF is an assumption. Antagonism comes from the position actuator's spring."
+  },
+  "joint_LFTibia": {
+   "leg": "LF",
+   "side": "L",
+   "dof": "Tibia",
+   "status": "mn",
+   "movement": "femur-tibia flexion (+) / extension (-)",
+   "agonist": [
+    "Ti flexor MN",
+    "Acc. ti flexor MN",
+    "ltm1-tibia MN",
+    "ltm2-femur MN",
+    "ltm MN"
+   ],
+   "antagonist": [
+    "Ti extensor MN"
+   ],
+   "confidence": "high",
+   "note": "Long-tendon-muscle (ltm) MNs pull the tibia flexor tendon."
+  },
+  "joint_LFTarsus1": {
+   "leg": "LF",
+   "side": "L",
+   "dof": "Tarsus1",
+   "status": "mn",
+   "movement": "tarsus depression (+) / levation (-)",
+   "agonist": [
+    "Ta depressor MN"
+   ],
+   "antagonist": [
+    "Ta levator MN"
+   ],
+   "confidence": "high",
+   "note": "Only Tarsus1 is an actuated joint; Tarsus2-5 are fixed/baked in the model."
+  },
+  "joint_RFCoxa_yaw": {
+   "leg": "RF",
+   "side": "R",
+   "dof": "Coxa_yaw",
+   "status": "mn",
+   "movement": "leg abduction (+) / adduction (-) about the body-axis (x) hinge",
+   "agonist": [
+    "Pleural remotor/abductor MN"
+   ],
+   "antagonist": [
+    "Sternal adductor MN"
+   ],
+   "confidence": "low",
+   "note": "Pleural remotor/abductor MN is dual-function (also antagonist of the coxa promotor); Sternal adductor MN has only 1 neuron per side."
+  },
+  "joint_RFCoxa": {
+   "leg": "RF",
+   "side": "R",
+   "dof": "Coxa",
+   "status": "mn",
+   "movement": "coxa promotion (+) / remotion (-), pitch about y",
+   "agonist": [
+    "Tergopleural/Pleural promotor MN"
+   ],
+   "antagonist": [
+    "Pleural remotor/abductor MN"
+   ],
+   "confidence": "low",
+   "note": "Promotor 4 neurons per side; remotor 2 per side. Names follow Azevedo et al. 2020 leg-muscle nomenclature; direction vs NeuroMechFly sign is unverified."
+  },
+  "joint_RFCoxa_roll": {
+   "leg": "RF",
+   "side": "R",
+   "dof": "Coxa_roll",
+   "status": "mn",
+   "movement": "coxa rotation about its long axis (z)",
+   "agonist": [
+    "Sternal anterior rotator MN"
+   ],
+   "antagonist": [
+    "Sternal posterior rotator MN"
+   ],
+   "confidence": "low",
+   "note": "Anterior rotator 2 (L) / 2 (R); posterior rotator 4 (L) / 2 (R)."
+  },
+  "joint_RFFemur": {
+   "leg": "RF",
+   "side": "R",
+   "dof": "Femur",
+   "status": "mn",
+   "movement": "trochanter-femur pitch: flexion (+) / extension (-)",
+   "agonist": [
+    "Tr flexor MN",
+    "Acc. tr flexor MN"
+   ],
+   "antagonist": [
+    "Tr extensor MN"
+   ],
+   "confidence": "medium",
+   "note": "Trochanter and femur are fused in the fly, so trochanter muscles drive the model's Femur pitch. Sternotrochanter MN / Tergotr. MN are left unmapped (uncertain action)."
+  },
+  "joint_RFFemur_roll": {
+   "leg": "RF",
+   "side": "R",
+   "dof": "Femur_roll",
+   "status": "mn",
+   "movement": "femur rotation about its long axis (z)",
+   "agonist": [
+    "Fe reductor MN"
+   ],
+   "antagonist": [],
+   "confidence": "low",
+   "note": "One-sided: no annotated antagonist roll muscle; Fe reductor action on the roll DOF is an assumption. Antagonism comes from the position actuator's spring."
+  },
+  "joint_RFTibia": {
+   "leg": "RF",
+   "side": "R",
+   "dof": "Tibia",
+   "status": "mn",
+   "movement": "femur-tibia flexion (+) / extension (-)",
+   "agonist": [
+    "Ti flexor MN",
+    "Acc. ti flexor MN",
+    "ltm1-tibia MN",
+    "ltm2-femur MN",
+    "ltm MN"
+   ],
+   "antagonist": [
+    "Ti extensor MN"
+   ],
+   "confidence": "high",
+   "note": "Long-tendon-muscle (ltm) MNs pull the tibia flexor tendon."
+  },
+  "joint_RFTarsus1": {
+   "leg": "RF",
+   "side": "R",
+   "dof": "Tarsus1",
+   "status": "mn",
+   "movement": "tarsus depression (+) / levation (-)",
+   "agonist": [
+    "Ta depressor MN"
+   ],
+   "antagonist": [
+    "Ta levator MN"
+   ],
+   "confidence": "high",
+   "note": "Only Tarsus1 is an actuated joint; Tarsus2-5 are fixed/baked in the model."
+  }
+ },
+ "review_note": "Reviewed against MaleCNS v1.0 annotations (types on ProLN, ProAN, VProN, DProN nerves) and NeuroMechFly leg_dofs [Coxa_yaw, Coxa, Coxa_roll, Femur, Femur_roll, Tibia, Tarsus1]. Distal joints (Tibia, Tarsus1, Femur) have well-established antagonist pairs. Coxa and Femur_roll assignments come from muscle names only (no functional data) and need anatomical review; MN counts are 1-4 neurons per type per side. Two right ProLN MNs have no type annotation and are unmapped."
+}

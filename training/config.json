@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "environment": "backend.env.KeyboardReachEnv",
+  "mode": "contact_gated_kinematic_scaffold",
+  "seed": 0,
+  "targets": [
+    "fly",
+    "abc",
+    "sv",
+    "module"
+  ],
+  "max_steps": 500,
+  "action": "absolute scaled point-foot xyz",
+  "observation": "state assisted; includes next key center and shift bit",
+  "training_algorithm": null,
+  "checkpoint": null,
+  "learning_claim": false,
+  "gate": "Oracle scaffold only. PPO training on the relative-action KeyboardTypingEnv is configured in training/ppo.json (see docs/training.md); it is still a kinematic point-foot, not the articulated-body contact gate."
+}

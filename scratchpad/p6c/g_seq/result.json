@@ -1,0 +1,64 @@
+{
+ "steps": 700,
+ "stopped": "steps",
+ "seconds": 163.0,
+ "final": {
+  "token_acc": 0.43,
+  "nll": 2.1525,
+  "n_val": 100,
+  "gen_n": 24,
+  "gen_parse_rate": 0.0417,
+  "gen_pass_rate": 0.0,
+  "gen_exact_rate": 0.0,
+  "gen_token_acc": 0.3236
+ },
+ "history": [
+  {
+   "step": 700,
+   "token_acc": 0.43,
+   "nll": 2.1525,
+   "n_val": 100,
+   "gen_n": 24,
+   "gen_parse_rate": 0.0417,
+   "gen_pass_rate": 0.0,
+   "gen_exact_rate": 0.0,
+   "gen_token_acc": 0.3236
+  }
+ ],
+ "kind": "gru",
+ "seed": 0,
+ "params": {
+  "kind": "gru",
+  "trainable": 680483,
+  "frozen": 0,
+  "total": 680483,
+  "groups": {
+   "embed": {
+    "trainable": 32768,
+    "frozen": 0
+   },
+   "read_norm": {
+    "trainable": 826,
+    "frozen": 0
+   },
+   "read_down": {
+    "trainable": 26496,
+    "frozen": 0
+   },
+   "read_up": {
+    "trainable": 66560,
+    "frozen": 0
+   },
+   "cell": {
+    "trainable": 553833,
+    "frozen": 0
+   }
+  },
+  "hidden": 413
+ },
+ "n_train": 100,
+ "data": "dataset-fallback (oracle train pairs 4 < 200); sources={\"authored/sv\": 21, \"humaneval/py\": 164, \"mbpp/py\": 974, \"rtllm/sv\": 50, \"verilogeval/sv\": 156}",
+ "cfg_hash": "279fbe61cef6",
+ "wall": 163.6,
+ "overfit_gate": false
+}

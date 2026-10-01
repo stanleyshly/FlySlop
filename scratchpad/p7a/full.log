@@ -1,0 +1,96 @@
+/Users/stanley/Desktop/FlySlop/backend/connectome/runtime.py:95: UserWarning: Sparse invariant checks are implicitly disabled. Memory errors (e.g. SEGFAULT) will occur when operating on a sparse tensor which violates the invariants, but checks incur performance overhead. To silence this warning, explicitly opt in or out. See `torch.sparse.check_sparse_tensor_invariants.__doc__` for guidance.  (Triggered internally at /Users/runner/work/pytorch/pytorch/aten/src/ATen/Context.cpp:855.)
+  S = torch.sparse_csr_tensor(crow, col, vals, size=(n, n))
+/Users/stanley/Desktop/FlySlop/backend/connectome/runtime.py:95: UserWarning: Sparse CSR tensor support is in beta state. If you miss a functionality in the sparse tensor support, please submit a feature request to https://github.com/pytorch/pytorch/issues. (Triggered internally at /Users/runner/work/pytorch/pytorch/aten/src/ATen/SparseCsrTensorImpl.cpp:51.)
+  S = torch.sparse_csr_tensor(crow, col, vals, size=(n, n))
+............/Users/stanley/Desktop/FlySlop/tests/test_connectome_runtime.py:86: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /Users/runner/work/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:821.)
+  rho = float(torch.linalg.eigvals(w).abs().max())
+................[curriculum] stage 1 s1: passed | not implemented | 
+[curriculum] stage 2 s2: passed | not implemented | 
+[curriculum] stage 3 s3: passed | not implemented | 
+.[curriculum] stage 1 s1: passed | not implemented | 
+[curriculum] stage 2 s2: error |  | RuntimeError: injected failure in stage1_keys
+[curriculum] stage 2 s2: passed | not implemented | 
+[curriculum] stage 3 s3: passed | not implemented | 
+.[curriculum] stage 3 s3: passed | not implemented | 
+.[curriculum] stage 1 s1: passed | not implemented | 
+[curriculum] stage 2 s2: gate_failed | not implemented | 
+..[curriculum] stage 1 s1: passed | not implemented | 
+..[curriculum] stage 1 s1: passed | not implemented | 
+[curriculum] stage 2 s2: budget_stopped |  | steps budget exceeded: 11 > 10
+[curriculum] stage 1 s1: passed | not implemented | 
+[curriculum] stage 2 s2: advanced |  | steps budget exceeded: 11 > 10
+[curriculum] stage 3 s3: passed | not implemented | 
+.[curriculum] stage 1 s1: budget_stopped |  | wall_s budget exceeded: 0.1s > 0.1s
+.................[memory_budget] over RAM budget: huge needs 8.00 GB, in use 0.41 GB, cap 4.00 GB (FLYSLOP_MAX_RAM_GB)
+...s.E...E.E.......................................................................................................F...............
+======================================================================
+ERROR: test_controls_share_one_config_and_resume (test_distill.DistillTests.test_controls_share_one_config_and_resume)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/stanley/Desktop/FlySlop/tests/test_distill.py", line 71, in test_controls_share_one_config_and_resume
+    res = distill.run_controls(cfg, ["gru", "gru"], [0, 1], d, DATA, 4)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/stanley/Desktop/FlySlop/training/distill.py", line 197, in run_controls
+    r = train_kind(cfg, kind, seed, out / f"{kind}_s{seed}", data, steps, ram_gb=ram_gb, log=log)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/stanley/Desktop/FlySlop/training/distill.py", line 164, in train_kind
+    res = trainer.run(get_batch, evaluate, steps, resume=resume, log=log)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/stanley/Desktop/FlySlop/training/thinker_train_common.py", line 240, in run
+    memory_budget.check_fits(estimate_bytes(model, seq0.shape[0], chunk), f"{self.tag} training",
+  File "/Users/stanley/Desktop/FlySlop/backend/memory_budget.py", line 79, in check_fits
+    raise OverBudget(msg)
+backend.memory_budget.OverBudget: over RAM budget: gru/s0 training needs 0.21 GB, in use 0.47 GB, cap 0.75 GB (FLYSLOP_MAX_RAM_GB)
+
+======================================================================
+ERROR: test_wall_budget_stops (test_distill.DistillTests.test_wall_budget_stops)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/stanley/Desktop/FlySlop/tests/test_distill.py", line 99, in test_wall_budget_stops
+    r = distill.train_kind(cfg, "gru", 0, d, DATA, 50, log=lambda *_: None)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/stanley/Desktop/FlySlop/training/distill.py", line 164, in train_kind
+    res = trainer.run(get_batch, evaluate, steps, resume=resume, log=log)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/stanley/Desktop/FlySlop/training/thinker_train_common.py", line 240, in run
+    memory_budget.check_fits(estimate_bytes(model, seq0.shape[0], chunk), f"{self.tag} training",
+  File "/Users/stanley/Desktop/FlySlop/backend/memory_budget.py", line 79, in check_fits
+    raise OverBudget(msg)
+backend.memory_budget.OverBudget: over RAM budget: gru/s0 training needs 0.21 GB, in use 0.48 GB, cap 0.75 GB (FLYSLOP_MAX_RAM_GB)
+
+======================================================================
+ERROR: test_edit_trainer_smoke (test_distill.EditTests.test_edit_trainer_smoke)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/stanley/Desktop/FlySlop/tests/test_distill.py", line 145, in test_edit_trainer_smoke
+    r = E.train_edit(cfg, "gru", 0, d, 4, stage=3, log=lambda *_: None)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/stanley/Desktop/FlySlop/training/edit_trainer.py", line 223, in train_edit
+    res = trainer.run(get_batch, make_evaluator(tok, cfg, val_exs), steps, resume=resume, log=log)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/stanley/Desktop/FlySlop/training/thinker_train_common.py", line 240, in run
+    memory_budget.check_fits(estimate_bytes(model, seq0.shape[0], chunk), f"{self.tag} training",
+  File "/Users/stanley/Desktop/FlySlop/backend/memory_budget.py", line 79, in check_fits
+    raise OverBudget(msg)
+backend.memory_budget.OverBudget: over RAM budget: edit3/gru training needs 0.21 GB, in use 0.48 GB, cap 0.75 GB (FLYSLOP_MAX_RAM_GB)
+
+======================================================================
+FAIL: test_tiny_overfit_connectome (test_thinker.ThinkerTests.test_tiny_overfit_connectome)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/stanley/Desktop/FlySlop/tests/test_thinker.py", line 97, in test_tiny_overfit_connectome
+    self.assertGreaterEqual(curve[-1][2], 0.9)
+AssertionError: 0.6318181753158569 not greater than or equal to 0.9
+
+----------------------------------------------------------------------
+Ran 184 tests in 135.381s
+
+FAILED (failures=1, errors=3, skipped=1)
+
+oracle cost: mean ratio vs naive 0.206, vs diff size 1.90 (median 1.28), n=596
+
+param counts (trainable / frozen): {'real': (681400, 0), 'shuffled': (681400, 0), 'random_sparse': (681400, 0), 'frozen': (144792, 536608), 'gru': (680483, 0)}
+
+overfit curve (step, loss, acc, s): [(1, 6.96, 0.0, 0.4), (5, 4.34, 0.23, 2.9), (10, 2.19, 0.44, 5.3), (15, 1.29, 0.63, 77.5), (15, 1.29, 0.63, 77.5)]
+fin

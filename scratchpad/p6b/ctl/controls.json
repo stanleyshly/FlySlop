@@ -1,0 +1,64 @@
+{
+ "cfg_hash": "a809d97f97c3",
+ "steps": 40,
+ "seeds": [
+  0,
+  1
+ ],
+ "kinds": [
+  "gru"
+ ],
+ "data": "dataset; sources={\"authored/sv\": 21, \"humaneval/py\": 164, \"mbpp/py\": 974, \"rtllm/sv\": 50, \"verilogeval/sv\": 156}",
+ "rows": [
+  {
+   "kind": "gru",
+   "seed": 0,
+   "steps": 40,
+   "seconds": 5.2,
+   "trainable": 680483,
+   "cfg_hash": "a809d97f97c3",
+   "token_acc": 0.0786,
+   "nll": 5.7521,
+   "n_val": 8,
+   "gen_n": 4,
+   "gen_parse_rate": 0.0,
+   "gen_pass_rate": 0.0,
+   "gen_exact_rate": 0.0
+  },
+  {
+   "kind": "gru",
+   "seed": 1,
+   "steps": 40,
+   "seconds": 5.0,
+   "trainable": 680483,
+   "cfg_hash": "a809d97f97c3",
+   "token_acc": 0.0403,
+   "nll": 6.2291,
+   "n_val": 8,
+   "gen_n": 4,
+   "gen_parse_rate": 0.0,
+   "gen_pass_rate": 0.0,
+   "gen_exact_rate": 0.0
+  }
+ ],
+ "summary": {
+  "gru": {
+   "trainable": 680483,
+   "token_acc": {
+    "mean": 0.05945,
+    "std": 0.01915,
+    "n": 2
+   },
+   "gen_parse_rate": {
+    "mean": 0.0,
+    "std": 0.0,
+    "n": 2
+   },
+   "gen_pass_rate": {
+    "mean": 0.0,
+    "std": 0.0,
+    "n": 2
+   }
+  }
+ }
+}

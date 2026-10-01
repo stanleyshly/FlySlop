@@ -1,0 +1,8 @@
+{"step": 47, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 5.39172, "acc": 0.0841, "sec": 0.089, "tf_acc": 0.162}
+{"step": 48, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 5.59793, "acc": 0.0866, "sec": 0.098, "tf_acc": 0.1654}
+{"step": 49, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 5.50105, "acc": 0.0897, "sec": 0.109, "tf_acc": 0.2228}
+{"step": 50, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 5.16693, "acc": 0.0734, "sec": 0.144, "tf_acc": 0.2062}
+{"step": 51, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 5.38174, "acc": 0.084, "sec": 0.106, "tf_acc": 0.1765}
+{"step": 52, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 5.33555, "acc": 0.1028, "sec": 0.088, "tf_acc": 0.1799}
+{"step": 53, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 5.23691, "acc": 0.0781, "sec": 0.103, "tf_acc": 0.1839}
+{"step": 54, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 4.99722, "acc": 0.0874, "sec": 0.078, "tf_acc": 0.1818}

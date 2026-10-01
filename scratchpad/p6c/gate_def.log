@@ -1,0 +1,35 @@
+data: dataset-fallback (oracle train pairs 4 < 200); sources={"authored/sv": 21, "humaneval/py": 164, "mbpp/py": 974, "rtllm/sv": 50, "verilogeval/sv": 156} {'train': 1111, 'val': 113, 'test': 141}
+[gru/s0] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 7.03324, "acc": 0.0, "sec": 0.342}
+[gru/s0] {"step": 50, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 2.04847, "acc": 0.4849, "sec": 0.233}
+[gru/s0] {"step": 100, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.46652, "acc": 0.8711, "sec": 0.353}
+[gru/s0] {"step": 150, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.17691, "acc": 0.9675, "sec": 0.254}
+[gru/s0] {"step": 200, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.06892, "acc": 0.989, "sec": 0.183}
+[gru/s0] {"step": 250, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.02709, "acc": 0.9958, "sec": 0.238}
+[gru/s0] {"step": 300, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.01633, "acc": 0.9955, "sec": 0.267}
+[gru/s0] {"step": 350, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.0096, "acc": 0.9969, "sec": 0.265}
+[gru/s0] {"step": 400, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.00246, "acc": 0.9979, "sec": 0.213}
+[gru/s0] {"step": 450, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.01115, "acc": 0.9946, "sec": 0.225}
+[gru/s0] {"step": 500, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.00687, "acc": 0.9974, "sec": 0.515}
+[gru/s0] {"step": 550, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.00342, "acc": 0.998, "sec": 0.379}
+[gru/s0] {"step": 600, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.00671, "acc": 0.9975, "sec": 0.361}
+[gru/s0] {"step": 650, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.00285, "acc": 0.999, "sec": 0.289}
+[gru/s0] {"step": 700, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.0003, "acc": 1.0, "sec": 0.375}
+[gru/s0] {"step": 750, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.00168, "acc": 0.9992, "sec": 0.275}
+[gru/s0] {"step": 800, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.00517, "acc": 0.9971, "sec": 0.614}
+{
+ "kind": "gru",
+ "steps": 800,
+ "seconds": 231.8,
+ "final": {
+  "token_acc": 0.9985,
+  "nll": 0.0083,
+  "n_val": 100,
+  "gen_n": 100,
+  "gen_parse_rate": 0.95,
+  "gen_pass_rate": 0.92,
+  "gen_exact_rate": 0.9,
+  "gen_token_acc": 0.951
+ },
+ "overfit_gate": true
+}
+peak RSS 0.34 GB

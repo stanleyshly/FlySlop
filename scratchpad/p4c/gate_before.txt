@@ -1,0 +1,76 @@
+{
+  "gate": "PLAN \u00a75.3 scripted body: >=95% intended contacts, <=1% unintended characters, 200 presses x 3 seeds",
+  "physics": {
+    "timestep": 0.001,
+    "tick_hz": 30,
+    "kp": 800.0,
+    "kv": 16.0,
+    "armature": 0.01,
+    "joint_damping": 0.05,
+    "tip_radius": 0.015,
+    "key_stiffness": 300.0,
+    "key_damping": 30.0,
+    "push_through": 0.2,
+    "key_preload": 0.1,
+    "key_mass": 4.0,
+    "pad_timeconst": 0.004,
+    "touch_window": 0.01,
+    "press_depth": 0.05,
+    "release_depth": 0.02,
+    "debounce_ticks": 2
+  },
+  "per_seed": [
+    {
+      "seed": 0,
+      "intended_presses": 201,
+      "contact_onsets": 201,
+      "intended_contacts": 201,
+      "intended_contact_rate": 1.0,
+      "unintended_characters": 0,
+      "unintended_char_rate": 0.0,
+      "uncredited_actuations": 9,
+      "exact_text": true,
+      "char_mismatches": 0,
+      "replay_ok": true,
+      "ticks": 5407,
+      "max_ik_error": 0.0
+    },
+    {
+      "seed": 1,
+      "intended_presses": 200,
+      "contact_onsets": 200,
+      "intended_contacts": 200,
+      "intended_contact_rate": 1.0,
+      "unintended_characters": 0,
+      "unintended_char_rate": 0.0,
+      "uncredited_actuations": 15,
+      "exact_text": true,
+      "char_mismatches": 0,
+      "replay_ok": true,
+      "ticks": 5210,
+      "max_ik_error": 0.0
+    },
+    {
+      "seed": 2,
+      "intended_presses": 200,
+      "contact_onsets": 200,
+      "intended_contacts": 200,
+      "intended_contact_rate": 1.0,
+      "unintended_characters": 0,
+      "unintended_char_rate": 0.0,
+      "uncredited_actuations": 13,
+      "exact_text": true,
+      "char_mismatches": 0,
+      "replay_ok": true,
+      "ticks": 5384,
+      "max_ik_error": 0.0
+    }
+  ],
+  "summary": {
+    "intended_contact_rate": 1.0,
+    "unintended_char_rate": 0.0,
+    "uncredited_actuations": 37,
+    "all_replays_ok": true,
+    "gate_met": true
+  }
+}

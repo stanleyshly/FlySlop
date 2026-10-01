@@ -1,0 +1,40 @@
+/Users/stanley/Desktop/FlySlop/backend/connectome/runtime.py:95: UserWarning: Sparse invariant checks are implicitly disabled. Memory errors (e.g. SEGFAULT) will occur when operating on a sparse tensor which violates the invariants, but checks incur performance overhead. To silence this warning, explicitly opt in or out. See `torch.sparse.check_sparse_tensor_invariants.__doc__` for guidance.  (Triggered internally at /Users/runner/work/pytorch/pytorch/aten/src/ATen/Context.cpp:855.)
+  S = torch.sparse_csr_tensor(crow, col, vals, size=(n, n))
+/Users/stanley/Desktop/FlySlop/backend/connectome/runtime.py:95: UserWarning: Sparse CSR tensor support is in beta state. If you miss a functionality in the sparse tensor support, please submit a feature request to https://github.com/pytorch/pytorch/issues. (Triggered internally at /Users/runner/work/pytorch/pytorch/aten/src/ATen/SparseCsrTensorImpl.cpp:51.)
+  S = torch.sparse_csr_tensor(crow, col, vals, size=(n, n))
+............/Users/stanley/Desktop/FlySlop/tests/test_connectome_runtime.py:86: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /Users/runner/work/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:821.)
+  rho = float(torch.linalg.eigvals(w).abs().max())
+................[curriculum] stage 1 s1: passed | not implemented | 
+[curriculum] stage 2 s2: passed | not implemented | 
+[curriculum] stage 3 s3: passed | not implemented | 
+.[curriculum] stage 1 s1: passed | not implemented | 
+[curriculum] stage 2 s2: error |  | RuntimeError: injected failure in stage1_keys
+[curriculum] stage 2 s2: passed | not implemented | 
+[curriculum] stage 3 s3: passed | not implemented | 
+.[curriculum] stage 3 s3: passed | not implemented | 
+.[curriculum] stage 1 s1: passed | not implemented | 
+[curriculum] stage 2 s2: gate_failed | not implemented | 
+..[curriculum] stage 1 s1: passed | not implemented | 
+..[curriculum] stage 1 s1: passed | not implemented | 
+[curriculum] stage 2 s2: budget_stopped |  | steps budget exceeded: 11 > 10
+[curriculum] stage 1 s1: passed | not implemented | 
+[curriculum] stage 2 s2: advanced |  | steps budget exceeded: 11 > 10
+[curriculum] stage 3 s3: passed | not implemented | 
+.[curriculum] stage 1 s1: budget_stopped |  | wall_s budget exceeded: 0.1s > 0.1s
+.................[memory_budget] over RAM budget: huge needs 8.00 GB, in use 0.40 GB, cap 4.00 GB (FLYSLOP_MAX_RAM_GB)
+...s...............................................................................................................................
+----------------------------------------------------------------------
+Ran 184 tests in 105.105s
+
+OK (skipped=1)
+[gru/s0] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 7.13651, "acc": 0.0, "sec": 0.036}
+[gru/s0] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 7.13651, "acc": 0.0, "sec": 0.016}
+[gru/s1] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.91572, "acc": 0.0, "sec": 0.015}
+[gru/s1] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.91572, "acc": 0.0, "sec": 0.014}
+
+oracle cost: mean ratio vs naive 0.206, vs diff size 1.90 (median 1.28), n=596
+
+param counts (trainable / frozen): {'real': (681400, 0), 'shuffled': (681400, 0), 'random_sparse': (681400, 0), 'frozen': (144792, 536608), 'gru': (680483, 0)}
+
+overfit curve (step, loss, acc, s): [(1, 6.96, 0.0, 0.2), (5, 4.34, 0.23, 1.2), (10, 2.19, 0.44, 2.4), (15, 1.29, 0.63, 3.6), (20, 0.65, 0.84, 4.9), (22, 0.43, 0.95, 5.4)]

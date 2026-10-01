@@ -1,0 +1,24 @@
+test_context_contains_prompt_buffer_output (tests.test_microsuite.LoopTests.test_context_contains_prompt_buffer_output) ... ok
+test_episode_budget (tests.test_microsuite.LoopTests.test_episode_budget) ... ok
+test_python_infinite_loop_terminates (tests.test_microsuite.LoopTests.test_python_infinite_loop_terminates) ... ok
+test_python_repair_from_corrupted (tests.test_microsuite.LoopTests.test_python_repair_from_corrupted) ... ok
+test_repair_gain_metric (tests.test_microsuite.LoopTests.test_repair_gain_metric) ... FAIL
+test_sv_oracle_repair_sample (tests.test_microsuite.LoopTests.test_sv_oracle_repair_sample) ... ok
+test_token_and_buffer_caps (tests.test_microsuite.LoopTests.test_token_and_buffer_caps) ... ok
+test_verilator_hang_terminates (tests.test_microsuite.LoopTests.test_verilator_hang_terminates) ... ok
+test_counts_and_metadata (tests.test_microsuite.SuiteTests.test_counts_and_metadata) ... ok
+test_no_literal_overlap_with_training_records (tests.test_microsuite.SuiteTests.test_no_literal_overlap_with_training_records) ... ok
+test_python_oracle_and_null (tests.test_microsuite.SuiteTests.test_python_oracle_and_null) ... ok
+
+======================================================================
+FAIL: test_repair_gain_metric (tests.test_microsuite.LoopTests.test_repair_gain_metric)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/stanley/Desktop/FlySlop/tests/test_microsuite.py", line 59, in test_repair_gain_metric
+    self.assertGreater(g["improvement"], 0.0)
+AssertionError: 0.0 not greater than 0.0
+
+----------------------------------------------------------------------
+Ran 11 tests in 45.245s
+
+FAILED (failures=1)

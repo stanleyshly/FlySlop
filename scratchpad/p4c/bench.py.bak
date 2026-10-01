@@ -1,0 +1,23 @@
+import sys, json, time, numpy as np
+from training.physical_eval import type_tokens
+from backend.keyplan import expand_tokens
+N=int(sys.argv[1]); modes=sys.argv[2].split(",")
+base="abcdefgh"
+cases={
+ "Shift+char (held) 'AbCdEfGh'": (["AbCdEfGh"],{"shift_mode":"held"}),
+ "Shift+symbols 'Q!@#(){}:\"<>?|~_+'": ([ "Q!@#(){}:\"<>?|~_+"],{"shift_mode":"held"}),
+ "Fn+Backspace <DEL>": ([base,"<LEFT>","<LEFT>","<DEL>","<DEL>"],{}),
+ "Fn+ArrowLeft <HOME>": ([base,"<ENTER>","xy","<HOME>","z"],{}),
+ "Fn+ArrowRight <END>": ([base,"<ENTER>","xy","<UP>","<HOME>","<END>","z"],{}),
+ "Shift selection + replace": ([base,"<SEL_START>","<LEFT>","<LEFT>","<LEFT>","<SEL_END>","Q"],{}),
+ "Shift sel arrows (up/down/right)": ([base,"<ENTER>",base,"<SEL_START>","<UP>","<LEFT>","<RIGHT>","<SEL_END>","<BS>"],{}),
+ "Shift+Fn select-to-home": (["ab cd","<SEL_START>","<HOME>","<SEL_END>","Z"],{}),
+}
+res={}
+for name,(src,kw) in cases.items():
+    for mode in modes:
+        ok=cv=0; ticks=[]; per=[]; slips=0; t0=time.time()
+        for seed in range(N):
+            r=type_tokens(src,"expert",mode,seed=seed,recover=False,**kw)
+            ok+=bool(r["exact"]); cv+=bool(r["contact_verified"]); ticks.append(r["ticks"]); per.append(r["ticks_per_command"] if "ticks_per_command" in r else 0); slips+=len(r["slips"])
+        print(f"{name:40s} {mode:5s} exact {ok}/{N} contact_ok {cv}/{N} ticks/cmd {np.mean(per):.1f} total {np.mean(ticks):.0f} slips {slips} fn_latch={r['fn_latch_used']} {time.time()-t0:.0f}s",flush=True)

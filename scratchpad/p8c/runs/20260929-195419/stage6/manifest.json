@@ -1,0 +1,86 @@
+{
+ "circuit_hash": "422b78d76143ebae60f50032d7fa291e500093d93f27b07fe16f1fb90ff83a56",
+ "code_hash": "4f489b98e80fd55d9fed120b29f4b81c9d4f3b4b810e5f37673a3f77a38d2bed",
+ "config": {
+  "budget": {
+   "steps": 200000,
+   "wall_s": 150
+  },
+  "controls": true,
+  "data": "auto",
+  "exclusive": true,
+  "gate": {
+   "beats_controls": 1
+  },
+  "id": 6,
+  "kind": "real",
+  "kinds": [
+   "real",
+   "shuffled",
+   "random_sparse",
+   "frozen",
+   "gru"
+  ],
+  "level": "symbolic",
+  "min_token_acc": 0.5,
+  "module": "training.stages.stage6_distill",
+  "name": "Distillation A-B-C",
+  "seeds": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "smoke_gates": "relaxed",
+  "smoke_stage": {
+   "controls": false,
+   "kind": "gru",
+   "steps": 30
+  }
+ },
+ "data_hash": "6c0eaa674541fe4781bb3a170c35a05b76e00524990c5e474a0f943d46128f14",
+ "exclusive": true,
+ "gate": {
+  "beats_controls": 1
+ },
+ "gate_passed": true,
+ "metrics": {
+  "data": "dataset-fallback (oracle train pairs 4 < 200); sources={\"authored/sv\": 21, \"humaneval/py\": 164, \"mbpp/py\": 974, \"rtllm/sv\": 50, \"verilogeval/sv\": 156}",
+  "gate_detail": {
+   "beats_controls": {
+    "note": "controls not run (set controls: true for the real gate)",
+    "ok": null
+   },
+   "token_acc_floor": {
+    "ok": false,
+    "threshold": 0.5,
+    "value": 0.2297
+   }
+  },
+  "gate_mode": "relaxed (smoke, NOT a real gate)",
+  "gen_exact_rate": 0.0,
+  "gen_n": 4,
+  "gen_parse_rate": 0.0,
+  "gen_pass_rate": 0.0,
+  "gen_token_acc": 0.0432,
+  "kind": "gru",
+  "n_val": 8,
+  "nll": 4.4931,
+  "real_gate_passed": false,
+  "smoke": true,
+  "status": "kind=gru token_acc=0.2297 gen_pass=0.0 gate=relaxed (smoke, NOT a real gate) real_pass=False",
+  "steps": 30,
+  "token_acc": 0.2297
+ },
+ "name": "Distillation A-B-C",
+ "peak_rss_bytes": 381632512,
+ "reason": null,
+ "seed": 6,
+ "smoke": true,
+ "stage": 6,
+ "started": 1790726059.5215511,
+ "status": "passed",
+ "steps": 30,
+ "time_s": 5.1578779220581055
+}

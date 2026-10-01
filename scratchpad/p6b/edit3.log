@@ -1,0 +1,26 @@
+[edit s3] 600 train / 60 val examples in 5.6s; oracle cost mean 14.6
+[edit3/gru] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.85063, "acc": 0.0, "sec": 0.26}
+[edit3/gru] {"step": 50, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.90303, "acc": 0.5884, "sec": 0.144}
+[edit3/gru] {"step": 100, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.61109, "acc": 0.6805, "sec": 0.211}
+[edit3/gru] {"step": 150, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.33847, "acc": 0.6578, "sec": 0.106}
+[edit3/gru] {"step": 200, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.20772, "acc": 0.7149, "sec": 0.157}
+{
+ "kind": "gru",
+ "stage": 3,
+ "steps": 200,
+ "stopped": "steps",
+ "seconds": 33.4,
+ "final": {
+  "token_acc": 0.6238,
+  "nll": 2.2693,
+  "first_round_ok": 0.0,
+  "replan_reach": 0.05,
+  "replan_within_ratio": 0.0,
+  "act_exact_first": 0.0,
+  "mean_cost_ratio": 0.0,
+  "n_eval": 40,
+  "rounds": 3
+ }
+}
+peak RSS 0.34 GB
+FLYSLOP_MAX_RAM_GB=1.25 uv run --extra training python -m  --stage 3 --kind    35.22s user 6.36s system 95% cpu 43.570 total

@@ -1,0 +1,13 @@
+import sys
+from backend.fly_env import *
+mode=sys.argv[1]; seeds=range(int(sys.argv[2]))
+env=FlyTypingEnv(action_mode=mode, terminate_on_error=False, physics={"shift_mode":"held"})
+for k in ("ArrowLeft","ArrowRight","ArrowUp","ArrowDown","Space"):
+    res=[]
+    for s in seeds:
+        env.reset(seed=s,options={"keys":[(k,True)],"max_steps":300})
+        for i in range(300):
+            obs,r,te,tr,info=env.step(env.expert_action())
+            if te or tr: break
+        res.append(env.tick if info["exact"] and not info["error"] else -env.tick)
+    print(k,res,flush=True)

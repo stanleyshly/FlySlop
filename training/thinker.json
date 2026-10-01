@@ -1,0 +1,60 @@
+{
+ "model": {
+  "circuit": "data/connectome/thinker_circuit_small.npz",
+  "vocab_size": 1024,
+  "embed_dim": 32,
+  "readout_rank": 64,
+  "k_steps": 4,
+  "backend": "csr",
+  "spectral_radius": 4.0,
+  "tbptt": 32
+ },
+ "tokenizer": "data/corpus/tokenizer/bpe.json",
+ "train": {
+  "batch": 32,
+  "max_len": 192,
+  "lr": 0.01,
+  "conn_lr": 0.003,
+  "clip": 1.0,
+  "warmup": 20,
+  "max_steps": 20000,
+  "max_seconds": 43200,
+  "log_every": 10,
+  "eval_every": 500,
+  "ckpt_every": 500,
+  "eval_pairs": 64,
+  "gen_pairs": 24,
+  "gen_max_new": 128,
+  "mix_temperature": 1.0,
+  "mix_mode": "parallel",
+  "tf_lambda": 0.5
+ },
+ "schedule": {
+  "mode": "gated",
+  "window": 20,
+  "a_thresh": 0.97,
+  "b_floor": 0.9,
+  "min_steps": 20,
+  "a_frac": 0.35,
+  "b_frac": 0.45,
+  "b_levels": [0.25, 0.5, 0.75, 0.95]
+ },
+ "distill": {
+  "data": "auto",
+  "min_oracle_pairs": 200,
+  "overfit_steps": 600,
+  "controls_kinds": ["real", "shuffled", "random_sparse", "frozen", "gru"],
+  "controls_seeds": [0, 1, 2, 3, 4]
+ },
+ "edit": {
+  "stage": 3,
+  "max_target_chars": 96,
+  "train_examples": 4000,
+  "val_examples": 200,
+  "max_new": 64,
+  "replan_rounds": 3,
+  "ratio": 1.5,
+  "corrupt_n": [1, 2],
+  "schedule": {"a_frac": 1.0, "b_frac": 0.0, "b_levels": [0.25, 0.5, 0.75, 0.95]}
+ }
+}

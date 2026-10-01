@@ -1,0 +1,165 @@
+/Users/stanley/Desktop/FlySlop/backend/connectome/runtime.py:95: UserWarning: Sparse invariant checks are implicitly disabled. Memory errors (e.g. SEGFAULT) will occur when operating on a sparse tensor which violates the invariants, but checks incur performance overhead. To silence this warning, explicitly opt in or out. See `torch.sparse.check_sparse_tensor_invariants.__doc__` for guidance.  (Triggered internally at /Users/runner/work/pytorch/pytorch/aten/src/ATen/Context.cpp:855.)
+  S = torch.sparse_csr_tensor(crow, col, vals, size=(n, n))
+/Users/stanley/Desktop/FlySlop/backend/connectome/runtime.py:95: UserWarning: Sparse CSR tensor support is in beta state. If you miss a functionality in the sparse tensor support, please submit a feature request to https://github.com/pytorch/pytorch/issues. (Triggered internally at /Users/runner/work/pytorch/pytorch/aten/src/ATen/SparseCsrTensorImpl.cpp:51.)
+  S = torch.sparse_csr_tensor(crow, col, vals, size=(n, n))
+............/Users/stanley/Desktop/FlySlop/tests/test_connectome_runtime.py:86: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /Users/runner/work/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:821.)
+  rho = float(torch.linalg.eigvals(w).abs().max())
+................[real/s8] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 7.00044, "acc": 0.0, "sec": 13.49}
+[curriculum] stage 1 s1: budget_stopped |  | wall_s budget exceeded: 40.3s > 30s
+F.[real/s8] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 7.00044, "acc": 0.0, "sec": 15.45}
+[curriculum] stage 1 s1: budget_stopped |  | wall_s budget exceeded: 46.4s > 30s
+F[real/s10] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.9766, "acc": 0.0009, "sec": 10.829}
+[curriculum] stage 3 s3: budget_stopped |  | wall_s budget exceeded: 34.2s > 30s
+F[real/s8] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 7.00044, "acc": 0.0, "sec": 10.35}
+[curriculum] stage 1 s1: budget_stopped |  | wall_s budget exceeded: 37.3s > 30s
+FF[real/s8] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 7.00044, "acc": 0.0, "sec": 16.182}
+[curriculum] stage 1 s1: budget_stopped |  | wall_s budget exceeded: 32.9s > 30s
+...[real/s8] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 7.00044, "acc": 0.0, "sec": 11.159}
+[curriculum] stage 1 s1: budget_stopped |  | wall_s budget exceeded: 35.4s > 30s
+F[curriculum] stage 1 s1: budget_stopped |  | wall_s budget exceeded: 11.5s > 0.1s
+...............E.........................................[memory_budget] over RAM budget: huge needs 8.00 GB, in use 0.30 GB, cap 4.00 GB (FLYSLOP_MAX_RAM_GB)
+...s..F........................................................................................................................................
+======================================================================
+ERROR: test_run_symbolic_missing_module (test_curriculum_stages.SymbolicWiring.test_run_symbolic_missing_module)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/stanley/Desktop/FlySlop/tests/test_curriculum_stages.py", line 168, in test_run_symbolic_missing_module
+    out = pcm.run_symbolic(SimpleNamespace(budget={}, elapsed=0), {}, True, 3)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/stanley/Desktop/FlySlop/training/stages/physical_common.py", line 361, in run_symbolic
+    res = edit_trainer.run_stage(SubCtx(ctx, "symbolic"), sc, smoke, stage=stage)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/stanley/Desktop/FlySlop/training/stages/physical_common.py", line 343, in __init__
+    self.stage_dir = Path(ctx.stage_dir) / sub
+                          ^^^^^^^^^^^^^
+AttributeError: 'types.SimpleNamespace' object has no attribute 'stage_dir'
+
+======================================================================
+FAIL: test_all_pass (test_curriculum.CurriculumTest.test_all_pass)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/stanley/Desktop/FlySlop/tests/test_curriculum.py", line 42, in test_all_pass
+    self.assertEqual(st["status"], "complete")
+AssertionError: 'stopped' != 'complete'
+- stopped
++ complete
+
+
+======================================================================
+FAIL: test_error_then_resume (test_curriculum.CurriculumTest.test_error_then_resume)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/stanley/Desktop/FlySlop/tests/test_curriculum.py", line 71, in test_error_then_resume
+    self.assertEqual(self.status(st), ["passed", "error", "pending"])
+AssertionError: Lists differ: ['budget_stopped', 'pending', 'pending'] != ['passed', 'error', 'pending']
+
+First differing element 0:
+'budget_stopped'
+'passed'
+
+- ['budget_stopped', 'pending', 'pending']
++ ['passed', 'error', 'pending']
+
+======================================================================
+FAIL: test_from_stage (test_curriculum.CurriculumTest.test_from_stage)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/stanley/Desktop/FlySlop/tests/test_curriculum.py", line 80, in test_from_stage
+    self.assertEqual(self.status(st), ["skipped", "skipped", "passed"])
+AssertionError: Lists differ: ['skipped', 'skipped', 'budget_stopped'] != ['skipped', 'skipped', 'passed']
+
+First differing element 2:
+'budget_stopped'
+'passed'
+
+- ['skipped', 'skipped', 'budget_stopped']
+?                         ^^^^^^^ ^^^^
+
++ ['skipped', 'skipped', 'passed']
+?                         ^^ ^
+
+
+======================================================================
+FAIL: test_gate_failure_stops (test_curriculum.CurriculumTest.test_gate_failure_stops)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/stanley/Desktop/FlySlop/tests/test_curriculum.py", line 51, in test_gate_failure_stops
+    self.assertEqual(self.status(st), ["passed", "gate_failed", "pending"])
+AssertionError: Lists differ: ['budget_stopped', 'pending', 'pending'] != ['passed', 'gate_failed', 'pending']
+
+First differing element 0:
+'budget_stopped'
+'passed'
+
+- ['budget_stopped', 'pending', 'pending']
++ ['passed', 'gate_failed', 'pending']
+
+======================================================================
+FAIL: test_kill_and_resume_subprocess (test_curriculum.CurriculumTest.test_kill_and_resume_subprocess)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/stanley/Desktop/FlySlop/tests/test_curriculum.py", line 115, in test_kill_and_resume_subprocess
+    self.assertIsNotNone(state_p, "never reached stage 2")
+AssertionError: unexpectedly None : never reached stage 2
+
+======================================================================
+FAIL: test_step_budget_stop_and_advance (test_curriculum.CurriculumTest.test_step_budget_stop_and_advance)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/stanley/Desktop/FlySlop/tests/test_curriculum.py", line 56, in test_step_budget_stop_and_advance
+    self.assertEqual(self.status(st), ["passed", "budget_stopped", "pending"])
+AssertionError: Lists differ: ['budget_stopped', 'pending', 'pending'] != ['passed', 'budget_stopped', 'pending']
+
+First differing element 0:
+'budget_stopped'
+'passed'
+
+- ['budget_stopped', 'pending', 'pending']
++ ['passed', 'budget_stopped', 'pending']
+
+======================================================================
+FAIL: test_gated_schedule_thresholds_caps_and_state (test_distill.DistillTests.test_gated_schedule_thresholds_caps_and_state)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/stanley/Desktop/FlySlop/tests/test_distill.py", line 55, in test_gated_schedule_thresholds_caps_and_state
+    self.assertEqual([e["reason"] for e in ev], ["step_cap", "step_cap"])
+AssertionError: Lists differ: ['step_cap'] != ['step_cap', 'step_cap']
+
+Second list contains 1 additional elements.
+First extra element 1:
+'step_cap'
+
+- ['step_cap']
++ ['step_cap', 'step_cap']
+
+----------------------------------------------------------------------
+Ran 238 tests in 487.881s
+
+FAILED (failures=7, errors=1, skipped=1)
+[gru/s0] {"event": "transition", "step": 1, "from": "A", "to": "B", "p": 0.25, "from_p": 0.0, "reason": "step_cap", "rolling_acc": 0.0, "threshold": 0.97}
+[gru/s0] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 7.13651, "acc": 0.0, "sec": 0.02}
+[gru/s0] {"event": "transition", "step": 2, "from": "B", "to": "B", "p": 0.5, "from_p": 0.25, "reason": "step_cap", "rolling_acc": 0.5769, "threshold": 0.9}
+[gru/s0] {"event": "transition", "step": 3, "from": "B", "to": "B", "p": 0.75, "from_p": 0.5, "reason": "step_cap", "rolling_acc": 0.7885, "threshold": 0.9}
+[gru/s0] {"event": "transition", "step": 4, "from": "B", "to": "B", "p": 0.95, "from_p": 0.75, "reason": "step_cap", "rolling_acc": 0.8269, "threshold": 0.9}
+[gru/s0] {"event": "transition", "step": 1, "from": "A", "to": "B", "p": 0.25, "from_p": 0.0, "reason": "step_cap", "rolling_acc": 0.0, "threshold": 0.97}
+[gru/s0] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 7.13651, "acc": 0.0, "sec": 0.026}
+[gru/s0] {"event": "transition", "step": 2, "from": "B", "to": "B", "p": 0.5, "from_p": 0.25, "reason": "step_cap", "rolling_acc": 0.5769, "threshold": 0.9}
+[gru/s0] {"event": "transition", "step": 3, "from": "B", "to": "B", "p": 0.75, "from_p": 0.5, "reason": "step_cap", "rolling_acc": 0.7885, "threshold": 0.9}
+[gru/s0] {"event": "transition", "step": 4, "from": "B", "to": "B", "p": 0.95, "from_p": 0.75, "reason": "step_cap", "rolling_acc": 0.8269, "threshold": 0.9}
+[gru/s1] {"event": "transition", "step": 1, "from": "A", "to": "B", "p": 0.25, "from_p": 0.0, "reason": "step_cap", "rolling_acc": 0.0, "threshold": 0.97}
+[gru/s1] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.91572, "acc": 0.0, "sec": 0.026}
+[gru/s1] {"event": "transition", "step": 2, "from": "B", "to": "B", "p": 0.5, "from_p": 0.25, "reason": "step_cap", "rolling_acc": 0.6923, "threshold": 0.9}
+[gru/s1] {"event": "transition", "step": 3, "from": "B", "to": "B", "p": 0.75, "from_p": 0.5, "reason": "step_cap", "rolling_acc": 0.8654, "threshold": 0.9}
+[gru/s1] {"event": "transition", "step": 4, "from": "B", "to": "B", "p": 0.95, "from_p": 0.75, "reason": "step_cap", "rolling_acc": 0.8654, "threshold": 0.9}
+[gru/s1] {"event": "transition", "step": 1, "from": "A", "to": "B", "p": 0.25, "from_p": 0.0, "reason": "step_cap", "rolling_acc": 0.0, "threshold": 0.97}
+[gru/s1] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.91572, "acc": 0.0, "sec": 0.035}
+[gru/s1] {"event": "transition", "step": 2, "from": "B", "to": "B", "p": 0.5, "from_p": 0.25, "reason": "step_cap", "rolling_acc": 0.6923, "threshold": 0.9}
+[gru/s1] {"event": "transition", "step": 3, "from": "B", "to": "B", "p": 0.75, "from_p": 0.5, "reason": "step_cap", "rolling_acc": 0.8654, "threshold": 0.9}
+[gru/s1] {"event": "transition", "step": 4, "from": "B", "to": "B", "p": 0.95, "from_p": 0.75, "reason": "step_cap", "rolling_acc": 0.8654, "threshold": 0.9}
+
+oracle cost: mean ratio vs naive 0.206, vs diff size 1.90 (median 1.28), n=596
+
+param counts (trainable / frozen): {'real': (681400, 0), 'shuffled': (681400, 0), 'random_sparse': (681400, 0), 'frozen': (144792, 536608), 'gru': (680483, 0)}
+
+overfit curve (step, loss, acc, s): [(1, 6.96, 0.0, 0.5), (5, 4.34, 0.23, 2.8), (10, 2.19, 0.44, 6.3), (15, 1.29, 0.63, 10.6), (20, 0.65, 0.84, 14.4), (22, 0.43, 0.95, 15.9)]

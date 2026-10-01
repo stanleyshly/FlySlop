@@ -1,0 +1,40 @@
+data: dataset-fallback (oracle train pairs 4 < 200); sources={"authored/sv": 21, "humaneval/py": 164, "mbpp/py": 974, "rtllm/sv": 50, "verilogeval/sv": 156} {'train': 1111, 'val': 113, 'test': 141}
+[gru/s0] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 7.03324, "acc": 0.0, "sec": 0.344}
+[gru/s0] {"step": 50, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 2.04847, "acc": 0.4849, "sec": 0.277}
+[gru/s0] {"step": 100, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.46652, "acc": 0.8711, "sec": 0.293}
+[gru/s0] {"step": 150, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.17691, "acc": 0.9675, "sec": 0.268}
+[gru/s0] {"step": 200, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.06892, "acc": 0.989, "sec": 0.172}
+[gru/s0] {"step": 250, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.02709, "acc": 0.9958, "sec": 0.241}
+[gru/s0] {"event": "transition", "step": 280, "from": "A", "to": "B", "p": 0.25, "from_p": 0.0, "reason": "fixed"}
+[gru/s0] {"step": 300, "phase": "B", "p": 0.25, "mixed_frac": 0.2604, "loss": 0.18304, "acc": 0.9659, "sec": 0.539, "tf_acc": 0.9784}
+[gru/s0] {"step": 350, "phase": "B", "p": 0.25, "mixed_frac": 0.2426, "loss": 0.45554, "acc": 0.907, "sec": 0.488, "tf_acc": 0.9452}
+[gru/s0] {"event": "transition", "step": 370, "from": "B", "to": "B", "p": 0.5, "from_p": 0.25, "reason": "fixed"}
+[gru/s0] {"step": 400, "phase": "B", "p": 0.5, "mixed_frac": 0.4973, "loss": 0.26182, "acc": 0.9504, "sec": 0.672, "tf_acc": 0.9926}
+[gru/s0] {"step": 450, "phase": "B", "p": 0.5, "mixed_frac": 0.5105, "loss": 0.13521, "acc": 0.9674, "sec": 0.86, "tf_acc": 0.9859}
+[gru/s0] {"event": "transition", "step": 460, "from": "B", "to": "B", "p": 0.75, "from_p": 0.5, "reason": "fixed"}
+[gru/s0] {"step": 500, "phase": "B", "p": 0.75, "mixed_frac": 0.7578, "loss": 0.08622, "acc": 0.9799, "sec": 0.58, "tf_acc": 0.9948}
+[gru/s0] {"event": "transition", "step": 550, "from": "B", "to": "B", "p": 0.95, "from_p": 0.75, "reason": "fixed"}
+[gru/s0] {"step": 550, "phase": "B", "p": 0.75, "mixed_frac": 0.7271, "loss": 0.031, "acc": 0.9911, "sec": 0.521, "tf_acc": 0.996}
+[gru/s0] {"step": 600, "phase": "B", "p": 0.95, "mixed_frac": 0.9608, "loss": 0.02311, "acc": 0.9941, "sec": 0.463, "tf_acc": 0.9983}
+[gru/s0] {"event": "transition", "step": 640, "from": "B", "to": "C", "p": 1.0, "from_p": 0.95, "reason": "fixed"}
+[gru/s0] {"step": 650, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 0.08522, "acc": 0.9859, "sec": 0.481, "tf_acc": 0.9939}
+[gru/s0] {"step": 700, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 0.02322, "acc": 0.9967, "sec": 0.46, "tf_acc": 1.0}
+[gru/s0] {"step": 750, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 0.04853, "acc": 0.9903, "sec": 0.453, "tf_acc": 0.9984}
+[gru/s0] {"step": 800, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 0.05084, "acc": 0.9834, "sec": 0.801, "tf_acc": 0.9942}
+{
+ "kind": "gru",
+ "steps": 800,
+ "seconds": 394.9,
+ "final": {
+  "token_acc": 0.9968,
+  "nll": 0.0122,
+  "n_val": 100,
+  "gen_n": 100,
+  "gen_parse_rate": 0.94,
+  "gen_pass_rate": 0.89,
+  "gen_exact_rate": 0.88,
+  "gen_token_acc": 0.9374
+ },
+ "overfit_gate": true
+}
+peak RSS 0.34 GB

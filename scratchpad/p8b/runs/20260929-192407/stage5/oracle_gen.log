@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/stanley/Desktop/FlySlop/training/oracle_gen.py", line 513, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/stanley/Desktop/FlySlop/training/oracle_gen.py", line 506, in main
+    m = run(a)
+        ^^^^^^
+  File "/Users/stanley/Desktop/FlySlop/training/oracle_gen.py", line 447, in run
+    row = attempt(t, teacher, filt, splits, lim)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/stanley/Desktop/FlySlop/training/oracle_gen.py", line 339, in attempt
+    raw = gen(TEMPLATES["gen_py" if lang == "py" else "gen_sv"].format(spec=spec_text), lim["code"])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/stanley/Desktop/FlySlop/training/oracle_gen.py", line 311, in gen
+    out = teacher.generate(prompt)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/stanley/Desktop/FlySlop/training/teacher.py", line 92, in generate
+    self.load()
+  File "/Users/stanley/Desktop/FlySlop/training/teacher.py", line 73, in load
+    if not self.skip_estimate and not mb.check_fits(need, f"load {self.model_id}", raise_error=True, config_gb=self.max_ram_gb):
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/stanley/Desktop/FlySlop/backend/memory_budget.py", line 79, in check_fits
+    raise OverBudget(msg)
+backend.memory_budget.OverBudget: over RAM budget: load mlx-community/Qwen2.5-Coder-0.5B-Instruct-4bit needs 0.60 GB, in use 0.07 GB, cap 0.60 GB (FLYSLOP_MAX_RAM_GB)

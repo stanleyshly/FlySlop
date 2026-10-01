@@ -1,0 +1,161 @@
+{
+ "circuit_hash": "422b78d76143ebae60f50032d7fa291e500093d93f27b07fe16f1fb90ff83a56",
+ "code_hash": "a7ce1b4cbf5792d337cefbd75c1f774a8b95357a233f223b0a9b592cb9c5402c",
+ "config": {
+  "budget": {
+   "steps": 200000,
+   "wall_s": 120
+  },
+  "exclusive": false,
+  "gate": {
+   "code_exact": 0.7,
+   "token_exact": 0.9
+  },
+  "id": 2,
+  "level": "physical",
+  "module": "training.stages.stage2_transcription",
+  "name": "Transcription",
+  "physical": {
+   "action_mode": "mn",
+   "bc_episodes": 400,
+   "bc_episodes_code": 100,
+   "bc_epochs": 30,
+   "bc_workers": 4,
+   "config": "training/ppo_fly_mn.json",
+   "eval_code_episodes": 50,
+   "eval_episodes": 100,
+   "levels": [
+    "words",
+    "code_16",
+    "code_32",
+    "code_64",
+    "code_128",
+    "code_multi"
+   ],
+   "n_envs": 4,
+   "policy": "connectome",
+   "ppo_timesteps": 500000,
+   "readout": "mn_antagonist"
+  },
+  "smoke_gates": "relaxed",
+  "smoke_physical": {
+   "bc_episodes": 8,
+   "bc_episodes_code": 4,
+   "bc_epochs": 1,
+   "eval_code_episodes": 2,
+   "eval_episodes": 4,
+   "levels": [
+    "words",
+    "code_16"
+   ],
+   "n_envs": 1,
+   "ppo": {
+    "batch_size": 64,
+    "n_epochs": 1,
+    "n_steps": 128
+   },
+   "ppo_timesteps": 128
+  }
+ },
+ "data_hash": "6c0eaa674541fe4781bb3a170c35a05b76e00524990c5e474a0f943d46128f14",
+ "exclusive": false,
+ "gate": {
+  "code_exact": 0.7,
+  "token_exact": 0.9
+ },
+ "gate_passed": true,
+ "metrics": {
+  "best_checkpoint": "scratchpad/p8b/runs/20260929-192407/stage2/best_model.zip",
+  "code_cer": 1.0,
+  "code_episodes": 2,
+  "code_exact": 0.0,
+  "gate_detail": {
+   "code_exact": {
+    "metric": "code_exact",
+    "ok": false,
+    "op": "ge",
+    "threshold": 0.7,
+    "value": 0.0
+   },
+   "token_exact": {
+    "metric": "token_exact",
+    "ok": false,
+    "op": "ge",
+    "threshold": 0.9,
+    "value": 0.0
+   }
+  },
+  "gate_mode": "relaxed (smoke, NOT a real gate)",
+  "heldout_code_split": "test",
+  "levels": [
+   "words",
+   "code_16"
+  ],
+  "phases": [
+   {
+    "bc": {
+     "episodes": 8,
+     "epochs": 1,
+     "expert_exact_while_collecting": 1.0,
+     "mse_first": 0.15404744321649724,
+     "mse_last": 0.15404744321649724,
+     "transitions": 550
+    },
+    "ckpt": "scratchpad/p8b/runs/20260929-192407/stage2/phase0_words.zip",
+    "eval": {
+     "code_cer": 1.0,
+     "code_episodes": 2,
+     "code_exact": 0.0,
+     "token_cer": 0.9583333333333334,
+     "token_episodes": 4,
+     "token_exact": 0.0
+    },
+    "phase": "words",
+    "pool": 200,
+    "ppo_timesteps": 128,
+    "seconds": 4.2,
+    "warm_start": "scratchpad/p8b/runs/20260929-192407/stage1/best_model.zip"
+   },
+   {
+    "bc": {
+     "episodes": 4,
+     "epochs": 1,
+     "expert_exact_while_collecting": 1.0,
+     "mse_first": 0.14078528318442454,
+     "mse_last": 0.14078528318442454,
+     "transitions": 767
+    },
+    "ckpt": "scratchpad/p8b/runs/20260929-192407/stage2/phase1_code_16.zip",
+    "eval": {
+     "code_cer": 1.0,
+     "code_episodes": 2,
+     "code_exact": 0.0,
+     "token_cer": 0.9583333333333334,
+     "token_episodes": 4,
+     "token_exact": 0.0
+    },
+    "phase": "code_16",
+    "pool": 500,
+    "ppo_timesteps": 128,
+    "seconds": 4.7
+   }
+  ],
+  "real_gate_passed": false,
+  "smoke": true,
+  "status": "token_exact=0.0 code_exact=0.0 gate=relaxed (smoke, NOT a real gate) real_pass=False",
+  "token_cer": 0.9583333333333334,
+  "token_episodes": 4,
+  "token_exact": 0.0,
+  "warm_start": "scratchpad/p8b/runs/20260929-192407/stage1/best_model.zip"
+ },
+ "name": "Transcription",
+ "peak_rss_bytes": 316325888,
+ "reason": null,
+ "seed": 2,
+ "smoke": true,
+ "stage": 2,
+ "started": 1790724265.238079,
+ "status": "passed",
+ "steps": 1589,
+ "time_s": 13.811935901641846
+}

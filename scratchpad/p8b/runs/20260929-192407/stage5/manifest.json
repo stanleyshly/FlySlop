@@ -1,0 +1,49 @@
+{
+ "circuit_hash": "422b78d76143ebae60f50032d7fa291e500093d93f27b07fe16f1fb90ff83a56",
+ "code_hash": "a7ce1b4cbf5792d337cefbd75c1f774a8b95357a233f223b0a9b592cb9c5402c",
+ "config": {
+  "budget": {
+   "steps": 200000,
+   "wall_s": 150
+  },
+  "exclusive": true,
+  "gate": {
+   "filtered_pairs": 10000
+  },
+  "id": 5,
+  "level": "offline",
+  "module": "training.stages.stage5_oracle_data",
+  "name": "LLM oracle data",
+  "oracle": {
+   "code_tokens": 384,
+   "holdout_sources": "",
+   "neardup_accepted": 0.9,
+   "neardup_test": 0.7,
+   "pairs_glob": null,
+   "pairs_min": 10000,
+   "run": "curriculum",
+   "seed": 0,
+   "sources": null,
+   "spec_tokens": 160,
+   "time_budget_s": null
+  },
+  "smoke_gates": "relaxed"
+ },
+ "data_hash": "6c0eaa674541fe4781bb3a170c35a05b76e00524990c5e474a0f943d46128f14",
+ "exclusive": true,
+ "gate": {
+  "filtered_pairs": 10000
+ },
+ "gate_passed": false,
+ "metrics": {},
+ "name": "LLM oracle data",
+ "peak_rss_bytes": 316325888,
+ "reason": "RuntimeError: oracle_gen exited 1; see scratchpad/p8b/runs/20260929-192407/stage5/oracle_gen.log",
+ "seed": 5,
+ "smoke": true,
+ "stage": 5,
+ "started": 1790724369.251601,
+ "status": "error",
+ "steps": 2,
+ "time_s": 2.0255069732666016
+}

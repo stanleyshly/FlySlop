@@ -1,0 +1,44 @@
+[curriculum] run=scratchpad/p8c/runs/20260929-193803 smoke=True ram_gb=1.0
+[gru/s6] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 7.01492, "acc": 0.0, "sec": 0.224}
+[gru/s6] {"step": 5, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.48548, "acc": 0.0872, "sec": 0.153}
+[gru/s6] {"event": "transition", "step": 10, "from": "A", "to": "B", "p": 0.25, "from_p": 0.0, "reason": "step_cap", "rolling_acc": 0.0781, "threshold": 0.9}
+[gru/s6] {"step": 10, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 5.42718, "acc": 0.1268, "sec": 0.134}
+[gru/s6] {"event": "transition", "step": 13, "from": "B", "to": "B", "p": 0.5, "from_p": 0.25, "reason": "step_cap", "rolling_acc": 0.1161, "threshold": 0.85}
+[gru/s6] {"step": 15, "phase": "B", "p": 0.5, "mixed_frac": 0.5084, "loss": 5.44968, "acc": 0.1291, "sec": 0.211}
+[gru/s6] {"event": "transition", "step": 16, "from": "B", "to": "B", "p": 0.75, "from_p": 0.5, "reason": "step_cap", "rolling_acc": 0.0955, "threshold": 0.85}
+[gru/s6] {"event": "transition", "step": 19, "from": "B", "to": "B", "p": 0.95, "from_p": 0.75, "reason": "step_cap", "rolling_acc": 0.0797, "threshold": 0.85}
+[gru/s6] {"step": 20, "phase": "B", "p": 0.95, "mixed_frac": 0.9423, "loss": 5.53772, "acc": 0.0951, "sec": 0.232}
+[gru/s6] {"event": "transition", "step": 22, "from": "B", "to": "C", "p": 1.0, "from_p": 0.95, "reason": "step_cap", "rolling_acc": 0.0852, "threshold": 0.85}
+[gru/s6] {"step": 25, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 5.67127, "acc": 0.029, "sec": 0.223}
+[gru/s6] {"step": 30, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 5.60891, "acc": 0.0463, "sec": 0.223}
+[curriculum] stage 6 Distillation A-B-C: passed | kind=gru token_acc=0.0878 gen_pass=0.0 gate=relaxed (smoke, NOT a real gate) real_pass=False | 
+[curriculum] stage 7 Autonomous micro-programs: passed | pass@1=0.0 by_lang={"py": 0.0, "sv": 0.0} physical_exact=1.0 (n=3) gate=relaxed (smoke, NOT a real gate) real_pass=True | 
+[gru/s8] resumed at step 30
+[gru/s8] {"step": 35, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 4.86906, "acc": 0.1115, "sec": 0.175}
+[gru/s8] resumed at step 38
+[gru/s8] {"step": 40, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 5.40336, "acc": 0.041, "sec": 0.242}
+[gru/s8] {"step": 45, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 5.58154, "acc": 0.0712, "sec": 0.213}
+[gru/s8] resumed at step 46
+[gru/s8] {"step": 50, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 5.24101, "acc": 0.0678, "sec": 0.228}
+[curriculum] stage 8 Longer programs: passed | levels 3/3 lines<=2=0.0 lines<=3=0.0 branches=0.0 gate=relaxed (smoke, NOT a real gate) real_pass=True | 
+[curriculum] stage 9 Self-correction: error |  | KeyError: 'by_group'
+[curriculum] stopped: stage 9 error: KeyError: 'by_group'
+       36.18 real        31.51 user         4.82 sys
+           387530752  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              360162  page reclaims
+                4234  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                5409  voluntary context switches
+              214837  involuntary context switches
+           119903435  instructions retired
+            63330980  cycles elapsed
+            12469568  peak memory footprint
+done

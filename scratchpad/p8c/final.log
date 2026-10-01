@@ -1,0 +1,48 @@
+[curriculum] run=scratchpad/p8c/runs/20260929-195419 smoke=True ram_gb=1.0
+[gru/s6] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 7.01492, "acc": 0.0, "sec": 0.073}
+[gru/s6] {"step": 5, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.48548, "acc": 0.0872, "sec": 0.056}
+[gru/s6] {"event": "transition", "step": 10, "from": "A", "to": "B", "p": 0.25, "from_p": 0.0, "reason": "step_cap", "rolling_acc": 0.0781, "threshold": 0.97}
+[gru/s6] {"step": 10, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 5.42718, "acc": 0.1268, "sec": 0.052}
+[gru/s6] {"event": "transition", "step": 13, "from": "B", "to": "B", "p": 0.5, "from_p": 0.25, "reason": "step_cap", "rolling_acc": 0.123, "threshold": 0.9}
+[gru/s6] {"step": 15, "phase": "B", "p": 0.5, "mixed_frac": 0.5646, "loss": 5.44859, "acc": 0.1319, "sec": 0.13, "tf_acc": 0.228}
+[gru/s6] {"event": "transition", "step": 16, "from": "B", "to": "B", "p": 0.75, "from_p": 0.5, "reason": "step_cap", "rolling_acc": 0.0933, "threshold": 0.9}
+[gru/s6] {"event": "transition", "step": 19, "from": "B", "to": "B", "p": 0.95, "from_p": 0.75, "reason": "step_cap", "rolling_acc": 0.0926, "threshold": 0.9}
+[gru/s6] {"step": 20, "phase": "B", "p": 0.95, "mixed_frac": 0.9554, "loss": 5.62093, "acc": 0.0977, "sec": 0.11, "tf_acc": 0.2314}
+[gru/s6] {"event": "transition", "step": 22, "from": "B", "to": "C", "p": 1.0, "from_p": 0.95, "reason": "step_cap", "rolling_acc": 0.0927, "threshold": 0.9}
+[gru/s6] {"step": 25, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 5.69134, "acc": 0.0518, "sec": 0.106, "tf_acc": 0.1511}
+[gru/s6] {"step": 30, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 5.30399, "acc": 0.0872, "sec": 0.107, "tf_acc": 0.1771}
+[curriculum] stage 6 Distillation A-B-C: passed | kind=gru token_acc=0.2297 gen_pass=0.0 gate=relaxed (smoke, NOT a real gate) real_pass=False | 
+[curriculum] stage 7 Autonomous micro-programs: passed | pass@1=0.0 by_lang={"py": 0.0, "sv": 0.0} physical_exact=1.0 (n=3) gate=relaxed (smoke, NOT a real gate) real_pass=True | 
+[gru/s8] resumed at step 30
+[gru/s8] {"step": 35, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 4.57512, "acc": 0.0962, "sec": 0.08, "tf_acc": 0.2077}
+[gru/s8] resumed at step 38
+[gru/s8] {"step": 40, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 5.30587, "acc": 0.0785, "sec": 0.092, "tf_acc": 0.1843}
+[gru/s8] {"step": 45, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 5.58412, "acc": 0.0712, "sec": 0.091, "tf_acc": 0.1489}
+[gru/s8] resumed at step 46
+[gru/s8] {"step": 50, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 5.16693, "acc": 0.0734, "sec": 0.144, "tf_acc": 0.2062}
+[curriculum] stage 8 Longer programs: passed | levels 3/3 lines<=2=0.0 lines<=3=0.0 branches=0.0 gate=relaxed (smoke, NOT a real gate) real_pass=True | 
+[selfcorrect] before: {"scratch": [0.0, 0.0], "corrupt": [0.625, 0.0]}
+[selfcorrect] oracle warm-up {"steps": 100, "loss": 0.4205, "acc": 0.8594, "n": 23}
+[selfcorrect] {"iter": 0, "rollouts": 8, "repairable": 8, "solved": 0, "solve_rate": 0.0, "method": "rft", "examples": 0, "steps": 0}
+[selfcorrect] {"iter": 1, "rollouts": 8, "repairable": 6, "solved": 0, "solve_rate": 0.0, "method": "rft", "examples": 0, "steps": 0}
+[selfcorrect] {"iter": 2, "rollouts": 8, "repairable": 6, "solved": 0, "solve_rate": 0.0, "method": "rft", "examples": 0, "steps": 0}
+[curriculum] stage 9 Self-correction: passed | scratch: no_repair=0.0 repair@3=0.0 gain=0.0 method=rft gate=relaxed (smoke, NOT a real gate) real_pass=False | 
+[curriculum] complete
+       25.56 real        24.97 user         2.53 sys
+           451641344  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              313177  page reclaims
+                 334  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                3090  voluntary context switches
+              310380  involuntary context switches
+           123328285  instructions retired
+            52440210  cycles elapsed
+            12404032  peak memory footprint

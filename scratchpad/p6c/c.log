@@ -1,0 +1,125 @@
+/Users/stanley/Desktop/FlySlop/backend/connectome/runtime.py:105: UserWarning: Sparse invariant checks are implicitly disabled. Memory errors (e.g. SEGFAULT) will occur when operating on a sparse tensor which violates the invariants, but checks incur performance overhead. To silence this warning, explicitly opt in or out. See `torch.sparse.check_sparse_tensor_invariants.__doc__` for guidance.  (Triggered internally at /Users/runner/work/pytorch/pytorch/aten/src/ATen/Context.cpp:855.)
+  return torch.sparse.mm(torch.sparse_csr_tensor(cr, cl, vals[e0:e1], size=(rows, n)), R)
+/Users/stanley/Desktop/FlySlop/backend/connectome/runtime.py:105: UserWarning: Sparse CSR tensor support is in beta state. If you miss a functionality in the sparse tensor support, please submit a feature request to https://github.com/pytorch/pytorch/issues. (Triggered internally at /Users/runner/work/pytorch/pytorch/aten/src/ATen/SparseCsrTensorImpl.cpp:51.)
+  return torch.sparse.mm(torch.sparse_csr_tensor(cr, cl, vals[e0:e1], size=(rows, n)), R)
+[real/s8] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 7.00044, "acc": 0.0, "sec": 5.3}
+[curriculum] stage 1 s1: budget_stopped |  | wall_s budget exceeded: 32.2s > 30s
+F.[real/s8] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 7.00044, "acc": 0.0, "sec": 5.826}
+[curriculum] stage 1 s1: budget_stopped |  | wall_s budget exceeded: 33.2s > 30s
+F[real/s10] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.9766, "acc": 0.0009, "sec": 5.346}
+[curriculum] stage 3 s3: budget_stopped |  | wall_s budget exceeded: 34.4s > 30s
+F[real/s8] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 7.00044, "acc": 0.0, "sec": 6.074}
+[curriculum] stage 1 s1: budget_stopped |  | wall_s budget exceeded: 34.4s > 30s
+FF[real/s8] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 7.00044, "acc": 0.0, "sec": 5.242}
+[curriculum] stage 1 s1: budget_stopped |  | wall_s budget exceeded: 30.7s > 30s
+...[real/s8] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 7.00044, "acc": 0.0, "sec": 5.726}
+[curriculum] stage 1 s1: budget_stopped |  | wall_s budget exceeded: 32.8s > 30s
+F[curriculum] stage 1 s1: budget_stopped |  | wall_s budget exceeded: 6.7s > 0.1s
+...........
+======================================================================
+FAIL: test_all_pass (tests.test_curriculum.CurriculumTest.test_all_pass)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/stanley/Desktop/FlySlop/tests/test_curriculum.py", line 42, in test_all_pass
+    self.assertEqual(st["status"], "complete")
+AssertionError: 'stopped' != 'complete'
+- stopped
++ complete
+
+
+======================================================================
+FAIL: test_error_then_resume (tests.test_curriculum.CurriculumTest.test_error_then_resume)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/stanley/Desktop/FlySlop/tests/test_curriculum.py", line 71, in test_error_then_resume
+    self.assertEqual(self.status(st), ["passed", "error", "pending"])
+AssertionError: Lists differ: ['budget_stopped', 'pending', 'pending'] != ['passed', 'error', 'pending']
+
+First differing element 0:
+'budget_stopped'
+'passed'
+
+- ['budget_stopped', 'pending', 'pending']
++ ['passed', 'error', 'pending']
+
+======================================================================
+FAIL: test_from_stage (tests.test_curriculum.CurriculumTest.test_from_stage)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/stanley/Desktop/FlySlop/tests/test_curriculum.py", line 80, in test_from_stage
+    self.assertEqual(self.status(st), ["skipped", "skipped", "passed"])
+AssertionError: Lists differ: ['skipped', 'skipped', 'budget_stopped'] != ['skipped', 'skipped', 'passed']
+
+First differing element 2:
+'budget_stopped'
+'passed'
+
+- ['skipped', 'skipped', 'budget_stopped']
+?                         ^^^^^^^ ^^^^
+
++ ['skipped', 'skipped', 'passed']
+?                         ^^ ^
+
+
+======================================================================
+FAIL: test_gate_failure_stops (tests.test_curriculum.CurriculumTest.test_gate_failure_stops)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/stanley/Desktop/FlySlop/tests/test_curriculum.py", line 51, in test_gate_failure_stops
+    self.assertEqual(self.status(st), ["passed", "gate_failed", "pending"])
+AssertionError: Lists differ: ['budget_stopped', 'pending', 'pending'] != ['passed', 'gate_failed', 'pending']
+
+First differing element 0:
+'budget_stopped'
+'passed'
+
+- ['budget_stopped', 'pending', 'pending']
++ ['passed', 'gate_failed', 'pending']
+
+======================================================================
+FAIL: test_kill_and_resume_subprocess (tests.test_curriculum.CurriculumTest.test_kill_and_resume_subprocess)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/stanley/Desktop/FlySlop/tests/test_curriculum.py", line 115, in test_kill_and_resume_subprocess
+    self.assertIsNotNone(state_p, "never reached stage 2")
+AssertionError: unexpectedly None : never reached stage 2
+
+======================================================================
+FAIL: test_step_budget_stop_and_advance (tests.test_curriculum.CurriculumTest.test_step_budget_stop_and_advance)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/stanley/Desktop/FlySlop/tests/test_curriculum.py", line 56, in test_step_budget_stop_and_advance
+    self.assertEqual(self.status(st), ["passed", "budget_stopped", "pending"])
+AssertionError: Lists differ: ['budget_stopped', 'pending', 'pending'] != ['passed', 'budget_stopped', 'pending']
+
+First differing element 0:
+'budget_stopped'
+'passed'
+
+- ['budget_stopped', 'pending', 'pending']
++ ['passed', 'budget_stopped', 'pending']
+
+----------------------------------------------------------------------
+Ran 21 tests in 270.094s
+
+FAILED (failures=6)
+[gru/s0] {"event": "transition", "step": 1, "from": "A", "to": "B", "p": 0.25, "from_p": 0.0, "reason": "step_cap", "rolling_acc": 0.0, "threshold": 0.97}
+[gru/s0] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 7.13651, "acc": 0.0, "sec": 0.018}
+[gru/s0] {"event": "transition", "step": 2, "from": "B", "to": "B", "p": 0.5, "from_p": 0.25, "reason": "step_cap", "rolling_acc": 0.5769, "threshold": 0.9}
+[gru/s0] {"event": "transition", "step": 3, "from": "B", "to": "B", "p": 0.75, "from_p": 0.5, "reason": "step_cap", "rolling_acc": 0.7885, "threshold": 0.9}
+[gru/s0] {"event": "transition", "step": 4, "from": "B", "to": "B", "p": 0.95, "from_p": 0.75, "reason": "step_cap", "rolling_acc": 0.8269, "threshold": 0.9}
+[gru/s0] {"event": "transition", "step": 1, "from": "A", "to": "B", "p": 0.25, "from_p": 0.0, "reason": "step_cap", "rolling_acc": 0.0, "threshold": 0.97}
+[gru/s0] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 7.13651, "acc": 0.0, "sec": 0.013}
+[gru/s0] {"event": "transition", "step": 2, "from": "B", "to": "B", "p": 0.5, "from_p": 0.25, "reason": "step_cap", "rolling_acc": 0.5769, "threshold": 0.9}
+[gru/s0] {"event": "transition", "step": 3, "from": "B", "to": "B", "p": 0.75, "from_p": 0.5, "reason": "step_cap", "rolling_acc": 0.7885, "threshold": 0.9}
+[gru/s0] {"event": "transition", "step": 4, "from": "B", "to": "B", "p": 0.95, "from_p": 0.75, "reason": "step_cap", "rolling_acc": 0.8269, "threshold": 0.9}
+[gru/s1] {"event": "transition", "step": 1, "from": "A", "to": "B", "p": 0.25, "from_p": 0.0, "reason": "step_cap", "rolling_acc": 0.0, "threshold": 0.97}
+[gru/s1] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.91572, "acc": 0.0, "sec": 0.013}
+[gru/s1] {"event": "transition", "step": 2, "from": "B", "to": "B", "p": 0.5, "from_p": 0.25, "reason": "step_cap", "rolling_acc": 0.6923, "threshold": 0.9}
+[gru/s1] {"event": "transition", "step": 3, "from": "B", "to": "B", "p": 0.75, "from_p": 0.5, "reason": "step_cap", "rolling_acc": 0.8654, "threshold": 0.9}
+[gru/s1] {"event": "transition", "step": 4, "from": "B", "to": "B", "p": 0.95, "from_p": 0.75, "reason": "step_cap", "rolling_acc": 0.8654, "threshold": 0.9}
+[gru/s1] {"event": "transition", "step": 1, "from": "A", "to": "B", "p": 0.25, "from_p": 0.0, "reason": "step_cap", "rolling_acc": 0.0, "threshold": 0.97}
+[gru/s1] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.91572, "acc": 0.0, "sec": 0.014}
+[gru/s1] {"event": "transition", "step": 2, "from": "B", "to": "B", "p": 0.5, "from_p": 0.25, "reason": "step_cap", "rolling_acc": 0.6923, "threshold": 0.9}
+[gru/s1] {"event": "transition", "step": 3, "from": "B", "to": "B", "p": 0.75, "from_p": 0.5, "reason": "step_cap", "rolling_acc": 0.8654, "threshold": 0.9}
+[gru/s1] {"event": "transition", "step": 4, "from": "B", "to": "B", "p": 0.95, "from_p": 0.75, "reason": "step_cap", "rolling_acc": 0.8654, "threshold": 0.9}

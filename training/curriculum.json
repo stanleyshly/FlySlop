@@ -1,0 +1,477 @@
+{
+ "seed": 0,
+ "ram_gb": 4,
+ "stages": [
+  {
+   "id": 1,
+   "name": "Key control",
+   "module": "training.stages.stage1_keys",
+   "level": "physical",
+   "exclusive": false,
+   "gate": {
+    "key_accuracy": 0.95,
+    "unintended_rate_max": 0.01
+   },
+   "budget": {
+    "wall_s": 172800,
+    "steps": 50000000
+   },
+   "physical": {
+    "config": "training/ppo_fly_mn.json",
+    "action_mode": "mn",
+    "readout": "mn_antagonist",
+    "policy": "connectome",
+    "bc_episodes": 400,
+    "bc_epochs": 30,
+    "ppo_timesteps": 300000,
+    "eval_episodes": 60,
+    "n_envs": 4,
+    "bc_workers": 4,
+    "ppo": {}
+   },
+   "smoke_physical": {
+    "bc_episodes": 12,
+    "bc_epochs": 2,
+    "ppo_timesteps": 128,
+    "eval_episodes": 6,
+    "n_envs": 1,
+    "ppo": {
+     "n_steps": 128,
+     "batch_size": 64,
+     "n_epochs": 1
+    }
+   }
+  },
+  {
+   "id": 2,
+   "name": "Transcription",
+   "module": "training.stages.stage2_transcription",
+   "level": "physical",
+   "exclusive": false,
+   "gate": {
+    "token_exact": 0.9,
+    "code_exact": 0.7
+   },
+   "budget": {
+    "wall_s": 172800,
+    "steps": 50000000
+   },
+   "physical": {
+    "config": "training/ppo_fly_mn.json",
+    "action_mode": "mn",
+    "readout": "mn_antagonist",
+    "policy": "connectome",
+    "bc_episodes": 400,
+    "bc_episodes_code": 100,
+    "bc_epochs": 30,
+    "ppo_timesteps": 500000,
+    "eval_episodes": 100,
+    "eval_code_episodes": 50,
+    "n_envs": 4,
+    "bc_workers": 4,
+    "levels": [
+     "words",
+     "code_16",
+     "code_32",
+     "code_64",
+     "code_128",
+     "code_multi"
+    ]
+   },
+   "smoke_physical": {
+    "bc_episodes": 8,
+    "bc_episodes_code": 4,
+    "bc_epochs": 1,
+    "ppo_timesteps": 128,
+    "eval_episodes": 4,
+    "eval_code_episodes": 2,
+    "n_envs": 1,
+    "levels": [
+     "words",
+     "code_16"
+    ],
+    "ppo": {
+     "n_steps": 128,
+     "batch_size": 64,
+     "n_epochs": 1
+    }
+   }
+  },
+  {
+   "id": 3,
+   "name": "Editing",
+   "module": "training.stages.stage3_editing",
+   "level": "physical+symbolic",
+   "exclusive": false,
+   "gate": {
+    "edit_key_accuracy": 0.95,
+    "symbolic_within_1.5x_oracle": 0.95
+   },
+   "budget": {
+    "wall_s": 172800,
+    "steps": 50000000
+   },
+   "physical": {
+    "config": "training/ppo_fly_mn.json",
+    "action_mode": "mn",
+    "readout": "mn_antagonist",
+    "policy": "connectome",
+    "bc_episodes": 400,
+    "bc_epochs": 30,
+    "ppo_timesteps": 500000,
+    "eval_episodes": 60,
+    "n_envs": 4,
+    "include_fn": true
+   },
+   "smoke_physical": {
+    "bc_episodes": 6,
+    "bc_epochs": 1,
+    "ppo_timesteps": 128,
+    "eval_episodes": 4,
+    "n_envs": 1,
+    "ppo": {
+     "n_steps": 128,
+     "batch_size": 64,
+     "n_epochs": 1
+    }
+   },
+   "symbolic": true
+  },
+  {
+   "id": 4,
+   "name": "Error recovery",
+   "module": "training.stages.stage4_recovery",
+   "level": "physical+symbolic",
+   "exclusive": false,
+   "gate": {
+    "recovery_exact": 0.9,
+    "symbolic_replan_reach": 0.9
+   },
+   "budget": {
+    "wall_s": 172800,
+    "steps": 50000000
+   },
+   "physical": {
+    "config": "training/ppo_fly_mn.json",
+    "action_mode": "mn",
+    "readout": "mn_antagonist",
+    "policy": "connectome",
+    "bc_episodes": 400,
+    "bc_epochs": 30,
+    "ppo_timesteps": 500000,
+    "eval_episodes": 50,
+    "n_envs": 4,
+    "slip_p": 0.15,
+    "eval_noise": 0.3
+   },
+   "smoke_physical": {
+    "bc_episodes": 6,
+    "bc_epochs": 1,
+    "ppo_timesteps": 128,
+    "eval_episodes": 4,
+    "n_envs": 1,
+    "ppo": {
+     "n_steps": 128,
+     "batch_size": 64,
+     "n_epochs": 1
+    }
+   },
+   "symbolic": true
+  },
+  {
+   "id": 5,
+   "name": "LLM oracle data",
+   "module": "training.stages.stage5_oracle_data",
+   "level": "offline",
+   "exclusive": true,
+   "gate": {
+    "filtered_pairs": 10000
+   },
+   "budget": {
+    "wall_s": 172800,
+    "steps": 50000000
+   },
+   "oracle": {
+    "pairs_min": 10000,
+    "run": "curriculum",
+    "sources": null,
+    "holdout_sources": "",
+    "seed": 0,
+    "spec_tokens": 160,
+    "code_tokens": 384,
+    "neardup_test": 0.7,
+    "neardup_accepted": 0.9,
+    "time_budget_s": null,
+    "pairs_glob": null
+   }
+  },
+  {
+   "id": 6,
+   "name": "Distillation A-B-C",
+   "module": "training.stages.stage6_distill",
+   "level": "symbolic",
+   "exclusive": true,
+   "gate": {
+    "beats_controls": 1
+   },
+   "budget": {
+    "wall_s": 172800,
+    "steps": 50000000
+   },
+   "kind": "real",
+   "controls": true,
+   "kinds": [
+    "real",
+    "shuffled",
+    "random_sparse",
+    "frozen",
+    "gru"
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "data": "auto",
+   "min_token_acc": 0.5,
+   "smoke_stage": {
+    "kind": "gru",
+    "controls": false,
+    "steps": 30
+   }
+  },
+  {
+   "id": 7,
+   "name": "Autonomous micro-programs",
+   "module": "training.stages.stage7_microprograms",
+   "level": "symbolic+physical",
+   "exclusive": false,
+   "gate": {
+    "pass_at_1_floor": 0.0,
+    "physical_exact_rate": 0.0
+   },
+   "budget": {
+    "wall_s": 172800,
+    "steps": 50000000
+   },
+   "max_py": null,
+   "max_sv": null,
+   "max_new": 256,
+   "run_timeout": 20.0,
+   "workers": 4,
+   "finetune_on_failures": false,
+   "ft_tasks": 64,
+   "ft_steps": 50,
+   "phys_tasks": 3,
+   "phys_max_chars": 80,
+   "typist": "auto",
+   "action_mode": "mn",
+   "smoke_stage": {
+    "max_py": 10,
+    "max_sv": 1,
+    "max_new": 96,
+    "workers": 2,
+    "phys_max_chars": 30,
+    "typist": "expert"
+   }
+  },
+  {
+   "id": 8,
+   "name": "Longer programs",
+   "module": "training.stages.stage8_longer",
+   "level": "symbolic",
+   "exclusive": false,
+   "gate": {
+    "pass_rate_floor": 0.0
+   },
+   "budget": {
+    "wall_s": 172800,
+    "steps": 50000000
+   },
+   "levels": [
+    {
+     "name": "lines<=1",
+     "max_lines": 1
+    },
+    {
+     "name": "lines<=2",
+     "max_lines": 2
+    },
+    {
+     "name": "lines<=3",
+     "max_lines": 3
+    },
+    {
+     "name": "lines<=4",
+     "max_lines": 4
+    },
+    {
+     "name": "lines<=5",
+     "max_lines": 5
+    },
+    {
+     "name": "branches",
+     "feature": "branch",
+     "max_lines": 20
+    },
+    {
+     "name": "loops",
+     "feature": "loop",
+     "max_lines": 20
+    },
+    {
+     "name": "multi_function",
+     "feature": "multi_fn",
+     "max_lines": 40
+    }
+   ],
+   "steps_per_level": 500,
+   "max_attempts": 3,
+   "max_py": null,
+   "max_sv": null,
+   "max_new": 256,
+   "run_timeout": 20.0,
+   "workers": 4,
+   "val_cap": 20,
+   "smoke_stage": {
+    "levels": [
+     {
+      "name": "lines<=2",
+      "max_lines": 2
+     },
+     {
+      "name": "lines<=3",
+      "max_lines": 3
+     },
+     {
+      "name": "branches",
+      "feature": "branch",
+      "max_lines": 20
+     }
+    ],
+    "steps_per_level": 8,
+    "max_attempts": 1,
+    "max_py": 8,
+    "max_sv": 0,
+    "max_new": 64,
+    "workers": 2,
+    "val_cap": 6
+   }
+  },
+  {
+   "id": 9,
+   "name": "Self-correction",
+   "module": "training.stages.stage9_selfcorrect",
+   "level": "symbolic+physical",
+   "exclusive": false,
+   "gate": {
+    "pass_at_1_gain": 0.0
+   },
+   "budget": {
+    "wall_s": 172800,
+    "steps": 50000000
+   },
+   "gate_mode": "scratch",
+   "repair_init": "auto",
+   "max_py": null,
+   "max_sv": null,
+   "selfcorrect": {
+    "method": "rft",
+    "iters": 40,
+    "tasks_per_iter": 32,
+    "samples": 4,
+    "temperature": 1.0,
+    "ft_steps": 8,
+    "batch": 16,
+    "max_rounds": 3,
+    "max_ctx": 512,
+    "max_new_gen": 256,
+    "max_new_edit": 96,
+    "n_train_tasks": 400,
+    "lang": "py",
+    "workers": 4,
+    "warmup_examples": 256,
+    "warmup_per_task": 2,
+    "warmup_steps": 100
+   },
+   "smoke_stage": {
+    "repair_init": "generation",
+    "max_py": 8,
+    "max_sv": 0,
+    "selfcorrect": {
+     "iters": 3,
+     "tasks_per_iter": 4,
+     "samples": 2,
+     "ft_steps": 3,
+     "batch": 8,
+     "max_ctx": 160,
+     "max_new_gen": 64,
+     "max_new_edit": 32,
+     "n_train_tasks": 12,
+     "verify_reference": false,
+     "workers": 2,
+     "warmup_examples": 12,
+     "warmup_per_task": 2,
+     "warmup_steps": 100,
+     "temperature": 0.2
+    }
+   }
+  }
+ ],
+ "data_files": [
+  "data/corpus"
+ ],
+ "smoke": {
+  "budget": {
+   "wall_s": 120,
+   "steps": 200000
+  },
+  "gates": "relaxed",
+  "stage_overrides": {
+   "3": {
+    "budget": {
+     "wall_s": 240,
+     "steps": 200000
+    }
+   },
+   "4": {
+    "budget": {
+     "wall_s": 240,
+     "steps": 200000
+    }
+   },
+   "5": {
+    "budget": {
+     "wall_s": 150,
+     "steps": 200000
+    }
+   },
+   "6": {
+    "budget": {
+     "wall_s": 150,
+     "steps": 200000
+    }
+   },
+   "7": {
+    "budget": {
+     "wall_s": 150,
+     "steps": 200000
+    }
+   },
+   "8": {
+    "budget": {
+     "wall_s": 150,
+     "steps": 200000
+    }
+   },
+   "9": {
+    "budget": {
+     "wall_s": 150,
+     "steps": 200000
+    }
+   }
+  }
+ }
+}

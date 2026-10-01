@@ -1,0 +1,38 @@
+data: dataset-fallback (oracle train pairs 4 < 200); sources={"authored/sv": 21, "humaneval/py": 164, "mbpp/py": 974, "rtllm/sv": 50, "verilogeval/sv": 156} {'train': 1111, 'val': 113, 'test': 141}
+[gru/s0] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 7.03324, "acc": 0.0, "sec": 0.212}
+[gru/s0] {"step": 50, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 2.04847, "acc": 0.4849, "sec": 0.109}
+[gru/s0] {"step": 100, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.46652, "acc": 0.8711, "sec": 0.169}
+[gru/s0] {"step": 150, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.17691, "acc": 0.9675, "sec": 0.105}
+[gru/s0] {"step": 200, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.06892, "acc": 0.989, "sec": 0.091}
+[gru/s0] {"step": 250, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.02709, "acc": 0.9958, "sec": 0.127}
+[gru/s0] {"step": 300, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.01633, "acc": 0.9955, "sec": 0.147}
+[gru/s0] {"event": "transition", "step": 315, "from": "A", "to": "B", "p": 0.25, "from_p": 0.0, "reason": "fixed"}
+[gru/s0] {"step": 350, "phase": "B", "p": 0.25, "mixed_frac": 0.2521, "loss": 1.01537, "acc": 0.8502, "sec": 0.216}
+[gru/s0] {"event": "transition", "step": 385, "from": "B", "to": "B", "p": 0.5, "from_p": 0.25, "reason": "fixed"}
+[gru/s0] {"step": 400, "phase": "B", "p": 0.5, "mixed_frac": 0.4941, "loss": 3.28665, "acc": 0.3696, "sec": 0.195}
+[gru/s0] {"step": 450, "phase": "B", "p": 0.5, "mixed_frac": 0.474, "loss": 2.17167, "acc": 0.5288, "sec": 0.229}
+[gru/s0] {"event": "transition", "step": 455, "from": "B", "to": "B", "p": 0.75, "from_p": 0.5, "reason": "fixed"}
+[gru/s0] {"step": 500, "phase": "B", "p": 0.75, "mixed_frac": 0.7551, "loss": 3.74299, "acc": 0.2213, "sec": 0.213}
+[gru/s0] {"event": "transition", "step": 525, "from": "B", "to": "B", "p": 0.95, "from_p": 0.75, "reason": "fixed"}
+[gru/s0] {"step": 550, "phase": "B", "p": 0.95, "mixed_frac": 0.9345, "loss": 3.62875, "acc": 0.1863, "sec": 0.236}
+[gru/s0] {"event": "transition", "step": 595, "from": "B", "to": "C", "p": 1.0, "from_p": 0.95, "reason": "fixed"}
+[gru/s0] {"step": 600, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.77461, "acc": 0.1902, "sec": 0.286}
+[gru/s0] {"step": 650, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.17487, "acc": 0.22, "sec": 0.206}
+[gru/s0] {"step": 700, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 3.15469, "acc": 0.2172, "sec": 0.189}
+{
+ "kind": "gru",
+ "steps": 700,
+ "seconds": 133.1,
+ "final": {
+  "token_acc": 0.3467,
+  "nll": 2.6033,
+  "n_val": 100,
+  "gen_n": 24,
+  "gen_parse_rate": 0.0,
+  "gen_pass_rate": 0.0,
+  "gen_exact_rate": 0.0,
+  "gen_token_acc": 0.2647
+ },
+ "overfit_gate": false
+}
+peak RSS 0.34 GB

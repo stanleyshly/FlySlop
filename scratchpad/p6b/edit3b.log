@@ -1,0 +1,28 @@
+[edit s3] 400 train / 60 val examples in 2.3s; oracle cost mean 14.6
+[edit3/gru] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.85315, "acc": 0.0, "sec": 0.178}
+[edit3/gru] {"step": 100, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 1.53375, "acc": 0.6256, "sec": 0.054}
+[edit3/gru] {"step": 200, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.7168, "acc": 0.8141, "sec": 0.109}
+[edit3/gru] {"step": 300, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.51408, "acc": 0.8702, "sec": 0.078}
+[edit3/gru] {"step": 400, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.23875, "acc": 0.9443, "sec": 0.11}
+[edit3/gru] {"step": 500, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.17355, "acc": 0.9519, "sec": 0.13}
+[edit3/gru] {"step": 600, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.11484, "acc": 0.9838, "sec": 0.137}
+[edit3/gru] {"step": 700, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 0.05892, "acc": 0.9847, "sec": 0.111}
+{
+ "kind": "gru",
+ "stage": 3,
+ "steps": 700,
+ "stopped": "steps",
+ "seconds": 72.5,
+ "final": {
+  "token_acc": 0.3524,
+  "nll": 5.7161,
+  "first_round_ok": 0.025,
+  "replan_reach": 0.025,
+  "replan_within_ratio": 0.025,
+  "act_exact_first": 0.025,
+  "mean_cost_ratio": 0.0,
+  "n_eval": 40,
+  "rounds": 3
+ }
+}
+peak RSS 0.39 GB

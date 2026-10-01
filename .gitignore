@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+dist/
+build/
+.env
+data/cache/
+data/anatomy/
+data/full_cns/
+/lab-group40-fa25/
+web/node_modules/
+data/replays/cache/
+/runs/
+data/private/

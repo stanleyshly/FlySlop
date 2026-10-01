@@ -1,0 +1,77 @@
+{
+ "mode": "scratch",
+ "max_rounds": 0,
+ "n": 89,
+ "pass_at_1": 0.0,
+ "first_run_pass": 0.0,
+ "repair_gain": 0.0,
+ "mean_repair_rounds": 0.0,
+ "by_group": {
+  "difficulty=1": {
+   "n": 37,
+   "pass_at_1": 0.0,
+   "first_run_pass": 0.0
+  },
+  "difficulty=2": {
+   "n": 34,
+   "pass_at_1": 0.0,
+   "first_run_pass": 0.0
+  },
+  "difficulty=3": {
+   "n": 18,
+   "pass_at_1": 0.0,
+   "first_run_pass": 0.0
+  },
+  "lang=py": {
+   "n": 51,
+   "pass_at_1": 0.0,
+   "first_run_pass": 0.0
+  },
+  "lang=py,difficulty=1": {
+   "n": 27,
+   "pass_at_1": 0.0,
+   "first_run_pass": 0.0
+  },
+  "lang=py,difficulty=2": {
+   "n": 18,
+   "pass_at_1": 0.0,
+   "first_run_pass": 0.0
+  },
+  "lang=py,difficulty=3": {
+   "n": 6,
+   "pass_at_1": 0.0,
+   "first_run_pass": 0.0
+  },
+  "lang=sv": {
+   "n": 38,
+   "pass_at_1": 0.0,
+   "first_run_pass": 0.0
+  },
+  "lang=sv,difficulty=1": {
+   "n": 10,
+   "pass_at_1": 0.0,
+   "first_run_pass": 0.0
+  },
+  "lang=sv,difficulty=2": {
+   "n": 16,
+   "pass_at_1": 0.0,
+   "first_run_pass": 0.0
+  },
+  "lang=sv,difficulty=3": {
+   "n": 12,
+   "pass_at_1": 0.0,
+   "first_run_pass": 0.0
+  }
+ },
+ "timing": {
+  "wall_s": 1.8,
+  "workers": 2,
+  "mean_task_s": {
+   "py": 0.02,
+   "sv": 0.06
+  },
+  "judge_cache_hits": 0,
+  "judge_runs": 89
+ },
+ "policy": "null"
+}

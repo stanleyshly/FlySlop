@@ -1,0 +1,208 @@
+{
+ "circuit_hash": "422b78d76143ebae60f50032d7fa291e500093d93f27b07fe16f1fb90ff83a56",
+ "code_hash": "4f489b98e80fd55d9fed120b29f4b81c9d4f3b4b810e5f37673a3f77a38d2bed",
+ "config": {
+  "budget": {
+   "steps": 200000,
+   "wall_s": 150
+  },
+  "exclusive": false,
+  "gate": {
+   "pass_at_1_gain": 0.0
+  },
+  "gate_mode": "scratch",
+  "id": 9,
+  "level": "symbolic+physical",
+  "max_py": null,
+  "max_sv": null,
+  "module": "training.stages.stage9_selfcorrect",
+  "name": "Self-correction",
+  "repair_init": "auto",
+  "selfcorrect": {
+   "batch": 16,
+   "ft_steps": 8,
+   "iters": 40,
+   "lang": "py",
+   "max_ctx": 512,
+   "max_new_edit": 96,
+   "max_new_gen": 256,
+   "max_rounds": 3,
+   "method": "rft",
+   "n_train_tasks": 400,
+   "samples": 4,
+   "tasks_per_iter": 32,
+   "temperature": 1.0,
+   "warmup_examples": 256,
+   "warmup_per_task": 2,
+   "warmup_steps": 100,
+   "workers": 4
+  },
+  "smoke_gates": "relaxed",
+  "smoke_stage": {
+   "max_py": 8,
+   "max_sv": 0,
+   "repair_init": "generation",
+   "selfcorrect": {
+    "batch": 8,
+    "ft_steps": 3,
+    "iters": 3,
+    "max_ctx": 160,
+    "max_new_edit": 32,
+    "max_new_gen": 64,
+    "n_train_tasks": 12,
+    "samples": 2,
+    "tasks_per_iter": 4,
+    "temperature": 0.2,
+    "verify_reference": false,
+    "warmup_examples": 12,
+    "warmup_per_task": 2,
+    "warmup_steps": 100,
+    "workers": 2
+   }
+  }
+ },
+ "data_hash": "6c0eaa674541fe4781bb3a170c35a05b76e00524990c5e474a0f943d46128f14",
+ "exclusive": false,
+ "gate": {
+  "pass_at_1_gain": 0.0
+ },
+ "gate_passed": true,
+ "metrics": {
+  "after_training": {
+   "corrupt": {
+    "improvement": 0.0,
+    "max_rounds": 3,
+    "mean_repair_rounds": 2.125,
+    "mode": "corrupt",
+    "n": 8,
+    "no_repair_by_lang": {},
+    "no_repair_pass_at_1": 0.625,
+    "repair_by_lang": {
+     "py": 0.625
+    },
+    "repair_pass_at_1": 0.625
+   },
+   "scratch": {
+    "improvement": 0.0,
+    "max_rounds": 3,
+    "mean_repair_rounds": 2.0,
+    "mode": "scratch",
+    "n": 8,
+    "no_repair_by_lang": {
+     "py": 0.0
+    },
+    "no_repair_pass_at_1": 0.0,
+    "repair_by_lang": {
+     "py": 0.0
+    },
+    "repair_pass_at_1": 0.0
+   }
+  },
+  "before_training": {
+   "corrupt": {
+    "improvement": -0.625,
+    "max_rounds": 3,
+    "mean_repair_rounds": 4.0,
+    "mode": "corrupt",
+    "n": 8,
+    "no_repair_by_lang": {},
+    "no_repair_pass_at_1": 0.625,
+    "repair_by_lang": {
+     "py": 0.0
+    },
+    "repair_pass_at_1": 0.0
+   },
+   "scratch": {
+    "improvement": 0.0,
+    "max_rounds": 3,
+    "mean_repair_rounds": 2.0,
+    "mode": "scratch",
+    "n": 8,
+    "no_repair_by_lang": {
+     "py": 0.0
+    },
+    "no_repair_pass_at_1": 0.0,
+    "repair_by_lang": {
+     "py": 0.0
+    },
+    "repair_pass_at_1": 0.0
+   }
+  },
+  "eval_tasks": 8,
+  "gate_detail": {
+   "pass_at_1_gain": {
+    "metric": "scratch.improvement",
+    "ok": false,
+    "op": "gt",
+    "threshold": 0.0,
+    "value": 0.0
+   }
+  },
+  "gate_mode": "relaxed (smoke, NOT a real gate)",
+  "gen_ckpt": "scratchpad/p8c/runs/20260929-195419/stage8/ckpt.pt",
+  "gen_kind": "gru",
+  "improvement": 0.0,
+  "max_rounds": 3,
+  "method": "rft",
+  "no_repair_pass_at_1": 0.0,
+  "real_gate_passed": false,
+  "repair_init": "scratchpad/p8c/runs/20260929-195419/stage8/ckpt.pt",
+  "repair_init_source": "generation ckpt",
+  "repair_kind": "gru",
+  "repair_pass_at_1": 0.0,
+  "seconds": 8.0,
+  "smoke": true,
+  "solve_rate_first_iter": 0.0,
+  "solve_rate_last_iter": 0.0,
+  "status": "scratch: no_repair=0.0 repair@3=0.0 gain=0.0 method=rft gate=relaxed (smoke, NOT a real gate) real_pass=False",
+  "train_history": [
+   {
+    "examples": 0,
+    "iter": 0,
+    "method": "rft",
+    "repairable": 8,
+    "rollouts": 8,
+    "solve_rate": 0.0,
+    "solved": 0,
+    "steps": 0
+   },
+   {
+    "examples": 0,
+    "iter": 1,
+    "method": "rft",
+    "repairable": 6,
+    "rollouts": 8,
+    "solve_rate": 0.0,
+    "solved": 0,
+    "steps": 0
+   },
+   {
+    "examples": 0,
+    "iter": 2,
+    "method": "rft",
+    "repairable": 6,
+    "rollouts": 8,
+    "solve_rate": 0.0,
+    "solved": 0,
+    "steps": 0
+   }
+  ],
+  "train_tasks": 12,
+  "warmup": {
+   "acc": 0.8594,
+   "loss": 0.4205,
+   "n": 23,
+   "steps": 100
+  }
+ },
+ "name": "Self-correction",
+ "peak_rss_bytes": 450592768,
+ "reason": null,
+ "seed": 9,
+ "smoke": true,
+ "stage": 9,
+ "started": 1790726075.7831428,
+ "status": "passed",
+ "steps": 103,
+ "time_s": 8.776356220245361
+}

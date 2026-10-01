@@ -1,0 +1,105 @@
+{
+  "npz": "thinker_circuit_small.npz",
+  "npz_mb": 1.48,
+  "content_hash": "2e628ab2bb044dc8bbcb7c0f492025be96ea952f76463fdfb29fe1a83450b0be",
+  "preset": "small",
+  "config": {
+    "n_vp": 800,
+    "n_cb": 3900,
+    "n_dn": 300,
+    "min_weight": 2,
+    "topk_in": 400,
+    "seed": 0
+  },
+  "extracted": "2026-09-29",
+  "extraction_seconds": 13.9,
+  "peak_rss_gb": 0.939,
+  "ram_cap_gb": 1.5,
+  "neurons": 5000,
+  "edges": 536608,
+  "edges_before_topk": 543934,
+  "synapses": 7261263,
+  "inhibitory_edges": 186500,
+  "populations": {
+    "VP": {
+      "neurons": 800,
+      "edges_in": 5732,
+      "edges_out": 22709,
+      "signs_neg": 80,
+      "sign_code_counts": {
+        "0": 756,
+        "1": 0,
+        "2": 44
+      }
+    },
+    "CB": {
+      "neurons": 3900,
+      "edges_in": 465998,
+      "edges_out": 489251,
+      "signs_neg": 1353,
+      "sign_code_counts": {
+        "0": 3843,
+        "1": 25,
+        "2": 32
+      }
+    },
+    "DN": {
+      "neurons": 300,
+      "edges_in": 64878,
+      "edges_out": 24648,
+      "signs_neg": 69,
+      "sign_code_counts": {
+        "0": 298,
+        "1": 1,
+        "2": 1
+      }
+    }
+  },
+  "edge_blocks": {
+    "VP->VP": 2045,
+    "VP->CB": 19342,
+    "VP->DN": 1322,
+    "CB->VP": 3639,
+    "CB->CB": 429260,
+    "CB->DN": 56352,
+    "DN->VP": 48,
+    "DN->CB": 17396,
+    "DN->DN": 7204
+  },
+  "reachable_from_inputs": {
+    "1": {
+      "DN": 0.63,
+      "CB": 0.7476923076923077
+    },
+    "2": {
+      "DN": 1.0,
+      "CB": 1.0
+    },
+    "3": {
+      "DN": 1.0,
+      "CB": 1.0
+    },
+    "4": {
+      "DN": 1.0,
+      "CB": 1.0
+    },
+    "5": {
+      "DN": 1.0,
+      "CB": 1.0
+    },
+    "6": {
+      "DN": 1.0,
+      "CB": 1.0
+    }
+  },
+  "dn_reachable_k4": 1.0,
+  "dn_reachable_frac_by_k": {
+    "1": 0.63,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0
+  },
+  "max_indegree": 400
+}

@@ -1,0 +1,48 @@
+[curriculum] run=scratchpad/p8c/runs/20260929-194020 smoke=True ram_gb=1.0
+[gru/s6] {"step": 1, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 7.01492, "acc": 0.0, "sec": 0.315}
+[gru/s6] {"step": 5, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 6.48548, "acc": 0.0872, "sec": 0.132}
+[gru/s6] {"event": "transition", "step": 10, "from": "A", "to": "B", "p": 0.25, "from_p": 0.0, "reason": "step_cap", "rolling_acc": 0.0781, "threshold": 0.9}
+[gru/s6] {"step": 10, "phase": "A", "p": 0.0, "mixed_frac": 0.0, "loss": 5.42718, "acc": 0.1268, "sec": 0.13}
+[gru/s6] {"event": "transition", "step": 13, "from": "B", "to": "B", "p": 0.5, "from_p": 0.25, "reason": "step_cap", "rolling_acc": 0.1161, "threshold": 0.85}
+[gru/s6] {"step": 15, "phase": "B", "p": 0.5, "mixed_frac": 0.5084, "loss": 5.44968, "acc": 0.1291, "sec": 0.205}
+[gru/s6] {"event": "transition", "step": 16, "from": "B", "to": "B", "p": 0.75, "from_p": 0.5, "reason": "step_cap", "rolling_acc": 0.0955, "threshold": 0.85}
+[gru/s6] {"event": "transition", "step": 19, "from": "B", "to": "B", "p": 0.95, "from_p": 0.75, "reason": "step_cap", "rolling_acc": 0.0797, "threshold": 0.85}
+[gru/s6] {"step": 20, "phase": "B", "p": 0.95, "mixed_frac": 0.9423, "loss": 5.53772, "acc": 0.0951, "sec": 0.241}
+[gru/s6] {"event": "transition", "step": 22, "from": "B", "to": "C", "p": 1.0, "from_p": 0.95, "reason": "step_cap", "rolling_acc": 0.0852, "threshold": 0.85}
+[gru/s6] {"step": 25, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 5.67127, "acc": 0.029, "sec": 0.202}
+[gru/s6] {"step": 30, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 5.60891, "acc": 0.0463, "sec": 0.211}
+[curriculum] stage 6 Distillation A-B-C: passed | kind=gru token_acc=0.0878 gen_pass=0.0 gate=relaxed (smoke, NOT a real gate) real_pass=False | 
+[curriculum] stage 7 Autonomous micro-programs: passed | pass@1=0.0 by_lang={"py": 0.0, "sv": 0.0} physical_exact=1.0 (n=3) gate=relaxed (smoke, NOT a real gate) real_pass=True | 
+[gru/s8] resumed at step 30
+[gru/s8] {"step": 35, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 4.86906, "acc": 0.1115, "sec": 0.275}
+[gru/s8] resumed at step 38
+[gru/s8] {"step": 40, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 5.40336, "acc": 0.041, "sec": 0.245}
+[gru/s8] {"step": 45, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 5.58154, "acc": 0.0712, "sec": 0.227}
+[gru/s8] resumed at step 46
+[gru/s8] {"step": 50, "phase": "C", "p": 1.0, "mixed_frac": 1.0, "loss": 5.24101, "acc": 0.0678, "sec": 0.208}
+[curriculum] stage 8 Longer programs: passed | levels 3/3 lines<=2=0.0 lines<=3=0.0 branches=0.0 gate=relaxed (smoke, NOT a real gate) real_pass=True | 
+[selfcorrect] before: {"scratch": [0.0, 0.0], "corrupt": [0.625, 0.0]}
+[selfcorrect] oracle warm-up {"steps": 60, "loss": 0.2512, "acc": 0.8971, "n": 9}
+[selfcorrect] {"iter": 0, "rollouts": 8, "repairable": 8, "solved": 0, "solve_rate": 0.0, "method": "rft", "examples": 0, "steps": 0}
+[selfcorrect] {"iter": 1, "rollouts": 8, "repairable": 6, "solved": 0, "solve_rate": 0.0, "method": "rft", "examples": 0, "steps": 0}
+[selfcorrect] {"iter": 2, "rollouts": 8, "repairable": 6, "solved": 0, "solve_rate": 0.0, "method": "rft", "examples": 0, "steps": 0}
+[curriculum] stage 9 Self-correction: passed | scratch: no_repair=0.0 repair@3=0.0 gain=0.0 method=rft gate=relaxed (smoke, NOT a real gate) real_pass=False | 
+[curriculum] complete
+       48.89 real        44.01 user         6.52 sys
+           427556864  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              470378  page reclaims
+                1895  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                4794  voluntary context switches
+              312271  involuntary context switches
+           122949558  instructions retired
+            59422019  cycles elapsed
+            12485888  peak memory footprint

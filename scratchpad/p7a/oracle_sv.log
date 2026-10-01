@@ -1,0 +1,75 @@
+{
+ "mode": "scratch",
+ "max_rounds": 0,
+ "n": 38,
+ "pass_at_1": 1.0,
+ "first_run_pass": 1.0,
+ "repair_gain": 0.0,
+ "mean_repair_rounds": 0.0,
+ "by_group": {
+  "difficulty=1": {
+   "n": 10,
+   "pass_at_1": 1.0,
+   "first_run_pass": 1.0
+  },
+  "difficulty=2": {
+   "n": 16,
+   "pass_at_1": 1.0,
+   "first_run_pass": 1.0
+  },
+  "difficulty=3": {
+   "n": 12,
+   "pass_at_1": 1.0,
+   "first_run_pass": 1.0
+  },
+  "lang=sv": {
+   "n": 38,
+   "pass_at_1": 1.0,
+   "first_run_pass": 1.0
+  },
+  "lang=sv,difficulty=1": {
+   "n": 10,
+   "pass_at_1": 1.0,
+   "first_run_pass": 1.0
+  },
+  "lang=sv,difficulty=2": {
+   "n": 16,
+   "pass_at_1": 1.0,
+   "first_run_pass": 1.0
+  },
+  "lang=sv,difficulty=3": {
+   "n": 12,
+   "pass_at_1": 1.0,
+   "first_run_pass": 1.0
+  }
+ },
+ "timing": {
+  "wall_s": 180.9,
+  "workers": 2,
+  "mean_task_s": {
+   "py": 0.0,
+   "sv": 9.5
+  },
+  "judge_cache_hits": 0,
+  "judge_runs": 38
+ },
+ "policy": "oracle"
+}
+      181.00 real       271.51 user        28.55 sys
+           270712832  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             2895602  page reclaims
+               60247  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                 381  signals received
+               13417  voluntary context switches
+              594328  involuntary context switches
+           124799467  instructions retired
+            60161809  cycles elapsed
+            12453120  peak memory footprint

@@ -84,11 +84,12 @@ def fit(model, obs: np.ndarray, act: np.ndarray, cfg: dict, seed: int, details: 
     critic = ("value_net", "mlp_extractor.value", "mlp_extractor.critic")
     params = [p for name, p in policy.named_parameters() if not name.startswith(critic) and name != "log_std"]
     optim = torch.optim.Adam(params, lr=cfg["learning_rate"])
-    obs_t, act_t = torch.as_tensor(obs), torch.as_tensor(act)
+    device = next(policy.parameters()).device
+    obs_t, act_t = torch.as_tensor(obs, device=device), torch.as_tensor(act, device=device)
     losses = []
     n = len(obs_t)
     for _ in range(cfg["epochs"]):
-        order = torch.randperm(n)
+        order = torch.randperm(n, device=device)
         total, parts = 0.0, np.zeros(2)
         for start in range(0, n, cfg["batch_size"]):
             idx = order[start:start + cfg["batch_size"]]

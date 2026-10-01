@@ -244,6 +244,12 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--from-stage", type=int)
     ap.add_argument("--advance-on-budget", action="store_true")
     ap.add_argument("--ram-gb", type=float, help="RAM cap in GB; beats env FLYSLOP_MAX_RAM_GB, which beats config ram_gb")
+    ap.add_argument("--device", choices=("auto", "cpu", "cuda", "mps"),
+                    help="connectome policy device for physical stages (auto uses available hardware)")
+    ap.add_argument("--bc-workers", type=int,
+                    help="override behavior-cloning data-collection workers for physical stages")
+    ap.add_argument("--n-envs", type=int,
+                    help="physical environment subprocesses (PPO rollout size is preserved when this changes)")
     ap.add_argument("--runs-dir", default=str(RUNS))
     ap.add_argument("--wandb-project", help="opt into scalar-only W&B logging (also accepts WANDB_PROJECT)")
     ap.add_argument("--wandb-entity", help="W&B entity (also accepts WANDB_ENTITY)")
@@ -260,6 +266,39 @@ def main(argv: list[str] | None = None) -> int:
         cfg = effective_config(json.loads(Path(a.config).read_text()), smoke)
         run_dir = runs / time.strftime("%Y%m%d-%H%M%S")
         state = new_state(cfg, smoke, {"advance_on_budget": a.advance_on_budget, "from_stage": a.from_stage})
+    if a.device:
+        for stage in cfg.get("stages", []):
+            if "physical" in stage:
+                stage["physical"]["device"] = a.device
+            if "smoke_physical" in stage:
+                stage["smoke_physical"]["device"] = a.device
+        state["config"] = cfg
+        state["config_hash"] = config_hash(cfg)
+        state.setdefault("args", {})["device"] = a.device
+    if a.bc_workers is not None:
+        if a.bc_workers < 1:
+            ap.error("--bc-workers must be at least 1")
+        for stage in cfg.get("stages", []):
+            if "physical" in stage:
+                stage["physical"]["bc_workers"] = a.bc_workers
+            if "smoke_physical" in stage:
+                stage["smoke_physical"]["bc_workers"] = a.bc_workers
+        state["config"] = cfg
+        state["config_hash"] = config_hash(cfg)
+        state.setdefault("args", {})["bc_workers"] = a.bc_workers
+    if a.n_envs is not None:
+        if a.n_envs < 1:
+            ap.error("--n-envs must be at least 1")
+        for stage in cfg.get("stages", []):
+            for key in ("physical", "smoke_physical"):
+                pc = stage.get(key)
+                if pc is not None:
+                    pc["rollout_n_envs"] = int(pc.get("n_envs", 1))
+                    pc["n_envs"] = a.n_envs
+                    pc["preserve_rollout"] = True
+        state["config"] = cfg
+        state["config_hash"] = config_hash(cfg)
+        state.setdefault("args", {})["n_envs"] = a.n_envs
     ram_gb = resolve_ram_gb(a.ram_gb, cfg)  # --ram-gb > env FLYSLOP_MAX_RAM_GB > config ram_gb
     os.environ[memory_budget.ENV] = str(ram_gb)
     memory_budget.start_watchdog(config_gb=ram_gb)

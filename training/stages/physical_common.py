@@ -124,11 +124,16 @@ def build_config(pc: dict) -> dict:
         spec = config.setdefault("policy", {"type": "connectome"})
         spec["type"] = "connectome"
         spec.setdefault("connectome", {})["readout"] = pc["readout"]
+        if pc.get("device"):
+            spec["connectome"]["device"] = pc["device"]
         if pc.get("circuit"):
             spec["connectome"]["circuit"] = pc["circuit"]
     else:
         config["policy"] = {"type": "mlp"}
     config["ppo"].update(pc.get("ppo", {}))
+    if pc.get("preserve_rollout"):
+        old_envs = max(1, int(pc.get("rollout_n_envs", pc["n_envs"])))
+        config["ppo"]["n_steps"] = max(1, round(config["ppo"]["n_steps"] * old_envs / pc["n_envs"]))
     config["n_envs"] = pc["n_envs"]
     return config
 
@@ -471,6 +476,10 @@ def train_phases(ctx, config: dict, pc: dict, phases: list[dict], warm: str | No
     warm-started from ``warm``. A phase checkpoint is written after each phase; ``on_phase(name, model)`` may return
     a score used to choose the best checkpoint. On BudgetExceeded an ``interrupted.zip`` is saved and it re-raises.
     Returns (log, [(ckpt, score)], last checkpoint)."""
+    import torch
+    torch_threads = max(1, int(pc.get("torch_threads", 4)))
+    torch.set_num_threads(torch_threads)
+    _event(ctx, "torch_runtime", threads=torch_threads, n_envs=int(config.get("n_envs", 1)))
     out_dir.mkdir(parents=True, exist_ok=True)
     log, cands, last, model = [], [], None, None
     if warm:
